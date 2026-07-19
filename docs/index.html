@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ポケカ抽選レーダー | 全国のポケモンカード抽選情報まとめ</title>
+<meta name="description" content="ポケモンカードの抽選販売情報を毎日自動収集。オンライン応募・店頭受取(首都圏/大阪/京都/滋賀)の応募ページへ直接ジャンプ。相場・還元率つき。">
+<meta name="theme-color" content="#111111">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f4f4; --card:#ffffff; --ink:#111; --sub:#666; --line:#e3e3e3;
+  --accent:#e60012; --accent-dark:#c00010; --ok:#0a7d40;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{font-family:'Noto Sans JP',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;padding-bottom:60px}
+a{color:inherit}
+
+/* header */
+header{background:#111;color:#fff;padding:calc(env(safe-area-inset-top) + 14px) 16px 12px}
+.logo{font-weight:900;font-size:20px;letter-spacing:.02em;display:flex;align-items:center;gap:8px}
+.logo .ball{width:20px;height:20px;border-radius:50%;background:linear-gradient(to bottom,var(--accent) 0 46%,#111 46% 54%,#fff 54% 100%);position:relative;flex:none}
+.logo .ball::after{content:"";position:absolute;inset:0;margin:auto;width:7px;height:7px;border-radius:50%;background:#fff;border:2px solid #111}
+.updated{font-size:11px;color:#aaa;margin-top:3px;font-weight:400}
+
+/* filter bar */
+.filters{position:sticky;top:0;z-index:30;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 12px 8px}
+.tabs{display:flex;gap:6px}
+.tab{flex:1;text-align:center;padding:9px 0;font-size:13px;font-weight:700;background:#fff;border:1.5px solid var(--line);border-radius:10px;cursor:pointer;user-select:none;transition:all .15s}
+.tab.on{background:#111;color:#fff;border-color:#111}
+.row2{display:flex;gap:6px;margin-top:8px;align-items:center;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.row2::-webkit-scrollbar{display:none}
+.chip{flex:none;padding:6px 12px;font-size:12px;font-weight:700;background:#fff;border:1.5px solid var(--line);border-radius:999px;cursor:pointer;user-select:none;white-space:nowrap}
+.chip.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.sort{flex:none;margin-left:auto;font-size:12px;font-weight:700;padding:6px 8px;border:1.5px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);-webkit-appearance:none;appearance:none}
+
+/* stats strip */
+.strip{display:flex;gap:8px;padding:10px 12px 0}
+.stat{flex:1;background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 10px;text-align:center}
+.stat b{display:block;font-size:18px;font-weight:900}
+.stat span{font-size:10px;color:var(--sub);font-weight:700}
+.stat b.red{color:var(--accent)}
+
+/* cards */
+main{padding:10px 12px 0;max-width:640px;margin:0 auto}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 14px 12px;margin-bottom:10px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.meta{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:6px}
+.badge{font-size:10px;font-weight:900;padding:3px 8px;border-radius:6px;letter-spacing:.02em}
+.b-retailer{background:#111;color:#fff}
+.b-online{background:#e8f0fe;color:#1a56c4}
+.b-store{background:#e9f7ef;color:var(--ok)}
+.b-new{background:var(--accent);color:#fff}
+.b-end{background:#eee;color:#999}
+.title{font-size:15px;font-weight:900;line-height:1.4}
+.prod{font-size:12px;color:var(--sub);margin-top:2px;font-weight:700}
+.info{display:flex;gap:10px;margin-top:8px;flex-wrap:wrap}
+.dl{font-size:12px;font-weight:700}
+.dl .left{color:var(--accent);font-weight:900}
+.dl .left.calm{color:var(--ink)}
+.regions{font-size:11px;color:var(--sub);font-weight:700}
+.cond{font-size:11px;color:var(--sub);margin-top:5px}
+.resale{margin-top:8px;background:#faf7f2;border:1px dashed #ddd0bb;border-radius:9px;padding:7px 10px;font-size:12px;font-weight:700;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.resale .x{font-size:16px;font-weight:900;color:var(--accent)}
+.resale .est{font-size:9px;color:#999;font-weight:400}
+.apply{display:flex;gap:8px;margin-top:10px;align-items:center}
+.btn{flex:1;display:block;text-align:center;background:var(--accent);color:#fff;font-weight:900;font-size:14px;padding:12px 0;border-radius:11px;text-decoration:none;letter-spacing:.05em;transition:transform .1s}
+.btn:active{transform:scale(.97);background:var(--accent-dark)}
+.btn.gray{background:#bbb}
+.src{flex:none;font-size:10px;color:#999;text-decoration:none;padding:6px 4px}
+
+/* x section */
+.xsec{max-width:640px;margin:18px auto 0;padding:0 12px}
+.xsec h2{font-size:13px;font-weight:900;margin-bottom:8px}
+.xrow{display:flex;gap:8px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.xrow::-webkit-scrollbar{display:none}
+.xbtn{flex:none;background:#111;color:#fff;font-size:12px;font-weight:700;padding:9px 14px;border-radius:999px;text-decoration:none}
+
+.more{display:block;width:100%;text-align:center;padding:12px;font-size:13px;font-weight:700;color:var(--sub);background:none;border:none;cursor:pointer}
+.empty{text-align:center;color:var(--sub);font-size:13px;font-weight:700;padding:40px 20px}
+footer{max-width:640px;margin:24px auto 0;padding:16px 16px calc(env(safe-area-inset-bottom) + 24px);font-size:10px;color:#999;line-height:1.8}
+footer b{color:#777}
+.loading{text-align:center;padding:60px 0;color:var(--sub);font-weight:700;font-size:13px}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo"><span class="ball"></span>ポケカ抽選レーダー</div>
+  <div class="updated" id="updated">読み込み中…</div>
+</header>
+
+<div class="filters">
+  <div class="tabs">
+    <div class="tab on" data-plat="all">すべて</div>
+    <div class="tab" data-plat="online">オンライン</div>
+    <div class="tab" data-plat="store">店頭受取</div>
+  </div>
+  <div class="row2">
+    <div class="chip on" data-reg="all">全地域</div>
+    <div class="chip" data-reg="首都圏">首都圏</div>
+    <div class="chip" data-reg="大阪">大阪</div>
+    <div class="chip" data-reg="京都">京都</div>
+    <div class="chip" data-reg="滋賀">滋賀</div>
+    <select class="sort" id="sort">
+      <option value="deadline">締切が近い順</option>
+      <option value="new">新着順</option>
+      <option value="resale">還元率順</option>
+    </select>
+  </div>
+</div>
+
+<div class="strip" id="strip"></div>
+<main id="list"><div class="loading">抽選情報を読み込み中…</div></main>
+<button class="more" id="showEnded" style="display:none">締切済みも表示する ▼</button>
+
+<div class="xsec">
+  <h2>Xでリアルタイム検索(最新の目撃情報)</h2>
+  <div class="xrow" id="xrow"></div>
+</div>
+
+<footer id="foot">
+  <b>ご利用にあたって</b><br>
+  ・本サイトは公開されている抽選販売情報を自動収集した非公式まとめです。応募条件・期間は必ずリンク先の公式ページでご確認ください。<br>
+  ・「相場」は市場価格からの<b>推定値</b>であり、将来の価格を保証するものではありません。<br>
+  ・店頭受取の抽選は首都圏(1都3県)・大阪・京都・滋賀の対象案件のみ掲載しています。
+</footer>
+
+<script>
+const SHOKEN = ['東京','神奈川','埼玉','千葉'];
+const state = { plat:'all', reg:'all', sort:'deadline', showEnded:false, data:null };
+
+const $ = (s)=>document.querySelector(s);
+const $$ = (s)=>[...document.querySelectorAll(s)];
+
+fetch('data/data.json?t=' + Math.floor(Date.now()/600000))
+  .then(r=>r.json()).then(d=>{ state.data=d; renderAll(); })
+  .catch(()=>{ $('#list').innerHTML = '<div class="empty">データの読み込みに失敗しました。時間をおいて再読み込みしてください。</div>'; });
+
+$$('.tab').forEach(t=>t.onclick=()=>{ $$('.tab').forEach(x=>x.classList.remove('on')); t.classList.add('on'); state.plat=t.dataset.plat; render(); });
+$$('.chip').forEach(c=>c.onclick=()=>{ $$('.chip').forEach(x=>x.classList.remove('on')); c.classList.add('on'); state.reg=c.dataset.reg; render(); });
+$('#sort').onchange=e=>{ state.sort=e.target.value; render(); };
+$('#showEnded').onclick=()=>{ state.showEnded=!state.showEnded; $('#showEnded').textContent = state.showEnded ? '締切済みを隠す ▲' : '締切済みも表示する ▼'; render(); };
+
+function jstNow(){ return new Date(); }
+
+function deadlineDate(it){
+  if(!it.deadline) return null;
+  // 日付のみなら当日23:59締切とみなす
+  const d = new Date(it.deadline.length<=10 ? it.deadline+'T23:59:00+09:00' : it.deadline);
+  return isNaN(d) ? null : d;
+}
+function isEnded(it){
+  const d = deadlineDate(it);
+  return d ? d < jstNow() : false;
+}
+function leftLabel(it){
+  const d = deadlineDate(it);
+  if(!d) return {t:'締切は公式ページ参照', calm:true};
+  const ms = d - jstNow();
+  if(ms < 0) return {t:'受付終了', calm:true};
+  const h = ms/3600000;
+  if(h < 24) return {t:'あと' + Math.max(1,Math.floor(h)) + '時間', calm:false};
+  return {t:'あと' + Math.floor(h/24) + '日', calm: h>=72};
+}
+function fmtDl(it){
+  const d = deadlineDate(it);
+  if(!d) return '';
+  const w = '日月火水木金土'[d.getDay()];
+  const hasTime = it.deadline.length > 10;
+  return `${d.getMonth()+1}/${d.getDate()}(${w})` + (hasTime ? ` ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}` : '');
+}
+function isNew(it){
+  if(!it.first_seen) return false;
+  return (jstNow() - new Date(it.first_seen)) < 48*3600000;
+}
+function regionMatch(it){
+  if(state.reg==='all') return true;
+  if(it.platform!=='store') return true;
+  const rs = it.regions||[];
+  if(rs.length===0) return true; // 全国チェーン等
+  if(state.reg==='首都圏') return rs.some(r=>SHOKEN.includes(r));
+  return rs.includes(state.reg);
+}
+function yen(n){ return '¥' + Number(n).toLocaleString('ja-JP'); }
+function esc(s){ return (s||'').replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+function resaleOf(it){
+  if(!it.product_key || !state.data.products) return null;
+  const p = state.data.products[it.product_key];
+  if(!p || !p.market || !p.msrp) return null;
+  return p;
+}
+
+function renderAll(){
+  const d = state.data;
+  const u = new Date(d.updated_at);
+  $('#updated').textContent = `最終更新 ${u.getMonth()+1}/${u.getDate()} ${String(u.getHours()).padStart(2,'0')}:${String(u.getMinutes()).padStart(2,'0')} ・ 毎日自動更新`;
+  const xq = ['ポケカ 抽選','ポケカ 再販','ポケモンカード 抽選 応募','ポケセン 抽選'];
+  $('#xrow').innerHTML = xq.map(q=>`<a class="xbtn" target="_blank" rel="noopener" href="https://x.com/search?q=${encodeURIComponent(q)}&f=live">🔍 ${esc(q)}</a>`).join('');
+  render();
+}
+
+function render(){
+  const items = (state.data.items||[]).filter(it=>{
+    if(state.plat!=='all' && it.platform!==state.plat) return false;
+    if(!regionMatch(it)) return false;
+    return true;
+  });
+  const live = items.filter(it=>!isEnded(it));
+  const ended = items.filter(isEnded);
+
+  // stats
+  const online = live.filter(i=>i.platform==='online').length;
+  const store = live.filter(i=>i.platform==='store').length;
+  const soon = live.filter(i=>{ const d=deadlineDate(i); return d && (d-jstNow())<48*3600000; }).length;
+  $('#strip').innerHTML = `
+    <div class="stat"><b>${live.length}</b><span>受付中</span></div>
+    <div class="stat"><b class="red">${soon}</b><span>締切48h以内</span></div>
+    <div class="stat"><b>${online}</b><span>オンライン</span></div>
+    <div class="stat"><b>${store}</b><span>店頭受取</span></div>`;
+
+  const sortFn = {
+    deadline:(a,b)=>{ const da=deadlineDate(a), db=deadlineDate(b); if(!da&&!db)return 0; if(!da)return 1; if(!db)return -1; return da-db; },
+    new:(a,b)=> new Date(b.first_seen||0) - new Date(a.first_seen||0),
+    resale:(a,b)=>{ const ra=resaleOf(a), rb=resaleOf(b); const va=ra?ra.market/ra.msrp:0, vb=rb?rb.market/rb.msrp:0; return vb-va; },
+  }[state.sort];
+  live.sort(sortFn);
+  ended.sort((a,b)=>deadlineDate(b)-deadlineDate(a));
+
+  const shown = state.showEnded ? live.concat(ended) : live;
+  $('#showEnded').style.display = ended.length ? 'block' : 'none';
+
+  if(!shown.length){
+    $('#list').innerHTML = '<div class="empty">条件に合う受付中の抽選はありません。<br>フィルタを変えるか、また明日チェックしてください。</div>';
+    return;
+  }
+  $('#list').innerHTML = shown.map(card).join('');
+}
+
+function card(it){
+  const ended = isEnded(it);
+  const l = leftLabel(it);
+  const p = resaleOf(it);
+  const ratio = p ? (p.market/p.msrp) : 0;
+  return `<div class="card" style="${ended?'opacity:.55':''}">
+    <div class="meta">
+      <span class="badge b-retailer">${esc(it.retailer)}</span>
+      ${it.platform==='store' ? '<span class="badge b-store">店頭受取</span>' : '<span class="badge b-online">オンライン</span>'}
+      ${ended ? '<span class="badge b-end">受付終了</span>' : (isNew(it) ? '<span class="badge b-new">NEW</span>' : '')}
+    </div>
+    <div class="title">${esc(it.title)}</div>
+    ${it.product && it.product !== it.title && !it.title.includes(it.product.slice(0, 20)) ? `<div class="prod">${esc(it.product)}</div>` : ''}
+    <div class="info">
+      ${it.deadline ? `<span class="dl">締切 ${fmtDl(it)} <span class="left ${l.calm?'calm':''}">${l.t}</span></span>` : `<span class="dl"><span class="left calm">${l.t}</span></span>`}
+      ${(it.regions&&it.regions.length) ? `<span class="regions">📍 ${it.regions.map(esc).join('・')}</span>` : (it.platform==='store'?'<span class="regions">📍 対象店舗はリンク先参照</span>':'')}
+    </div>
+    ${it.conditions ? `<div class="cond">⚠ ${esc(it.conditions)}</div>` : ''}
+    ${p ? `<div class="resale">💰 相場 ${yen(p.market)} <span class="x">定価の約${ratio.toFixed(1)}倍</span> <span class="est">推定・${esc(p.market_source||'')} ${esc((p.as_of||'').slice(5,10))}時点</span></div>` : ''}
+    <div class="apply">
+      ${ended
+        ? '<span class="btn gray">受付終了</span>'
+        : `<a class="btn" href="${esc(it.apply_url)}" target="_blank" rel="noopener">応募ページへ ▶</a>`}
+      ${it.source_url && it.source_url!==it.apply_url ? `<a class="src" href="${esc(it.source_url)}" target="_blank" rel="noopener">情報元</a>` : ''}
+    </div>
+  </div>`;
+}
+</script>
+</body>
+</html>
