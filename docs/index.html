@@ -32,8 +32,9 @@ header{background:#111;color:#fff;padding:calc(env(safe-area-inset-top) + 14px) 
 /* filter bar */
 .filters{position:sticky;top:0;z-index:30;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 12px 8px}
 .tabs{display:flex;gap:6px}
-.tab{flex:1;text-align:center;padding:9px 0;font-size:13px;font-weight:700;background:#fff;border:1.5px solid var(--line);border-radius:10px;cursor:pointer;user-select:none;transition:all .15s}
+.tab{flex:1;text-align:center;padding:9px 0;font-size:12px;font-weight:700;background:#fff;border:1.5px solid var(--line);border-radius:10px;cursor:pointer;user-select:none;transition:all .15s;white-space:nowrap}
 .tab.on{background:#111;color:#fff;border-color:#111}
+.tab[data-plat="applied"].on{background:var(--ok);border-color:var(--ok)}
 .row2{display:flex;gap:6px;margin-top:8px;align-items:center;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .row2::-webkit-scrollbar{display:none}
 .chip{flex:none;padding:6px 12px;font-size:12px;font-weight:700;background:#fff;border:1.5px solid var(--line);border-radius:999px;cursor:pointer;user-select:none;white-space:nowrap}
@@ -79,6 +80,10 @@ main{padding:10px 12px 0;max-width:640px;margin:0 auto}
 .btn.gray{background:#bbb}
 .btn.sub{background:#fff;color:#111;border:2px solid #111;padding:10px 0}
 .btn.sub:active{background:#eee}
+.btn.check{flex:none;background:#fff;color:var(--ok);border:2px solid var(--ok);font-size:11px;font-weight:900;padding:10px 10px;border-radius:11px;cursor:pointer;line-height:1.2}
+.btn.check:active{background:#e9f7ef}
+.btn.undo{flex:none;background:#fff;color:#999;border:2px solid #ddd;font-size:11px;font-weight:700;padding:10px 10px;border-radius:11px;cursor:pointer}
+.applied-at{font-size:11px;color:var(--ok);font-weight:900;margin-top:6px}
 .src{flex:none;font-size:10px;color:#999;text-decoration:none;padding:6px 4px}
 
 /* x section */
@@ -110,6 +115,7 @@ footer b{color:#777}
     <div class="tab on" data-plat="all">すべて</div>
     <div class="tab" data-plat="online">オンライン</div>
     <div class="tab" data-plat="store">店頭受取</div>
+    <div class="tab" data-plat="applied">✓応募済み</div>
   </div>
   <div class="row2">
     <div class="chip on" data-reg="all">全地域</div>
@@ -219,6 +225,33 @@ function condLevel(it){
   return (it.cond_tags||[]).reduce((m,t)=>Math.max(m,t.s),0);
 }
 
+// ===== 応募済みアーカイブ(端末内保存) =====
+function loadApplied(){ try{ return JSON.parse(localStorage.getItem('applied')||'{}'); }catch(e){ return {}; } }
+function saveApplied(a){ localStorage.setItem('applied', JSON.stringify(a)); }
+window.markApplied = (id)=>{
+  const it = (state.data.items||[]).find(x=>x.id===id);
+  if(!it) return;
+  const a = loadApplied();
+  // データ更新で本体が消えても見られるようスナップショットごと保存
+  a[id] = { at: new Date().toISOString(), item: {
+    id: it.id, game: it.game, title: it.title, retailer: it.retailer, platform: it.platform,
+    deadline: it.deadline, apply_url: it.apply_url, apply_kind: it.apply_kind,
+    source: it.source, source_url: it.source_url, cond_tags: it.cond_tags, conditions: it.conditions,
+  }};
+  saveApplied(a);
+  render();
+};
+window.unmarkApplied = (id)=>{ const a = loadApplied(); delete a[id]; saveApplied(a); render(); };
+function updateAppliedTab(){
+  const n = Object.values(loadApplied()).filter(e=>((e.item||{}).game||'pokeca')===state.game).length;
+  const t = document.querySelector('.tab[data-plat="applied"]');
+  if(t) t.textContent = n ? `✓応募済み(${n})` : '✓応募済み';
+}
+function fmtAt(iso){
+  const d = new Date(iso);
+  return `${d.getMonth()+1}/${d.getDate()} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
+}
+
 function renderAll(){
   const d = state.data;
   const u = new Date(d.updated_at);
@@ -230,14 +263,37 @@ function renderAll(){
   render();
 }
 
+function renderApplied(){
+  const a = loadApplied();
+  const entries = Object.values(a).map(e=>{
+    const live = (state.data.items||[]).find(x=>x.id===(e.item||{}).id);
+    return { ...(live||e.item), __at: e.at };
+  }).filter(it=>(it.game||'pokeca')===state.game);
+  entries.sort((x,y)=>new Date(y.__at)-new Date(x.__at));
+  const endedN = entries.filter(isEnded).length;
+  $('#strip').innerHTML = `
+    <div class="stat"><b>${entries.length}</b><span>応募済み</span></div>
+    <div class="stat"><b class="red">${entries.length-endedN}</b><span>受付継続中</span></div>
+    <div class="stat"><b>${endedN}</b><span>締切済み(結果待ち含む)</span></div>`;
+  $('#showEnded').style.display = 'none';
+  $('#list').innerHTML = entries.length
+    ? entries.map(card).join('')
+    : '<div class="empty">まだ応募済みの抽選はありません。<br>各カードの「✓応募した」を押すとここにアーカイブされます。</div>';
+  updateAppliedTab();
+}
+
 function render(){
+  if(state.plat==='applied'){ renderApplied(); return; }
+  const applied = loadApplied();
   const items = (state.data.items||[]).filter(it=>{
+    if(applied[it.id]) return false; // 応募済みはアーカイブへ
     if((it.game||'pokeca')!==state.game) return false;
     if(state.plat!=='all' && it.platform!==state.plat) return false;
     if(state.easyCond && condLevel(it)>=2) return false;
     if(!regionMatch(it)) return false;
     return true;
   });
+  updateAppliedTab();
   const live = items.filter(it=>!isEnded(it));
   const ended = items.filter(isEnded);
 
@@ -274,7 +330,8 @@ function render(){
 // 赤ボタン=実際の応募画面への直リンクのみ。それ以外は白ボタンで正直に表示
 function applyBtn(it){
   if((it.apply_kind||'direct')==='direct'){
-    return `<a class="btn" href="${esc(it.apply_url)}" target="_blank" rel="noopener">応募ページへ ▶</a>`;
+    const label = state.plat==='applied' ? '応募ページ/結果を確認 ▶' : '応募ページへ ▶';
+    return `<a class="btn" href="${esc(it.apply_url)}" target="_blank" rel="noopener">${label}</a>`;
   }
   const condText = (it.conditions||'') + (it.cond_tags||[]).map(t=>t.t).join('');
   let label = '詳細・応募方法を見る';
@@ -313,9 +370,13 @@ function card(it){
     ${it.conditions ? `<div class="cond">⚠ ${esc(it.conditions)}</div>` : ''}
     ${p ? `<div class="resale">💰 相場 ${yen(p.market)} ${ratio ? `<span class="x">定価の約${ratio.toFixed(1)}倍</span>` : ''} <span class="est">推定・${esc(p.market_source||'')} ${esc((p.as_of||'').slice(5,10))}時点</span></div>` : ''}
     <div class="apply">
-      ${ended ? '<span class="btn gray">受付終了</span>' : applyBtn(it)}
+      ${state.plat==='applied'
+        ? `${applyBtn(it)}<button class="btn undo" onclick="unmarkApplied('${it.id}')">取消</button>`
+        : `${ended ? '<span class="btn gray">受付終了</span>' : applyBtn(it)}
+           ${!ended ? `<button class="btn check" onclick="markApplied('${it.id}')">✓応募した</button>` : ''}`}
       ${it.source_url && it.source_url!==it.apply_url ? `<a class="src" href="${esc(it.source_url)}" target="_blank" rel="noopener">情報元</a>` : ''}
     </div>
+    ${state.plat==='applied' && it.__at ? `<div class="applied-at">✓ ${fmtAt(it.__at)} に応募済み</div>` : ''}
   </div>`;
 }
 </script>
