@@ -44,6 +44,7 @@ export async function scrape() {
       platform: 'store',
       regions,
       apply_url: art.url,
+      apply_kind: 'info',
       source: 'hmv',
       source_url: art.url,
       deadline,

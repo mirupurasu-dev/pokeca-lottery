@@ -77,6 +77,8 @@ main{padding:10px 12px 0;max-width:640px;margin:0 auto}
 .btn{flex:1;display:block;text-align:center;background:var(--accent);color:#fff;font-weight:900;font-size:14px;padding:12px 0;border-radius:11px;text-decoration:none;letter-spacing:.05em;transition:transform .1s}
 .btn:active{transform:scale(.97);background:var(--accent-dark)}
 .btn.gray{background:#bbb}
+.btn.sub{background:#fff;color:#111;border:2px solid #111;padding:10px 0}
+.btn.sub:active{background:#eee}
 .src{flex:none;font-size:10px;color:#999;text-decoration:none;padding:6px 4px}
 
 /* x section */
@@ -269,6 +271,19 @@ function render(){
   $('#list').innerHTML = shown.map(card).join('');
 }
 
+// 赤ボタン=実際の応募画面への直リンクのみ。それ以外は白ボタンで正直に表示
+function applyBtn(it){
+  if((it.apply_kind||'direct')==='direct'){
+    return `<a class="btn" href="${esc(it.apply_url)}" target="_blank" rel="noopener">応募ページへ ▶</a>`;
+  }
+  const condText = (it.conditions||'') + (it.cond_tags||[]).map(t=>t.t).join('');
+  let label = '詳細・応募方法を見る';
+  if(/^https?:\/\/(x|twitter)\.com\//.test(it.apply_url)) label = '詳細(X投稿)を見る';
+  else if(/アプリ|LINE|モギリー/.test(condText)) label = 'アプリ/LINE応募 ・詳細を見る';
+  else if(it.platform==='store') label = '店頭応募 ・詳細を見る';
+  return `<a class="btn sub" href="${esc(it.apply_url)}" target="_blank" rel="noopener">${label}</a>`;
+}
+
 function condChips(it){
   const tags = it.cond_tags||[];
   if(!tags.length) return '<div class="ctags"><span class="ctag ok">◎ 条件ゆるめ(誰でも応募しやすい)</span></div>';
@@ -298,9 +313,7 @@ function card(it){
     ${it.conditions ? `<div class="cond">⚠ ${esc(it.conditions)}</div>` : ''}
     ${p ? `<div class="resale">💰 相場 ${yen(p.market)} ${ratio ? `<span class="x">定価の約${ratio.toFixed(1)}倍</span>` : ''} <span class="est">推定・${esc(p.market_source||'')} ${esc((p.as_of||'').slice(5,10))}時点</span></div>` : ''}
     <div class="apply">
-      ${ended
-        ? '<span class="btn gray">受付終了</span>'
-        : `<a class="btn" href="${esc(it.apply_url)}" target="_blank" rel="noopener">応募ページへ ▶</a>`}
+      ${ended ? '<span class="btn gray">受付終了</span>' : applyBtn(it)}
       ${it.source_url && it.source_url!==it.apply_url ? `<a class="src" href="${esc(it.source_url)}" target="_blank" rel="noopener">情報元</a>` : ''}
     </div>
   </div>`;

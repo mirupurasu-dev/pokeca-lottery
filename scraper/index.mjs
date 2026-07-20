@@ -45,6 +45,21 @@ function extractCondTags(text) {
   return tags.slice(0, 4);
 }
 
+// まとめサイト/SNSは「実際の応募画面」ではない → apply_kind='info' としてUIでボタンを分ける
+const INFO_DOMAINS = ['cardchusen.com', 'nyuka-now.com', 'pokechuu.com', 'pokecawatch.com',
+  'snkrdunk.com', 'x.com', 'twitter.com', 'gamenv.net', 'torecamap.co.jp'];
+
+function classifyApply(url, hint) {
+  if (hint) return hint;
+  try {
+    const h = new URL(url).hostname.replace(/^www\./, '');
+    if (INFO_DOMAINS.some((d) => h === d || h.endsWith('.' + d))) return 'info';
+  } catch {
+    return 'info';
+  }
+  return 'direct';
+}
+
 function normalize(raw, adapterName) {
   const apply_url = raw.apply_url || raw.source_url;
   if (!raw.title || !apply_url) return null;
@@ -73,6 +88,7 @@ function normalize(raw, adapterName) {
     platform: storeish ? 'store' : 'online',
     regions,
     apply_url,
+    apply_kind: classifyApply(apply_url, raw.apply_kind),
     source: raw.source || adapterName,
     source_url: raw.source_url || apply_url,
     deadline: raw.deadline || null,
@@ -109,6 +125,11 @@ function dedupe(items) {
     if (!win.deadline && lose.deadline) win.deadline = lose.deadline;
     if ((!win.regions || !win.regions.length) && lose.regions?.length) win.regions = lose.regions;
     if (!win.conditions && lose.conditions) win.conditions = lose.conditions;
+    // 直接応募URLを持つ方を必ず優先(まとめページ行きを回避)
+    if (win.apply_kind !== 'direct' && lose.apply_kind === 'direct') {
+      win.apply_url = lose.apply_url;
+      win.apply_kind = 'direct';
+    }
     byKey.set(key, win);
   }
   return [...byKey.values()];

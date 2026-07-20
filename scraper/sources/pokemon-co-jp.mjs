@@ -23,6 +23,7 @@ export async function scrape() {
         platform: 'online',
         regions: [],
         apply_url: url,
+        apply_kind: 'info',
         source: 'pokemon.co.jp',
         source_url: url,
         deadline: null,

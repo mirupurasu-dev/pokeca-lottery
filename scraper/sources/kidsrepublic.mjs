@@ -40,6 +40,7 @@ export async function scrape() {
       platform: 'store',
       regions: [],
       apply_url: l.url,
+      apply_kind: 'info',
       source: 'kidsrepublic',
       source_url: l.url,
       deadline,
