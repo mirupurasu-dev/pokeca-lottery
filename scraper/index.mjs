@@ -21,6 +21,30 @@ async function loadAdapters() {
   return adapters;
 }
 
+// 応募条件をタグ化(s=2:厳しめ / s=1:軽め)。UIでチップ表示・条件ゆるめフィルタに使う
+const COND_RULES = [
+  { re: /購入(履歴|実績|条件)|お買い上げ|レシート|利用実績/, t: '購入実績条件', s: 2 },
+  { re: /本人確認|マイナンバー|身分証|顔写真|デジタル認証/, t: '本人確認あり', s: 2 },
+  { re: /来店|店頭QR|店頭応募|店内|入店|整理券/, t: '来店必要', s: 2 },
+  { re: /クレジットカード|クレカ/, t: 'クレカ必須', s: 2 },
+  { re: /有料会員|プレミアム会員|ゴールド会員|プライム/, t: '有料会員限定', s: 2 },
+  { re: /抽選申込.?参加券|クーポン提示/, t: '参加券必要', s: 2 },
+  { re: /アプリ/, t: 'アプリ必須', s: 1 },
+  { re: /LINE|モギリー/, t: 'LINE必要', s: 1 },
+  { re: /フォロー|リポスト|リツイート/, t: 'Xフォロー等', s: 1 },
+  { re: /1[89]歳以上|20歳以上|成人/, t: '年齢制限', s: 1 },
+  { re: /会員|ログイン|ID登録/, t: '会員登録', s: 1 },
+];
+
+function extractCondTags(text) {
+  const tags = [];
+  for (const r of COND_RULES) {
+    if (r.re.test(text)) tags.push({ t: r.t, s: r.s });
+  }
+  tags.sort((a, b) => b.s - a.s);
+  return tags.slice(0, 4);
+}
+
 function normalize(raw, adapterName) {
   const apply_url = raw.apply_url || raw.source_url;
   if (!raw.title || !apply_url) return null;
@@ -37,8 +61,11 @@ function normalize(raw, adapterName) {
   // タイトルと実質同じ商品名は表示しない(カードの三重表示防止)
   let product = raw.product || null;
   if (product && raw.title.includes(product.replace(/^ポケモンカード(ゲーム)?\s*/, '').slice(0, 15))) product = null;
+  const condText = `${raw.conditions || ''} ${raw.title} ${retailer}`;
   return {
     id,
+    game: raw.game || 'pokeca',
+    cond_tags: extractCondTags(condText),
     title: raw.title.slice(0, 120),
     product,
     product_key: matchProduct(`${raw.title} ${raw.product || ''}`),
@@ -63,7 +90,7 @@ function dedupeKey(it) {
     .replace(/各店|通販|オンライン|ネット|店頭|ストア|[\s・/／()（）a-z0-9]/g, '');
   const sortedRetailer = [...retailer].sort().join('');
   const prod = it.product_key || (it.title || '').slice(0, 20);
-  return `${prod}|${sortedRetailer}`;
+  return `${it.game}|${prod}|${sortedRetailer}`;
 }
 
 function dedupe(items) {

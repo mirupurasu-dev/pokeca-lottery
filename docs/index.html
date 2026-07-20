@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>ポケカ抽選レーダー | 全国のポケモンカード抽選情報まとめ</title>
-<meta name="description" content="ポケモンカードの抽選販売情報を毎日自動収集。オンライン応募・店頭受取(首都圏/大阪/京都/滋賀)の応募ページへ直接ジャンプ。相場・還元率つき。">
+<title>トレカ抽選レーダー | ポケカ・ワンピカード抽選情報まとめ</title>
+<meta name="description" content="ポケモンカード・ワンピースカードの抽選販売情報を毎日自動収集。オンライン応募・店頭受取(首都圏/大阪/京都/滋賀)の応募ページへ直接ジャンプ。応募条件・相場・還元率つき。">
 <meta name="theme-color" content="#111111">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,8 +20,11 @@ body{font-family:'Noto Sans JP',-apple-system,BlinkMacSystemFont,sans-serif;back
 a{color:inherit}
 
 /* header */
-header{background:#111;color:#fff;padding:calc(env(safe-area-inset-top) + 14px) 16px 12px}
+header{background:#111;color:#fff;padding:calc(env(safe-area-inset-top) + 14px) 16px 0}
 .logo{font-weight:900;font-size:20px;letter-spacing:.02em;display:flex;align-items:center;gap:8px}
+.games{display:flex;gap:0;margin-top:10px}
+.gtab{flex:1;text-align:center;padding:10px 0 11px;font-size:14px;font-weight:900;color:#888;cursor:pointer;user-select:none;border-bottom:3px solid transparent;letter-spacing:.03em}
+.gtab.on{color:#fff;border-bottom-color:var(--accent)}
 .logo .ball{width:20px;height:20px;border-radius:50%;background:linear-gradient(to bottom,var(--accent) 0 46%,#111 46% 54%,#fff 54% 100%);position:relative;flex:none}
 .logo .ball::after{content:"";position:absolute;inset:0;margin:auto;width:7px;height:7px;border-radius:50%;background:#fff;border:2px solid #111}
 .updated{font-size:11px;color:#aaa;margin-top:3px;font-weight:400}
@@ -62,6 +65,11 @@ main{padding:10px 12px 0;max-width:640px;margin:0 auto}
 .dl .left.calm{color:var(--ink)}
 .regions{font-size:11px;color:var(--sub);font-weight:700}
 .cond{font-size:11px;color:var(--sub);margin-top:5px}
+.ctags{display:flex;gap:5px;flex-wrap:wrap;margin-top:8px}
+.ctag{font-size:10px;font-weight:900;padding:3px 8px;border-radius:6px;letter-spacing:.02em}
+.ctag.s2{background:#fdeaea;color:#c00010;border:1px solid #f5c6c6}
+.ctag.s1{background:#f0f0f0;color:#555;border:1px solid #e0e0e0}
+.ctag.ok{background:#e9f7ef;color:var(--ok);border:1px solid #cdeedd}
 .resale{margin-top:8px;background:#faf7f2;border:1px dashed #ddd0bb;border-radius:9px;padding:7px 10px;font-size:12px;font-weight:700;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .resale .x{font-size:16px;font-weight:900;color:var(--accent)}
 .resale .est{font-size:9px;color:#999;font-weight:400}
@@ -87,8 +95,12 @@ footer b{color:#777}
 </head>
 <body>
 <header>
-  <div class="logo"><span class="ball"></span>ポケカ抽選レーダー</div>
+  <div class="logo"><span class="ball"></span>トレカ抽選レーダー</div>
   <div class="updated" id="updated">読み込み中…</div>
+  <div class="games">
+    <div class="gtab on" data-game="pokeca">ポケカ</div>
+    <div class="gtab" data-game="onepiece">ワンピース</div>
+  </div>
 </header>
 
 <div class="filters">
@@ -103,10 +115,12 @@ footer b{color:#777}
     <div class="chip" data-reg="大阪">大阪</div>
     <div class="chip" data-reg="京都">京都</div>
     <div class="chip" data-reg="滋賀">滋賀</div>
+    <div class="chip" id="easyCond">◎条件ゆるめ</div>
     <select class="sort" id="sort">
       <option value="deadline">締切が近い順</option>
       <option value="new">新着順</option>
       <option value="resale">還元率順</option>
+      <option value="cond">条件ゆるい順</option>
     </select>
   </div>
 </div>
@@ -122,14 +136,15 @@ footer b{color:#777}
 
 <footer id="foot">
   <b>ご利用にあたって</b><br>
-  ・本サイトは公開されている抽選販売情報を自動収集した非公式まとめです。応募条件・期間は必ずリンク先の公式ページでご確認ください。<br>
+  ・本サイトはポケモンカード/ワンピースカードの公開されている抽選販売情報を自動収集した非公式まとめです。応募条件・期間は必ずリンク先の公式ページでご確認ください。<br>
+  ・条件タグ(🔒購入実績・本人確認など)は告知文からの自動判定のため、漏れ・誤りがあり得ます。<br>
   ・「相場」は市場価格からの<b>推定値</b>であり、将来の価格を保証するものではありません。<br>
   ・店頭受取の抽選は首都圏(1都3県)・大阪・京都・滋賀の対象案件のみ掲載しています。
 </footer>
 
 <script>
 const SHOKEN = ['東京','神奈川','埼玉','千葉'];
-const state = { plat:'all', reg:'all', sort:'deadline', showEnded:false, data:null };
+const state = { game: localStorage.getItem('game')||'pokeca', plat:'all', reg:'all', sort:'deadline', easyCond:false, showEnded:false, data:null };
 
 const $ = (s)=>document.querySelector(s);
 const $$ = (s)=>[...document.querySelectorAll(s)];
@@ -138,8 +153,13 @@ fetch('data/data.json?t=' + Math.floor(Date.now()/600000))
   .then(r=>r.json()).then(d=>{ state.data=d; renderAll(); })
   .catch(()=>{ $('#list').innerHTML = '<div class="empty">データの読み込みに失敗しました。時間をおいて再読み込みしてください。</div>'; });
 
+$$('.gtab').forEach(g=>{
+  g.classList.toggle('on', g.dataset.game===state.game);
+  g.onclick=()=>{ $$('.gtab').forEach(x=>x.classList.remove('on')); g.classList.add('on'); state.game=g.dataset.game; localStorage.setItem('game', state.game); if(state.data) renderAll(); };
+});
 $$('.tab').forEach(t=>t.onclick=()=>{ $$('.tab').forEach(x=>x.classList.remove('on')); t.classList.add('on'); state.plat=t.dataset.plat; render(); });
-$$('.chip').forEach(c=>c.onclick=()=>{ $$('.chip').forEach(x=>x.classList.remove('on')); c.classList.add('on'); state.reg=c.dataset.reg; render(); });
+$$('.chip[data-reg]').forEach(c=>c.onclick=()=>{ $$('.chip[data-reg]').forEach(x=>x.classList.remove('on')); c.classList.add('on'); state.reg=c.dataset.reg; render(); });
+$('#easyCond').onclick=()=>{ state.easyCond=!state.easyCond; $('#easyCond').classList.toggle('on', state.easyCond); render(); };
 $('#sort').onchange=e=>{ state.sort=e.target.value; render(); };
 $('#showEnded').onclick=()=>{ state.showEnded=!state.showEnded; $('#showEnded').textContent = state.showEnded ? '締切済みを隠す ▲' : '締切済みも表示する ▼'; render(); };
 
@@ -189,22 +209,30 @@ function esc(s){ return (s||'').replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;',
 function resaleOf(it){
   if(!it.product_key || !state.data.products) return null;
   const p = state.data.products[it.product_key];
-  if(!p || !p.market || !p.msrp) return null;
+  if(!p || !p.market) return null;
   return p;
+}
+
+function condLevel(it){
+  return (it.cond_tags||[]).reduce((m,t)=>Math.max(m,t.s),0);
 }
 
 function renderAll(){
   const d = state.data;
   const u = new Date(d.updated_at);
   $('#updated').textContent = `最終更新 ${u.getMonth()+1}/${u.getDate()} ${String(u.getHours()).padStart(2,'0')}:${String(u.getMinutes()).padStart(2,'0')} ・ 毎日自動更新`;
-  const xq = ['ポケカ 抽選','ポケカ 再販','ポケモンカード 抽選 応募','ポケセン 抽選'];
+  const xq = state.game==='onepiece'
+    ? ['ワンピカード 抽選','ワンピースカード 抽選 応募','ワンピカード 再販']
+    : ['ポケカ 抽選','ポケカ 再販','ポケモンカード 抽選 応募','ポケセン 抽選'];
   $('#xrow').innerHTML = xq.map(q=>`<a class="xbtn" target="_blank" rel="noopener" href="https://x.com/search?q=${encodeURIComponent(q)}&f=live">🔍 ${esc(q)}</a>`).join('');
   render();
 }
 
 function render(){
   const items = (state.data.items||[]).filter(it=>{
+    if((it.game||'pokeca')!==state.game) return false;
     if(state.plat!=='all' && it.platform!==state.plat) return false;
+    if(state.easyCond && condLevel(it)>=2) return false;
     if(!regionMatch(it)) return false;
     return true;
   });
@@ -221,10 +249,12 @@ function render(){
     <div class="stat"><b>${online}</b><span>オンライン</span></div>
     <div class="stat"><b>${store}</b><span>店頭受取</span></div>`;
 
+  const byDeadline = (a,b)=>{ const da=deadlineDate(a), db=deadlineDate(b); if(!da&&!db)return 0; if(!da)return 1; if(!db)return -1; return da-db; };
   const sortFn = {
-    deadline:(a,b)=>{ const da=deadlineDate(a), db=deadlineDate(b); if(!da&&!db)return 0; if(!da)return 1; if(!db)return -1; return da-db; },
+    deadline: byDeadline,
     new:(a,b)=> new Date(b.first_seen||0) - new Date(a.first_seen||0),
-    resale:(a,b)=>{ const ra=resaleOf(a), rb=resaleOf(b); const va=ra?ra.market/ra.msrp:0, vb=rb?rb.market/rb.msrp:0; return vb-va; },
+    resale:(a,b)=>{ const ra=resaleOf(a), rb=resaleOf(b); const va=ra?(ra.msrp?ra.market/ra.msrp:ra.market/99999):0, vb=rb?(rb.msrp?rb.market/rb.msrp:rb.market/99999):0; return vb-va; },
+    cond:(a,b)=> condLevel(a)-condLevel(b) || byDeadline(a,b),
   }[state.sort];
   live.sort(sortFn);
   ended.sort((a,b)=>deadlineDate(b)-deadlineDate(a));
@@ -239,11 +269,19 @@ function render(){
   $('#list').innerHTML = shown.map(card).join('');
 }
 
+function condChips(it){
+  const tags = it.cond_tags||[];
+  if(!tags.length) return '<div class="ctags"><span class="ctag ok">◎ 条件ゆるめ(誰でも応募しやすい)</span></div>';
+  const chips = tags.map(t=>`<span class="ctag s${t.s}">${t.s>=2?'🔒 ':''}${esc(t.t)}</span>`);
+  if(!tags.some(t=>t.s>=2)) chips.unshift('<span class="ctag ok">◎ 条件ゆるめ</span>');
+  return `<div class="ctags">${chips.join('')}</div>`;
+}
+
 function card(it){
   const ended = isEnded(it);
   const l = leftLabel(it);
   const p = resaleOf(it);
-  const ratio = p ? (p.market/p.msrp) : 0;
+  const ratio = (p && p.msrp) ? (p.market/p.msrp) : 0;
   return `<div class="card" style="${ended?'opacity:.55':''}">
     <div class="meta">
       <span class="badge b-retailer">${esc(it.retailer)}</span>
@@ -256,8 +294,9 @@ function card(it){
       ${it.deadline ? `<span class="dl">締切 ${fmtDl(it)} <span class="left ${l.calm?'calm':''}">${l.t}</span></span>` : `<span class="dl"><span class="left calm">${l.t}</span></span>`}
       ${(it.regions&&it.regions.length) ? `<span class="regions">📍 ${it.regions.map(esc).join('・')}</span>` : (it.platform==='store'?'<span class="regions">📍 対象店舗はリンク先参照</span>':'')}
     </div>
+    ${condChips(it)}
     ${it.conditions ? `<div class="cond">⚠ ${esc(it.conditions)}</div>` : ''}
-    ${p ? `<div class="resale">💰 相場 ${yen(p.market)} <span class="x">定価の約${ratio.toFixed(1)}倍</span> <span class="est">推定・${esc(p.market_source||'')} ${esc((p.as_of||'').slice(5,10))}時点</span></div>` : ''}
+    ${p ? `<div class="resale">💰 相場 ${yen(p.market)} ${ratio ? `<span class="x">定価の約${ratio.toFixed(1)}倍</span>` : ''} <span class="est">推定・${esc(p.market_source||'')} ${esc((p.as_of||'').slice(5,10))}時点</span></div>` : ''}
     <div class="apply">
       ${ended
         ? '<span class="btn gray">受付終了</span>'

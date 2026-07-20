@@ -22,6 +22,17 @@ const CATALOG = [
   { key: 'chouden-breaker', name: 'SV拡張パック「超電ブレイカー」BOX', msrp: 5400, re: /超電ブレイカー/ },
   { key: 'rocket-dan', name: 'SV拡張パック「ロケット団の栄光」BOX', msrp: 5400, re: /ロケット団の栄光/ },
   { key: 'mega-gengar-starter', name: 'スターターセットMEGA メガゲンガーex', msrp: 1980, re: /メガゲンガー/ },
+
+  // --- ワンピースカード (msrpはBOX入数が公式未記載のため未設定=相場のみ表示) ---
+  { key: 'op-17', game: 'onepiece', name: 'ブースターパック 世界最強の戦士【OP-17】BOX', msrp: null, re: /世界最強の戦士|OP-?17/i },
+  { key: 'op-16', game: 'onepiece', name: 'ブースターパック 決戦の刻【OP-16】BOX', msrp: null, re: /決戦の刻|OP-?16/i },
+  { key: 'op-15', game: 'onepiece', name: 'ブースターパック 神の島の冒険【OP-15】BOX', msrp: null, re: /神の島の冒険|OP-?15/i },
+  { key: 'op-14', game: 'onepiece', name: 'ブースターパック 蒼海の七傑【OP-14】BOX', msrp: null, re: /蒼海の七傑|OP-?14/i },
+  { key: 'op-13', game: 'onepiece', name: 'ブースターパック 受け継がれる意志【OP-13】BOX', msrp: null, re: /受け継がれる意志|OP-?13/i },
+  { key: 'eb-05', game: 'onepiece', name: 'エクストラブースター Heroines Edition vol.2【EB-05】BOX', msrp: null, re: /Heroines[\s\S]{0,12}vol\.?\s*2|EB-?05/i },
+  { key: 'eb-04', game: 'onepiece', name: 'エクストラブースター エッグヘッドクライシス【EB-04】BOX', msrp: null, re: /エッグヘッドクライシス|EB-?04/i },
+  { key: 'eb-03', game: 'onepiece', name: 'エクストラブースター Heroines Edition【EB-03】BOX', msrp: null, re: /Heroines|EB-?03/i },
+  { key: 'prb-02', game: 'onepiece', name: 'プレミアムブースター THE BEST vol.2【PRB-02】BOX', msrp: null, re: /THE\s*BEST[\s\S]{0,12}vol\.?\s*2|PRB-?02/i },
 ];
 
 export function loadProducts() {

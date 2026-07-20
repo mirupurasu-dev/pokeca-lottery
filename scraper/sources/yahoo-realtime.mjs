@@ -3,7 +3,12 @@
 import * as cheerio from 'cheerio';
 import { fetchText, clean, extractRegions } from './../util.mjs';
 
-const QUERIES = ['ポケカ 抽選販売', 'ポケモンカード 抽選 受付'];
+const QUERIES = [
+  { q: 'ポケカ 抽選販売', game: 'pokeca' },
+  { q: 'ポケモンカード 抽選 受付', game: 'pokeca' },
+  { q: 'ワンピカード 抽選販売', game: 'onepiece' },
+  { q: 'ワンピースカード 抽選 受付', game: 'onepiece' },
+];
 const MAX_AGE_DAYS = 5;
 
 // フォロー&リポスト系プレゼント企画・アフィリエイトを除外
@@ -13,7 +18,7 @@ export async function scrape() {
   const items = [];
   const seen = new Set();
 
-  for (const q of QUERIES) {
+  for (const { q, game } of QUERIES) {
     let entries = [];
     try {
       const html = await fetchText(
@@ -42,6 +47,7 @@ export async function scrape() {
       const isStore = /店頭|店舗|ご来店|来店|整理券/.test(text);
       items.push({
         title: text.slice(0, 70) + (text.length > 70 ? '…' : ''),
+        game,
         product: null,
         retailer: clean(t.name || t.screenName).slice(0, 24),
         platform: isStore ? 'store' : 'online',

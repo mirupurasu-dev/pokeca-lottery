@@ -58,7 +58,50 @@ export async function fetchMarketPrices(catalog, prevProducts = {}) {
   } catch (e) {
     console.error(`[resale] ライブ取得失敗(シード/前回値を使用): ${e.message}`);
   }
+
+  await fetchOnepieceMarket(catalog, products);
   return products;
+}
+
+// ワンピBOX相場: トレカの地図の買取相場コラム(週次更新)の「ボックス名|画像|価格」テーブル
+const OP_SRC_URL = 'https://torecamap.co.jp/column/onepiece-box-kaitori/';
+
+async function fetchOnepieceMarket(catalog, products) {
+  try {
+    const html = await fetchText(OP_SRC_URL);
+    const $ = cheerio.load(html);
+    const asOf = html.match(/更新日[^0-9]{0,10}([0-9]{4}[./年][0-9]{1,2}[./月][0-9]{1,2})/)?.[1] || null;
+    let live = 0;
+    $('table').each((_, t) => {
+      const head = $(t).find('tr').first().text();
+      if (!/ボックス名/.test(head)) return;
+      $(t).find('tr').slice(1).each((_, tr) => {
+        const rowText = $(tr).text().replace(/\s+/g, ' ');
+        const price = rowText.match(/約?\s*([\d,]{4,})\s*円/);
+        if (!price) return;
+        const yen = +price[1].replace(/,/g, '');
+        for (const p of catalog) {
+          if (p.game !== 'onepiece') continue;
+          if (p.re.test(rowText)) {
+            products[p.key] = {
+              name: p.name,
+              msrp: p.msrp || null,
+              market: yen,
+              market_source: 'トレカの地図(買取相場)',
+              market_url: OP_SRC_URL,
+              as_of: asOf ? asOf.replace(/[年月]/g, '.').replace(/日/, '') : nowJst(),
+              live: true,
+            };
+            live++;
+            break;
+          }
+        }
+      });
+    });
+    console.log(`[resale] ワンピ相場 ${live}商品を反映 (更新日 ${asOf})`);
+  } catch (e) {
+    console.error(`[resale] ワンピ相場取得失敗: ${e.message}`);
+  }
 }
 
 function collectProducts(node, out) {
