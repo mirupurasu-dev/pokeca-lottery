@@ -48,7 +48,12 @@ async function scrapePage({ url, game, strip }) {
     const infoUrl = packSlug ? `${url}/${packSlug}` : url;
 
     const conds = e.find('.board-cond__txt').map((_, c) => clean($(c).text())).get();
-    const methodNote = e.find('button[data-method-open]').attr('data-method-label') || '';
+    const mBtn = e.find('button[data-method-open]');
+    // 応募方式ラベル+注記+手順から条件をできるだけ具体的に拾う(◯円以上購入等はここに書かれる)
+    const methodNote = [mBtn.attr('data-method-label'), mBtn.attr('data-method-note'), mBtn.attr('data-cta-info'), clean(mBtn.attr('data-method') || '')]
+      .filter(Boolean)
+      .join(' / ')
+      .slice(0, 220);
 
     items.push({
       title: product.replace(strip, ''),

@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-25T14:39:57.165+09:00",
+ "updated_at": "2026-07-25T14:51:50.413+09:00",
  "items": [
   {
    "id": "36e854474f2c",
@@ -40,13 +40,21 @@
    "source_url": "https://shop.pokemon.co.jp/ja/shop/common/news/202607/000393.html",
    "deadline": "2026-07-24T23:59",
    "conditions": "LINEミニアプリ「モギリーLite」で応募・応募リンクは期間開始後に各店舗ページ掲載",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "3297e10680fb",
    "game": "pokeca",
    "cond_tags": [
+    {
+     "t": "本人確認あり",
+     "s": 2
+    },
+    {
+     "t": "LINE必要",
+     "s": 1
+    },
     {
      "t": "会員登録",
      "s": 1
@@ -63,9 +71,9 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/storm-emeralda",
    "deadline": "2026-07-26T18:00:00",
-   "conditions": "会員 / Googleフォーム抽選応募",
-   "first_seen": "2026-07-25T14:36:23.567+09:00",
-   "last_seen": "2026-07-25T14:39:56.003+09:00"
+   "conditions": "会員 / Googleフォーム抽選応募 / 送信後は修正できないことが多いです。会員登録は不要な場合がほとんど / ① 告知にあるGoogleフォームを開く ② 必要事項を入力して送信する ③ お店からの連絡（当選メールなど）を待つ ④ 当選したら期限内にお店で購入する / 応募ページ記載: 入力にあたって】 ・お名前をご入力いただく際には、身分証で確認可能なご氏名フルネームをご入力ください / LINE会員登録がお済でない方は コチラ から登録をお願いいたします",
+   "first_seen": "2026-07-25T14:47:57.180+09:00",
+   "last_seen": "2026-07-25T14:51:39.151+09:00"
   },
   {
    "id": "ca7c02e590ac",
@@ -100,14 +108,18 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/storm-emeralda",
    "deadline": "2026-07-26T20:00:00",
-   "conditions": "会員 / WEB抽選",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "会員 / WEB抽選 / 応募先や条件、結果の知らせ方はお店ごとに違います。各店舗の告知で確認してください / ① お店の公式サイトやSNSで応募ページを探す ② 必要なら会員登録する ③ 応募フォームから申し込む ④ 当選したら期間内に購入する",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.151+09:00"
   },
   {
    "id": "7b901fb2dadd",
    "game": "pokeca",
    "cond_tags": [
+    {
+     "t": "来店必要",
+     "s": 2
+    },
     {
      "t": "アプリ必須",
      "s": 1
@@ -128,14 +140,18 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/mega-dream-ex",
    "deadline": "2026-07-26T23:00:00",
-   "conditions": "アプリ・会員 / しまむらアプリ抽選（ワクワクポイント）",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "アプリ・会員 / しまむらアプリ抽選（ワクワクポイント） / 応募はアプリからのみ。落選してもチケットは戻りません / ① しまむらのアプリに登録する ② 来店や購入で「ワクワク」ポイントを貯める ③ チケットに交換して応募する ④ 当選したら登録した住所に届く",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.151+09:00"
   },
   {
    "id": "9af772eae4df",
    "game": "pokeca",
    "cond_tags": [
+    {
+     "t": "来店必要",
+     "s": 2
+    },
     {
      "t": "アプリ必須",
      "s": 1
@@ -156,14 +172,18 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/ninja-spinner",
    "deadline": "2026-07-26T23:00:00",
-   "conditions": "アプリ・会員 / しまむらアプリ抽選（ワクワクポイント）",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "アプリ・会員 / しまむらアプリ抽選（ワクワクポイント） / 応募はアプリからのみ。落選してもチケットは戻りません / ① しまむらのアプリに登録する ② 来店や購入で「ワクワク」ポイントを貯める ③ チケットに交換して応募する ④ 当選したら登録した住所に届く",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.151+09:00"
   },
   {
    "id": "f748e0ef4e70",
    "game": "pokeca",
    "cond_tags": [
+    {
+     "t": "来店必要",
+     "s": 2
+    },
     {
      "t": "アプリ必須",
      "s": 1
@@ -184,14 +204,18 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/mega-brave",
    "deadline": "2026-07-26T23:00:00",
-   "conditions": "アプリ・会員 / しまむらアプリ抽選（ワクワクポイント）",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "アプリ・会員 / しまむらアプリ抽選（ワクワクポイント） / 応募はアプリからのみ。落選してもチケットは戻りません / ① しまむらのアプリに登録する ② 来店や購入で「ワクワク」ポイントを貯める ③ チケットに交換して応募する ④ 当選したら登録した住所に届く",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.151+09:00"
   },
   {
    "id": "0d8e912d9733",
    "game": "pokeca",
    "cond_tags": [
+    {
+     "t": "来店必要",
+     "s": 2
+    },
     {
      "t": "アプリ必須",
      "s": 1
@@ -212,9 +236,9 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/mega-symphonia",
    "deadline": "2026-07-26T23:00:00",
-   "conditions": "アプリ・会員 / しまむらアプリ抽選（ワクワクポイント）",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "アプリ・会員 / しまむらアプリ抽選（ワクワクポイント） / 応募はアプリからのみ。落選してもチケットは戻りません / ① しまむらのアプリに登録する ② 来店や購入で「ワクワク」ポイントを貯める ③ チケットに交換して応募する ④ 当選したら登録した住所に届く",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.151+09:00"
   },
   {
    "id": "b69d5ff86df9",
@@ -244,9 +268,33 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/storm-emeralda",
    "deadline": "2026-07-26T23:45:00",
-   "conditions": "アプリ・会員・レシート / アプリ抽選",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "アプリ・会員・レシート / アプリ抽選 / 対象アプリや条件はお店ごとに違うので、各店舗の告知で確認してください / ① お店の公式アプリを入れて会員登録する ② アプリ内で応募する ③ 結果はアプリの通知で確認する ④ 当選したら期間内にお店へ行く",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.151+09:00"
+  },
+  {
+   "id": "381c2c2339d4",
+   "game": "pokeca",
+   "cond_tags": [
+    {
+     "t": "会員登録",
+     "s": 1
+    }
+   ],
+   "title": "ストームエメラルダ",
+   "product": null,
+   "product_key": "storm-emeralda",
+   "retailer": "ジラフル各店",
+   "platform": "store",
+   "regions": [],
+   "apply_url": "https://livepocket.jp/p/puf0p",
+   "apply_kind": "direct",
+   "source": "nyuka-now",
+   "source_url": "https://nyuka-now.com/archives/2459",
+   "deadline": "2026-07-26T23:59",
+   "conditions": "・申し込みには、事前に「Livepocket会員登録」が必要 ※それぞれ応募ページが異なりますので、ご注意ください。",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "7f675ce5e59f",
@@ -269,8 +317,8 @@
    "source_url": "https://nyuka-now.com/archives/2459",
    "deadline": "2026-07-26T23:59",
    "conditions": "モバイル会員の「抽選申込み」よりお申込み",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "d9b55f74761f",
@@ -301,14 +349,19 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/storm-emeralda",
    "deadline": "2026-07-26T23:59:00",
-   "conditions": "会員 / メンバーズカードアプリ WEB抽選",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "会員 / メンバーズカードアプリ WEB抽選 / 複数のカードショップが使う共通サービス。重複応募は無効で、落選時は通知が来ないことがあります / ① お店のモバイル会員に登録する（membercard.jp） ② 抽選ページで応募する（多くは1商品1点） ③ 当落はメールかマイページで確認する ④ 当選したら期限内にお店で購入する",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "a5d3fd9fe9b8",
    "game": "pokeca",
-   "cond_tags": [],
+   "cond_tags": [
+    {
+     "t": "会員登録",
+     "s": 1
+    }
+   ],
    "title": "ストームエメラルダ / スターターセットex各種",
    "product": null,
    "product_key": "storm-emeralda",
@@ -320,9 +373,9 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/storm-emeralda",
    "deadline": "2026-07-26T23:59:00",
-   "conditions": "WEB抽選",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "WEB抽選 / 応募先や条件、結果の知らせ方はお店ごとに違います。各店舗の告知で確認してください / ① お店の公式サイトやSNSで応募ページを探す ② 必要なら会員登録する ③ 応募フォームから申し込む ④ 当選したら期間内に購入する",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "99277c572468",
@@ -353,14 +406,23 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/storm-emeralda",
    "deadline": "2026-07-26T23:59:00",
-   "conditions": "会員・本人確認 / WEB抽選",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "会員・本人確認 / WEB抽選 / 応募先や条件、結果の知らせ方はお店ごとに違います。各店舗の告知で確認してください / ① お店の公式サイトやSNSで応募ページを探す ② 必要なら会員登録する ③ 応募フォームから申し込む ④ 当選したら期間内に購入する",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "6bf41688ce01",
    "game": "pokeca",
-   "cond_tags": [],
+   "cond_tags": [
+    {
+     "t": "本人確認あり",
+     "s": 2
+    },
+    {
+     "t": "アプリ必須",
+     "s": 1
+    }
+   ],
    "title": "アビスアイ",
    "product": null,
    "product_key": "abyss-eye",
@@ -372,9 +434,9 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/abyss-eye",
    "deadline": "2026-07-26T23:59:00",
-   "conditions": "店頭抽選",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "店頭抽選 / 応募のやり方も結果の知らせ方もお店ごとに違うので、各店舗の告知を確認してください / ① お店で応募する（応募用紙か、店頭の端末・アプリ） ② 名前や連絡先の記入、本人確認を求められることがある ③ 抽選結果を確認する（店頭の掲示・電話・アプリ通知など） ④ 当選したら期間内にお店へ行って購入する",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "d1511065c69c",
@@ -383,6 +445,10 @@
     {
      "t": "本人確認あり",
      "s": 2
+    },
+    {
+     "t": "会員登録",
+     "s": 1
     }
    ],
    "title": "ストームエメラルダ",
@@ -399,9 +465,9 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/storm-emeralda",
    "deadline": "2026-07-28T23:59:00",
-   "conditions": "本人確認 / Googleフォーム抽選応募",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "本人確認 / Googleフォーム抽選応募 / 送信後は修正できないことが多いです。会員登録は不要な場合がほとんど / ① 告知にあるGoogleフォームを開く ② 必要事項を入力して送信する ③ お店からの連絡（当選メールなど）を待つ ④ 当選したら期限内にお店で購入する / 応募ページ記載: （購入キャンセルは可能） ・ご購入の際「本人確認書類」+当選画面の提示できる電子機器（スクリーンショット不可）をお持ちください / ・ 本人確認書類は応募内容と完全一致のみを対象といたします",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "a870b0f1e95e",
@@ -418,9 +484,9 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/abyss-eye",
    "deadline": "2026-07-31T23:59:00",
-   "conditions": "Amazon.co.jp 招待制販売（招待リクエスト）",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "Amazon.co.jp 招待制販売（招待リクエスト） / 定価販売のほかに中古（マーケットプレイス）の出品もあるので、間違えて買わないよう注意 / ① 商品ページで抽選に参加する ② 当選するとメールで通知が届く ③ 期限内（72時間以内）に購入する",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "58eed82299e9",
@@ -446,14 +512,19 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/onepiece/op-29th-anniv-promo",
    "deadline": "2026-08-06T23:58:00",
-   "conditions": "アプリ・会員 / 予約販売",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "アプリ・会員 / 予約販売 / 申し込み方法や支払いのタイミング、受け取り期限はお店ごとに違います / ① お店の窓口や予約フォームで申し込む ② 代金を前払いすることがある ③ 発売日以降に受け取る（店頭か配送）",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "f10077987de1",
    "game": "onepiece",
-   "cond_tags": [],
+   "cond_tags": [
+    {
+     "t": "会員登録",
+     "s": 1
+    }
+   ],
    "title": "世界最強の戦士",
    "product": null,
    "product_key": "op-17",
@@ -465,9 +536,9 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/onepiece/op17-saikyo-no-senshi",
    "deadline": "2026-08-21T23:59:00",
-   "conditions": "SNS応募 / WEB抽選",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "SNS応募 / WEB抽選 / 応募先や条件、結果の知らせ方はお店ごとに違います。各店舗の告知で確認してください / ① お店の公式サイトやSNSで応募ページを探す ② 必要なら会員登録する ③ 応募フォームから申し込む ④ 当選したら期間内に購入する",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "811c2970ea5a",
@@ -475,6 +546,10 @@
    "cond_tags": [
     {
      "t": "本人確認あり",
+     "s": 2
+    },
+    {
+     "t": "来店必要",
      "s": 2
     },
     {
@@ -545,14 +620,19 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/inferno-x",
    "deadline": null,
-   "conditions": "アプリ・会員・本人確認 / 店頭販売（先着・通常）",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "アプリ・会員・本人確認 / 店頭販売（先着・通常） / 整理券の有無や開始時刻、購入制限はお店や入荷状況で変わります / 1 / ① 入荷・発売の告知と、整理券の有無を確認する ② 整理券がある場合は配布時間までにお店へ行く ③ 順番にレジで購入する",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "0bbe1111d67d",
    "game": "pokeca",
-   "cond_tags": [],
+   "cond_tags": [
+    {
+     "t": "来店必要",
+     "s": 2
+    }
+   ],
    "title": "インフェルノX",
    "product": null,
    "product_key": "inferno-x",
@@ -564,9 +644,9 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/inferno-x",
    "deadline": null,
-   "conditions": "店頭販売（先着・通常）",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "店頭販売（先着・通常） / 整理券の有無や開始時刻、購入制限はお店や入荷状況で変わります / 1 / ① 入荷・発売の告知と、整理券の有無を確認する ② 整理券がある場合は配布時間までにお店へ行く ③ 順番にレジで購入する",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "a14fc96ca3ad",
@@ -583,14 +663,19 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/30th-celebration",
    "deadline": null,
-   "conditions": "Amazon.co.jp 招待制販売（招待リクエスト）",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "Amazon.co.jp 招待制販売（招待リクエスト） / 定価販売のほかに中古（マーケットプレイス）の出品もあるので、間違えて買わないよう注意 / ① 商品ページで抽選に参加する ② 当選するとメールで通知が届く ③ 期限内（72時間以内）に購入する",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "da65ffdda125",
    "game": "pokeca",
-   "cond_tags": [],
+   "cond_tags": [
+    {
+     "t": "会員登録",
+     "s": 1
+    }
+   ],
    "title": "アビスアイ",
    "product": null,
    "product_key": "abyss-eye",
@@ -604,14 +689,19 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/abyss-eye",
    "deadline": null,
-   "conditions": "SNS応募 / WEB抽選",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "SNS応募 / WEB抽選 / 応募先や条件、結果の知らせ方はお店ごとに違います。各店舗の告知で確認してください / 1 / ① お店の公式サイトやSNSで応募ページを探す ② 必要なら会員登録する ③ 応募フォームから申し込む ④ 当選したら期間内に購入する",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "f517f3ac93d9",
    "game": "pokeca",
-   "cond_tags": [],
+   "cond_tags": [
+    {
+     "t": "来店必要",
+     "s": 2
+    }
+   ],
    "title": "アビスアイ",
    "product": null,
    "product_key": "abyss-eye",
@@ -671,9 +761,9 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/abyss-eye",
    "deadline": null,
-   "conditions": "店頭販売（先着・通常）",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "店頭販売（先着・通常） / 整理券の有無や開始時刻、購入制限はお店や入荷状況で変わります / 1 / ① 入荷・発売の告知と、整理券の有無を確認する ② 整理券がある場合は配布時間までにお店へ行く ③ 順番にレジで購入する",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "73828db0cc51",
@@ -690,9 +780,9 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/30th-celebration-premium-deck",
    "deadline": null,
-   "conditions": "Amazon.co.jp 招待制販売（招待リクエスト）",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "Amazon.co.jp 招待制販売（招待リクエスト） / 定価販売のほかに中古（マーケットプレイス）の出品もあるので、間違えて買わないよう注意 / ① 商品ページで抽選に参加する ② 当選するとメールで通知が届く ③ 期限内（72時間以内）に購入する",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "840e350df1a8",
@@ -700,6 +790,10 @@
    "cond_tags": [
     {
      "t": "アプリ必須",
+     "s": 1
+    },
+    {
+     "t": "会員登録",
      "s": 1
     }
    ],
@@ -714,9 +808,9 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/30th-celebration",
    "deadline": null,
-   "conditions": "アプリ / アプリ抽選",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "アプリ / アプリ抽選 / 対象アプリや条件はお店ごとに違うので、各店舗の告知で確認してください / ① お店の公式アプリを入れて会員登録する ② アプリ内で応募する ③ 結果はアプリの通知で確認する ④ 当選したら期間内にお店へ行く",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "93cc35450e05",
@@ -724,6 +818,10 @@
    "cond_tags": [
     {
      "t": "アプリ必須",
+     "s": 1
+    },
+    {
+     "t": "会員登録",
      "s": 1
     }
    ],
@@ -738,14 +836,19 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/30th-celebration-premium-deck",
    "deadline": null,
-   "conditions": "アプリ / アプリ抽選",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "アプリ / アプリ抽選 / 対象アプリや条件はお店ごとに違うので、各店舗の告知で確認してください / ① お店の公式アプリを入れて会員登録する ② アプリ内で応募する ③ 結果はアプリの通知で確認する ④ 当選したら期間内にお店へ行く",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "872e72884656",
    "game": "pokeca",
-   "cond_tags": [],
+   "cond_tags": [
+    {
+     "t": "会員登録",
+     "s": 1
+    }
+   ],
    "title": "ストームエメラルダ",
    "product": null,
    "product_key": "storm-emeralda",
@@ -757,9 +860,9 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/storm-emeralda",
    "deadline": null,
-   "conditions": "WEB抽選",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "WEB抽選 / 応募先や条件、結果の知らせ方はお店ごとに違います。各店舗の告知で確認してください / ① お店の公式サイトやSNSで応募ページを探す ② 必要なら会員登録する ③ 応募フォームから申し込む ④ 当選したら期間内に購入する",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "79ba53bcec5d",
@@ -781,9 +884,9 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/30th-celebration-premium-deck",
    "deadline": null,
-   "conditions": "会員 / WEB抽選",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "会員 / WEB抽選 / 応募先や条件、結果の知らせ方はお店ごとに違います。各店舗の告知で確認してください / 1 / ① お店の公式サイトやSNSで応募ページを探す ② 必要なら会員登録する ③ 応募フォームから申し込む ④ 当選したら期間内に購入する",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "494f1a67da25",
@@ -800,9 +903,9 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/30th-celebration-gosanke",
    "deadline": null,
-   "conditions": "Amazon.co.jp 招待制販売（招待リクエスト）",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "Amazon.co.jp 招待制販売（招待リクエスト） / 定価販売のほかに中古（マーケットプレイス）の出品もあるので、間違えて買わないよう注意 / ① 商品ページで抽選に参加する ② 当選するとメールで通知が届く ③ 期限内（72時間以内）に購入する",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "cfda51e7b36a",
@@ -819,9 +922,9 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/blackvolt-whiteflare",
    "deadline": null,
-   "conditions": "Amazon.co.jp 招待制販売（招待リクエスト）",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "Amazon.co.jp 招待制販売（招待リクエスト） / 定価販売のほかに中古（マーケットプレイス）の出品もあるので、間違えて買わないよう注意 / ① 商品ページで抽選に参加する ② 当選するとメールで通知が届く ③ 期限内（72時間以内）に購入する",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "9fd5614bd655",
@@ -838,14 +941,18 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/ninja-spinner",
    "deadline": null,
-   "conditions": "Amazon.co.jp 招待制販売（招待リクエスト）",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "Amazon.co.jp 招待制販売（招待リクエスト） / 定価販売のほかに中古（マーケットプレイス）の出品もあるので、間違えて買わないよう注意 / ① 商品ページで抽選に参加する ② 当選するとメールで通知が届く ③ 期限内（72時間以内）に購入する",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "ea596442f179",
    "game": "pokeca",
    "cond_tags": [
+    {
+     "t": "購入実績条件",
+     "s": 2
+    },
     {
      "t": "会員登録",
      "s": 1
@@ -862,9 +969,9 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/30th-celebration",
    "deadline": null,
-   "conditions": "会員 / Googleフォーム抽選応募",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "会員 / Googleフォーム抽選応募 / 送信後は修正できないことが多いです。会員登録は不要な場合がほとんど / ① 告知にあるGoogleフォームを開く ② 必要事項を入力して送信する ③ お店からの連絡（当選メールなど）を待つ ④ 当選したら期限内にお店で購入する / 応募ページ記載: ・新規エントリーの方：ノジマオンラインの会員登録後、ご希望の商品にエントリーしてください / ノジマ店舗の会員情報・購入履歴とは連動しておりません",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "fb682270e1c7",
@@ -872,6 +979,10 @@
    "cond_tags": [
     {
      "t": "アプリ必須",
+     "s": 1
+    },
+    {
+     "t": "会員登録",
      "s": 1
     }
    ],
@@ -886,9 +997,9 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/storm-emeralda",
    "deadline": null,
-   "conditions": "アプリ / WEB抽選",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "アプリ / WEB抽選 / 応募先や条件、結果の知らせ方はお店ごとに違います。各店舗の告知で確認してください / ① お店の公式サイトやSNSで応募ページを探す ② 必要なら会員登録する ③ 応募フォームから申し込む ④ 当選したら期間内に購入する",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "df459e03e8a8",
@@ -905,14 +1016,18 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/30th-celebration-premium-deck",
    "deadline": null,
-   "conditions": "予約販売",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "予約販売 / 申し込み方法や支払いのタイミング、受け取り期限はお店ごとに違います / ① お店の窓口や予約フォームで申し込む ② 代金を前払いすることがある ③ 発売日以降に受け取る（店頭か配送）",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "fd8c7a98972e",
    "game": "pokeca",
    "cond_tags": [
+    {
+     "t": "来店必要",
+     "s": 2
+    },
     {
      "t": "アプリ必須",
      "s": 1
@@ -959,14 +1074,18 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/abyss-eye",
    "deadline": null,
-   "conditions": "アプリ・会員 / しまむらアプリ抽選（ワクワクポイント）",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "アプリ・会員 / しまむらアプリ抽選（ワクワクポイント） / 応募はアプリからのみ。落選してもチケットは戻りません / ① しまむらのアプリに登録する ② 来店や購入で「ワクワク」ポイントを貯める ③ チケットに交換して応募する ④ 当選したら登録した住所に届く",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "a73cd8a157bb",
    "game": "pokeca",
    "cond_tags": [
+    {
+     "t": "来店必要",
+     "s": 2
+    },
     {
      "t": "アプリ必須",
      "s": 1
@@ -1013,9 +1132,9 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/inferno-x",
    "deadline": null,
-   "conditions": "アプリ・会員 / しまむらアプリ抽選（ワクワクポイント）",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "アプリ・会員 / しまむらアプリ抽選（ワクワクポイント） / 応募はアプリからのみ。落選してもチケットは戻りません / ① しまむらのアプリに登録する ② 来店や購入で「ワクワク」ポイントを貯める ③ チケットに交換して応募する ④ 当選したら登録した住所に届く",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "f3bff45b57bd",
@@ -1032,9 +1151,9 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/30th-celebration-premium-deck",
    "deadline": null,
-   "conditions": "予約販売",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "予約販売 / 申し込み方法や支払いのタイミング、受け取り期限はお店ごとに違います / ① お店の窓口や予約フォームで申し込む ② 代金を前払いすることがある ③ 発売日以降に受け取る（店頭か配送）",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "11197553e045",
@@ -1042,6 +1161,10 @@
    "cond_tags": [
     {
      "t": "アプリ必須",
+     "s": 1
+    },
+    {
+     "t": "会員登録",
      "s": 1
     }
    ],
@@ -1056,9 +1179,9 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/pokeka/battle-collection",
    "deadline": null,
-   "conditions": "アプリ / アプリ抽選",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "アプリ / アプリ抽選 / 対象アプリや条件はお店ごとに違うので、各店舗の告知で確認してください / 1 / ① お店の公式アプリを入れて会員登録する ② アプリ内で応募する ③ 結果はアプリの通知で確認する ④ 当選したら期間内にお店へ行く",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "d3396abc27d9",
@@ -1075,14 +1198,23 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/onepiece/op09-shintanaru-koutei",
    "deadline": null,
-   "conditions": "Amazon.co.jp 招待制販売（招待リクエスト）",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "Amazon.co.jp 招待制販売（招待リクエスト） / 定価販売のほかに中古（マーケットプレイス）の出品もあるので、間違えて買わないよう注意 / ① 商品ページで抽選に参加する ② 当選するとメールで通知が届く ③ 期限内（72時間以内）に購入する",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "bc1612428ea2",
    "game": "onepiece",
-   "cond_tags": [],
+   "cond_tags": [
+    {
+     "t": "本人確認あり",
+     "s": 2
+    },
+    {
+     "t": "アプリ必須",
+     "s": 1
+    }
+   ],
    "title": "決戦の刻",
    "product": null,
    "product_key": "op-16",
@@ -1096,14 +1228,22 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/onepiece/op16-kessen-no-toki",
    "deadline": null,
-   "conditions": "店頭抽選",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "店頭抽選 / 応募のやり方も結果の知らせ方もお店ごとに違うので、各店舗の告知を確認してください / ① お店で応募する（応募用紙か、店頭の端末・アプリ） ② 名前や連絡先の記入、本人確認を求められることがある ③ 抽選結果を確認する（店頭の掲示・電話・アプリ通知など） ④ 当選したら期間内にお店へ行って購入する",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "bba67058681e",
    "game": "onepiece",
    "cond_tags": [
+    {
+     "t": "本人確認あり",
+     "s": 2
+    },
+    {
+     "t": "アプリ必須",
+     "s": 1
+    },
     {
      "t": "会員登録",
      "s": 1
@@ -1168,14 +1308,19 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/onepiece/op16-kessen-no-toki",
    "deadline": null,
-   "conditions": "会員 / 店頭抽選",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "会員 / 店頭抽選 / 応募のやり方も結果の知らせ方もお店ごとに違うので、各店舗の告知を確認してください / ① お店で応募する（応募用紙か、店頭の端末・アプリ） ② 名前や連絡先の記入、本人確認を求められることがある ③ 抽選結果を確認する（店頭の掲示・電話・アプリ通知など） ④ 当選したら期間内にお店へ行って購入する",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "c24c79e819c3",
    "game": "onepiece",
-   "cond_tags": [],
+   "cond_tags": [
+    {
+     "t": "来店必要",
+     "s": 2
+    }
+   ],
    "title": "受け継がれる意志",
    "product": null,
    "product_key": "op-13",
@@ -1235,14 +1380,18 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/onepiece/uketsugareru-ishi",
    "deadline": null,
-   "conditions": "店頭販売（先着・通常）",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "店頭販売（先着・通常） / 整理券の有無や開始時刻、購入制限はお店や入荷状況で変わります / 1 / ① 入荷・発売の告知と、整理券の有無を確認する ② 整理券がある場合は配布時間までにお店へ行く ③ 順番にレジで購入する",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "f3c3e8cc7093",
    "game": "onepiece",
    "cond_tags": [
+    {
+     "t": "購入実績条件",
+     "s": 2
+    },
     {
      "t": "会員登録",
      "s": 1
@@ -1259,9 +1408,9 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/onepiece/op16-kessen-no-toki",
    "deadline": null,
-   "conditions": "会員 / Googleフォーム抽選応募",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "会員 / Googleフォーム抽選応募 / 送信後は修正できないことが多いです。会員登録は不要な場合がほとんど / ① 告知にあるGoogleフォームを開く ② 必要事項を入力して送信する ③ お店からの連絡（当選メールなど）を待つ ④ 当選したら期限内にお店で購入する / 応募ページ記載: ・新規エントリーの方：ノジマオンラインの会員登録後、ご希望の商品にエントリーしてください / ノジマ店舗の会員情報・購入履歴とは連動しておりません",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "d7ac125df699",
@@ -1278,9 +1427,9 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/onepiece/op17-saikyo-no-senshi",
    "deadline": null,
-   "conditions": "Amazon.co.jp 招待制販売（招待リクエスト）",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "Amazon.co.jp 招待制販売（招待リクエスト） / 定価販売のほかに中古（マーケットプレイス）の出品もあるので、間違えて買わないよう注意 / ① 商品ページで抽選に参加する ② 当選するとメールで通知が届く ③ 期限内（72時間以内）に購入する",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "f12c4d0c78fb",
@@ -1297,14 +1446,18 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/onepiece/op16-kessen-no-toki",
    "deadline": null,
-   "conditions": "Amazon.co.jp 招待制販売（招待リクエスト）",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "Amazon.co.jp 招待制販売（招待リクエスト） / 定価販売のほかに中古（マーケットプレイス）の出品もあるので、間違えて買わないよう注意 / ① 商品ページで抽選に参加する ② 当選するとメールで通知が届く ③ 期限内（72時間以内）に購入する",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "6e7f12d7ce8d",
    "game": "onepiece",
    "cond_tags": [
+    {
+     "t": "本人確認あり",
+     "s": 2
+    },
     {
      "t": "アプリ必須",
      "s": 1
@@ -1321,9 +1474,9 @@
    "source": "cardchusen",
    "source_url": "https://cardchusen.com/onepiece/op16-kessen-no-toki",
    "deadline": null,
-   "conditions": "アプリ / 店頭抽選",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "アプリ / 店頭抽選 / 応募のやり方も結果の知らせ方もお店ごとに違うので、各店舗の告知を確認してください / ① お店で応募する（応募用紙か、店頭の端末・アプリ） ② 名前や連絡先の記入、本人確認を求められることがある ③ 抽選結果を確認する（店頭の掲示・電話・アプリ通知など） ④ 当選したら期間内にお店へ行って購入する",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "8945c77bea89",
@@ -1350,13 +1503,17 @@
    "source_url": "https://www.hmv.co.jp/news/article/260714121/",
    "deadline": null,
    "conditions": "HMV店頭抽選・詳細は記事参照",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "a43db5b43399",
    "game": "pokeca",
    "cond_tags": [
+    {
+     "t": "購入実績条件",
+     "s": 2
+    },
     {
      "t": "会員登録",
      "s": 1
@@ -1373,9 +1530,9 @@
    "source": "nyuka-now",
    "source_url": "https://nyuka-now.com/archives/2459",
    "deadline": null,
-   "conditions": "・2026年6月10日13時以前のエントリーはリセットされているので、必要商品は再度エントリーが必要です。 ・エントリーにはノジマオンラインの会員IDが必要",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "・2026年6月10日13時以前のエントリーはリセットされているので、必要商品は再度エントリーが必要です。 ・エントリーにはノジマオンラインの会員IDが必要 / 応募ページ記載: ・新規エントリーの方：ノジマオンラインの会員登録後、ご希望の商品にエントリーしてください / ノジマ店舗の会員情報・購入履歴とは連動しておりません",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "2cc470771a55",
@@ -1393,8 +1550,8 @@
    "source_url": "https://nyuka-now.com/archives/2459",
    "deadline": null,
    "conditions": "明日6月8日(月)14時商品ページ公開 招待制販売の可能性が高いです。",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "e217da724c4d",
@@ -1421,8 +1578,8 @@
    "source_url": "https://www.pokemoncenter-online.com/news/?id=20260608",
    "deadline": null,
    "conditions": "会員ログイン後「抽選応募一覧」から応募(本人確認あり)",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "3fb537ffc1fc",
@@ -1440,8 +1597,8 @@
    "source_url": "https://x.com/koalakoalakko11/status/2080886512326168828",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "4fc2e84889dd",
@@ -1458,9 +1615,9 @@
    "source": "x",
    "source_url": "https://x.com/CB_Bmkami/status/2080884862823878676",
    "deadline": null,
-   "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "conditions": "X投稿由来・詳細は投稿元で確認 / 応募ページ記載: ：2026年7月27 日（月）23:59まで ・お1人様1回までご応募が可能です / 間：2026年7月27日（月）23:59まで ・お1人様1回までご応募が可能です",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "774c6ee9b3fb",
@@ -1478,8 +1635,8 @@
    "source_url": "https://x.com/fujisho_tsuchi/status/2080884096574853329",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "3634d54d0ef3",
@@ -1499,8 +1656,46 @@
    "source_url": "https://x.com/AfroTCG/status/2080872821669150978",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
+  },
+  {
+   "id": "462e60b72b56",
+   "game": "pokeca",
+   "cond_tags": [],
+   "title": "◓ ポケモン速報 🔥 【ジラフル各店｜抽選受付】 ジラフル各店にて、ポケモンカード「ストームエメラルダ」のWEB抽選受付が実施されています…",
+   "product": null,
+   "product_key": "storm-emeralda",
+   "retailer": "トレ速JP｜ポケカ・ONE PIECEカード速報",
+   "platform": "store",
+   "regions": [],
+   "apply_url": "https://x.com/toresoku_JP/status/2080893242351276195",
+   "apply_kind": "info",
+   "source": "x",
+   "source_url": "https://x.com/toresoku_JP/status/2080893242351276195",
+   "deadline": null,
+   "conditions": "X投稿由来・詳細は投稿元で確認",
+   "first_seen": "2026-07-25T14:51:39.152+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
+  },
+  {
+   "id": "29f1257c245b",
+   "game": "pokeca",
+   "cond_tags": [],
+   "title": "【抽選情報（地域限定）】 ジラフル各店にてポケモンカード ストームエメラルダのWEB抽選受付中（当選者には店頭販売）。7月26日(日)23:…",
+   "product": null,
+   "product_key": "storm-emeralda",
+   "retailer": "抽選情報",
+   "platform": "store",
+   "regions": [],
+   "apply_url": "https://nyuka-now.com/archives/2459",
+   "apply_kind": "info",
+   "source": "x",
+   "source_url": "https://x.com/nyuka_now/status/2080892649045885306",
+   "deadline": null,
+   "conditions": "X投稿由来・詳細は投稿元で確認",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "a998e04960af",
@@ -1520,8 +1715,8 @@
    "source_url": "https://x.com/SurugaDonkiUtsu/status/2080887960707486034",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "546c95626761",
@@ -1539,48 +1734,8 @@
    "source_url": "https://x.com/tsutayalinoas/status/2080876556554273027",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
-  },
-  {
-   "id": "10cdb92ceb4d",
-   "game": "pokeca",
-   "cond_tags": [],
-   "title": "【抽選販売】 ポケモンカードゲーム 『ストームエメラルダ』 『スターターセットex』3種 7/26（日）20時 までの受付にて、購入権の抽選…",
-   "product": null,
-   "product_key": "storm-emeralda",
-   "retailer": "イエローサブマリン大宮本店・プレイソフト ゲーム",
-   "platform": "store",
-   "regions": [
-    "埼玉"
-   ],
-   "apply_url": "https://x.com/YS_PLAYSOFT/status/2080866175941267534",
-   "apply_kind": "info",
-   "source": "x",
-   "source_url": "https://x.com/YS_PLAYSOFT/status/2080866175941267534",
-   "deadline": null,
-   "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
-  },
-  {
-   "id": "db7125fee968",
-   "game": "pokeca",
-   "cond_tags": [],
-   "title": "【抽選のご案内】 7/31(金)発売予定 ポケモンカードゲーム ●拡張パック『ストームエメラルダ』 ●MEGAスターターセットex３種 受付…",
-   "product": null,
-   "product_key": "storm-emeralda",
-   "retailer": "抽選のご案内",
-   "platform": "online",
-   "regions": [],
-   "apply_url": "https://x.com/hakot_game/status/2080865627565375765",
-   "apply_kind": "info",
-   "source": "x",
-   "source_url": "https://x.com/hakot_game/status/2080865627565375765",
-   "deadline": null,
-   "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "5d04e15caa55",
@@ -1598,8 +1753,8 @@
    "source_url": "https://x.com/pokeca_report/status/2080200032058552602",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "eda3733f5e8c",
@@ -1620,8 +1775,8 @@
    "source_url": "https://x.com/mirar_times/status/2080103918831628486",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "670d7c3e0009",
@@ -1639,8 +1794,8 @@
    "source_url": "https://x.com/panapanapa/status/2080040527014289911",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "eb02746ab022",
@@ -1658,8 +1813,8 @@
    "source_url": "https://x.com/HMV_Lalayoko/status/2079868554841624703",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "c9bff06f53b3",
@@ -1682,8 +1837,8 @@
    "source_url": "https://x.com/keiharusame/status/2079475755717927195",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "f0b56dcfd005",
@@ -1703,8 +1858,8 @@
    "source_url": "https://x.com/azukicyan_tcg/status/2080055034058772524",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "26437537d391",
@@ -1724,8 +1879,8 @@
    "source_url": "https://x.com/azukicyan_tcg/status/2079481504585990330",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "d0fa42ec5d9f",
@@ -1743,8 +1898,8 @@
    "source_url": "https://x.com/ssd_tateba/status/2080822055545778647",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "5f70b7d45e89",
@@ -1762,8 +1917,8 @@
    "source_url": "https://x.com/tc_6537/status/2080820829810528477",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "ead8661ff28c",
@@ -1781,8 +1936,8 @@
    "source_url": "https://x.com/renkin_lab/status/2080808602428920198",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "b6de38c7ef7f",
@@ -1805,8 +1960,8 @@
    "source_url": "https://x.com/AEON_KYUSHU/status/2080805232817401934",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "4435449f03a9",
@@ -1824,8 +1979,8 @@
    "source_url": "https://x.com/stock_alert_lab/status/2080538080424149430",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "18ec613769a7",
@@ -1843,8 +1998,8 @@
    "source_url": "https://x.com/panapanapa/status/2080507065563529380",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "fee9f4aed312",
@@ -1862,8 +2017,8 @@
    "source_url": "https://x.com/sasan1075119125/status/2080488149005004800",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "f5c79887fe56",
@@ -1881,8 +2036,8 @@
    "source_url": "https://x.com/koronkoron4416/status/2080288248056959029",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "520f72347918",
@@ -1900,8 +2055,8 @@
    "source_url": "https://x.com/renkin_lab/status/2080214375143764395",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "b4787e008dc5",
@@ -1919,8 +2074,8 @@
    "source_url": "https://x.com/tsutaya_shima/status/2080872739041366212",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "5f46b1aeae90",
@@ -1938,8 +2093,8 @@
    "source_url": "https://x.com/tc_6605/status/2080858326791868528",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "7ff39f46d118",
@@ -1957,8 +2112,8 @@
    "source_url": "https://x.com/NAKAZATOtoreka/status/2080846193605906443",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "1108d033d1c9",
@@ -1976,8 +2131,8 @@
    "source_url": "https://x.com/ssd_knym/status/2080843335183544324",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "2be80e63a656",
@@ -1995,8 +2150,8 @@
    "source_url": "https://x.com/omusubicororiin/status/2080836152849010733",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "50ab9eb25a56",
@@ -2014,8 +2169,8 @@
    "source_url": "https://x.com/ssd_fukuyama/status/2080822842791206958",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "95d4b9c8450c",
@@ -2033,8 +2188,8 @@
    "source_url": "https://x.com/tc_6570/status/2080820599644098665",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
   },
   {
    "id": "d57565b49429",
@@ -2054,8 +2209,29 @@
    "source_url": "https://x.com/omusubicororiin/status/2079454519755477069",
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認",
-   "first_seen": "2026-07-25T14:36:23.570+09:00",
-   "last_seen": "2026-07-25T14:39:56.004+09:00"
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:51:39.152+09:00"
+  },
+  {
+   "id": "10cdb92ceb4d",
+   "game": "pokeca",
+   "cond_tags": [],
+   "title": "【抽選販売】 ポケモンカードゲーム 『ストームエメラルダ』 『スターターセットex』3種 7/26（日）20時 までの受付にて、購入権の抽選…",
+   "product": null,
+   "product_key": "storm-emeralda",
+   "retailer": "イエローサブマリン大宮本店・プレイソフト ゲーム",
+   "platform": "store",
+   "regions": [
+    "埼玉"
+   ],
+   "apply_url": "https://x.com/YS_PLAYSOFT/status/2080866175941267534",
+   "apply_kind": "info",
+   "source": "x",
+   "source_url": "https://x.com/YS_PLAYSOFT/status/2080866175941267534",
+   "deadline": null,
+   "conditions": "X投稿由来・詳細は投稿元で確認",
+   "first_seen": "2026-07-25T14:47:57.181+09:00",
+   "last_seen": "2026-07-25T14:47:57.181+09:00"
   }
  ],
  "products": {
@@ -2073,7 +2249,7 @@
    "market": 9500,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-07-25T14:39:56.300+09:00",
+   "as_of": "2026-07-25T14:51:50.246+09:00",
    "live": true
   },
   "ninja-spinner": {
@@ -2082,7 +2258,7 @@
    "market": 10800,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-07-25T14:39:56.300+09:00",
+   "as_of": "2026-07-25T14:51:50.246+09:00",
    "live": true
   },
   "munikis-zero": {
@@ -2091,7 +2267,7 @@
    "market": 8800,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-07-25T14:39:56.300+09:00",
+   "as_of": "2026-07-25T14:51:50.246+09:00",
    "live": true
   },
   "mega-dream": {
@@ -2100,7 +2276,7 @@
    "market": 14000,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-07-25T14:39:56.300+09:00",
+   "as_of": "2026-07-25T14:51:50.246+09:00",
    "live": true
   },
   "mega-sinfonia": {
@@ -2109,7 +2285,7 @@
    "market": 10700,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-07-25T14:39:56.300+09:00",
+   "as_of": "2026-07-25T14:51:50.246+09:00",
    "live": true
   },
   "mega-brave": {
@@ -2118,7 +2294,7 @@
    "market": 11500,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-07-25T14:39:56.300+09:00",
+   "as_of": "2026-07-25T14:51:50.246+09:00",
    "live": true
   },
   "celebration-30th": {
@@ -2159,7 +2335,7 @@
    "market": 60000,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-07-25T14:39:56.300+09:00",
+   "as_of": "2026-07-25T14:51:50.246+09:00",
    "live": true
   },
   "pokeca-151": {
@@ -2168,7 +2344,7 @@
    "market": 59000,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-07-25T14:39:56.300+09:00",
+   "as_of": "2026-07-25T14:51:50.246+09:00",
    "live": true
   },
   "terastal-fes": {
@@ -2177,7 +2353,7 @@
    "market": 21100,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-07-25T14:39:56.300+09:00",
+   "as_of": "2026-07-25T14:51:50.246+09:00",
    "live": true
   },
   "black-bolt": {
@@ -2186,7 +2362,7 @@
    "market": 25500,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-07-25T14:39:56.300+09:00",
+   "as_of": "2026-07-25T14:51:50.246+09:00",
    "live": true
   },
   "white-flare": {
@@ -2195,7 +2371,7 @@
    "market": 23200,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-07-25T14:39:56.300+09:00",
+   "as_of": "2026-07-25T14:51:50.246+09:00",
    "live": true
   },
   "inferno-x": {
@@ -2204,7 +2380,7 @@
    "market": 22500,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-07-25T14:39:56.300+09:00",
+   "as_of": "2026-07-25T14:51:50.246+09:00",
    "live": true
   },
   "chouden-breaker": {
@@ -2213,7 +2389,7 @@
    "market": 34000,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-07-25T14:39:56.300+09:00",
+   "as_of": "2026-07-25T14:51:50.246+09:00",
    "live": true
   },
   "rocket-dan": {
@@ -2222,7 +2398,7 @@
    "market": 27300,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-07-25T14:39:56.300+09:00",
+   "as_of": "2026-07-25T14:51:50.246+09:00",
    "live": true
   },
   "mega-gengar-starter": {
@@ -2313,8 +2489,23 @@
    "live": true
   }
  },
- "errors": [
-  "kidsrepublic: HTTP 403 for https://www.kidsrepublic.jp/campaign/",
-  "yodobashi: HTTP 403 for https://limited.yodobashi.com/"
- ]
+ "enrich": {
+  "https://docs.google.com/forms/d/1aa3ZAd9WcCa7_uz_lh2uBtBbsUqwzXvcst8Olnb4Rok/viewform": {
+   "snippet": "入力にあたって】 ・お名前をご入力いただく際には、身分証で確認可能なご氏名フルネームをご入力ください / LINE会員登録がお済でない方は コチラ から登録をお願いいたします",
+   "as_of": "2026-07-25T05:51:39.152Z"
+  },
+  "https://docs.google.com/forms/d/e/1FAIpQLSdwShboyOUKjPZsUO5JKuFvh5rAFwdk62YFMAYVOH9Uj6IC3w/viewform": {
+   "snippet": "（購入キャンセルは可能） ・ご購入の際「本人確認書類」+当選画面の提示できる電子機器（スクリーンショット不可）をお持ちください / ・ 本人確認書類は応募内容と完全一致のみを対象といたします",
+   "as_of": "2026-07-25T05:51:39.152Z"
+  },
+  "https://docs.google.com/forms/d/e/1FAIpQLSe2tm0oG-L8fBGGdkqdWNJD2NRkl7IHSWxGKKcFoU_u0-K1Ow/viewform": {
+   "snippet": "・新規エントリーの方：ノジマオンラインの会員登録後、ご希望の商品にエントリーしてください / ノジマ店舗の会員情報・購入履歴とは連動しておりません",
+   "as_of": "2026-07-25T05:51:39.152Z"
+  },
+  "https://forms.gle/Y6zixdHMqP4VE14g8": {
+   "snippet": "：2026年7月27 日（月）23:59まで ・お1人様1回までご応募が可能です / 間：2026年7月27日（月）23:59まで ・お1人様1回までご応募が可能です",
+   "as_of": "2026-07-25T05:51:39.152Z"
+  }
+ },
+ "errors": []
 }

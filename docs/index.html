@@ -66,7 +66,8 @@ main{padding:10px 12px 0;max-width:640px;margin:0 auto}
 .dl .left{color:var(--accent);font-weight:900}
 .dl .left.calm{color:var(--ink)}
 .regions{font-size:11px;color:var(--sub);font-weight:700}
-.cond{font-size:11px;color:var(--sub);margin-top:5px}
+.cond{font-size:11px;color:var(--sub);margin-top:5px;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;cursor:pointer}
+.cond.open{-webkit-line-clamp:unset}
 .ctags{display:flex;gap:5px;flex-wrap:wrap;margin-top:8px}
 .ctag{font-size:10px;font-weight:900;padding:3px 8px;border-radius:6px;letter-spacing:.02em}
 .ctag.s2{background:#fdeaea;color:#c00010;border:1px solid #f5c6c6}
@@ -133,6 +134,7 @@ footer b{color:#777}
       <option value="cond">条件ゆるい順</option>
     </select>
   </div>
+  <div class="row2" id="prodRow"></div>
 </div>
 
 <div class="strip" id="strip"></div>
@@ -154,17 +156,51 @@ footer b{color:#777}
 
 <script>
 const SHOKEN = ['東京','神奈川','埼玉','千葉'];
-const state = { game: localStorage.getItem('game')||'pokeca', plat:'all', reg:'all', sort:'deadline', easyCond:false, showEnded:false, data:null };
+const state = { game: localStorage.getItem('game')||'pokeca', plat:'all', reg:'all', sort:'deadline', easyCond:false, prod:{pokeca:'all',onepiece:'all'}, showEnded:false, data:null };
 
 const $ = (s)=>document.querySelector(s);
 const $$ = (s)=>[...document.querySelectorAll(s)];
 
+// ===== フィルタ状態とスクロール位置の保存/復元(離脱→復帰で元の場所に戻る) =====
+try {
+  const f = JSON.parse(localStorage.getItem('filters_v2')||'{}');
+  if(f.plat) state.plat = f.plat;
+  if(f.reg) state.reg = f.reg;
+  if(f.sort) state.sort = f.sort;
+  if(f.easyCond) state.easyCond = true;
+  if(f.prod) state.prod = {...state.prod, ...f.prod};
+} catch(e) {}
+function saveFilters(){
+  localStorage.setItem('filters_v2', JSON.stringify({plat:state.plat, reg:state.reg, sort:state.sort, easyCond:state.easyCond, prod:state.prod}));
+}
+history.scrollRestoration = 'manual';
+let _syT = null;
+addEventListener('scroll', ()=>{
+  if(_syT) return;
+  _syT = setTimeout(()=>{ _syT=null; sessionStorage.setItem('sy_'+state.game, String(scrollY)); }, 200);
+}, {passive:true});
+
 function loadData(){
   fetch('data/data.json?t=' + Math.floor(Date.now()/600000))
-    .then(r=>r.json()).then(d=>{ state.data=d; renderAll(); })
+    .then(r=>r.json()).then(d=>{
+      state.data=d;
+      renderAll();
+      // 初回描画後にスクロール位置を復元
+      if(!state._restored){
+        state._restored = true;
+        const y = +sessionStorage.getItem('sy_'+state.game) || 0;
+        if(y) setTimeout(()=>scrollTo(0, y), 60);
+      }
+    })
     .catch(()=>{ $('#list').innerHTML = '<div class="empty">データの読み込みに失敗しました。<br><a href="javascript:loadData()" style="text-decoration:underline">再読み込みする</a></div>'; });
 }
 loadData();
+
+// 保存済みフィルタをUIに反映
+$$('.tab').forEach(x=>x.classList.toggle('on', x.dataset.plat===state.plat));
+$$('.chip[data-reg]').forEach(x=>x.classList.toggle('on', x.dataset.reg===state.reg));
+document.getElementById('easyCond').classList.toggle('on', state.easyCond);
+document.getElementById('sort').value = state.sort;
 
 $$('.gtab').forEach(g=>{
   g.classList.toggle('on', g.dataset.game===state.game);
@@ -174,17 +210,46 @@ function setPlat(plat){
   state.plat = plat;
   $$('.tab').forEach(x=>x.classList.toggle('on', x.dataset.plat===plat));
 }
-$$('.tab').forEach(t=>t.onclick=()=>{ setPlat(t.dataset.plat); render(); });
+$$('.tab').forEach(t=>t.onclick=()=>{ setPlat(t.dataset.plat); saveFilters(); render(); });
 $$('.chip[data-reg]').forEach(c=>c.onclick=()=>{
   $$('.chip[data-reg]').forEach(x=>x.classList.remove('on'));
   c.classList.add('on');
   state.reg = c.dataset.reg;
   // 地域はオンライン(全国配送)には効かないため、地域を選んだら店頭受取タブへ自動切替
   if(state.reg!=='all' && (state.plat==='all'||state.plat==='online')) setPlat('store');
-  render();
+  saveFilters(); render();
 });
-$('#easyCond').onclick=()=>{ state.easyCond=!state.easyCond; $('#easyCond').classList.toggle('on', state.easyCond); render(); };
-$('#sort').onchange=e=>{ state.sort=e.target.value; render(); };
+$('#easyCond').onclick=()=>{ state.easyCond=!state.easyCond; $('#easyCond').classList.toggle('on', state.easyCond); saveFilters(); render(); };
+$('#sort').onchange=e=>{ state.sort=e.target.value; saveFilters(); render(); };
+
+// ===== 商品(パック)フィルタ =====
+function prodLabel(key){
+  if(key==='other') return 'その他';
+  const p = state.data && state.data.products && state.data.products[key];
+  if(!p) return key;
+  const m = p.name.match(/「([^」]+)」/) || p.name.match(/([^\s「」【】]+)【/);
+  return m ? m[1] : p.name.slice(0, 12);
+}
+function buildProdRow(gameItems){
+  const cur = state.prod[state.game] || 'all';
+  const counts = {};
+  let other = 0;
+  for(const it of gameItems){
+    if(isEnded(it)) continue;
+    if(it.product_key) counts[it.product_key]=(counts[it.product_key]||0)+1; else other++;
+  }
+  const keys = Object.keys(counts).sort((a,b)=>counts[b]-counts[a]).slice(0,12);
+  if(cur!=='all' && cur!=='other' && !keys.includes(cur)) keys.push(cur);
+  let html = `<div class="chip ${cur==='all'?'on':''}" data-prod="all">全商品</div>`;
+  html += keys.map(k=>`<div class="chip ${cur===k?'on':''}" data-prod="${esc(k)}">${esc(prodLabel(k))}(${counts[k]||0})</div>`).join('');
+  if(other) html += `<div class="chip ${cur==='other'?'on':''}" data-prod="other">その他(${other})</div>`;
+  const row = $('#prodRow');
+  row.innerHTML = html;
+  row.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{
+    state.prod[state.game] = c.dataset.prod;
+    saveFilters(); render();
+  });
+}
 $('#showEnded').onclick=()=>{ state.showEnded=!state.showEnded; $('#showEnded').textContent = state.showEnded ? '締切済みを隠す ▲' : '締切済みも表示する ▼'; render(); };
 
 function jstNow(){ return new Date(); }
@@ -300,14 +365,20 @@ function renderApplied(){
 
 function render(){
   if(!state.data) return; // 読み込み前のタップでも落ちない(読み込み完了時に反映される)
-  if(state.plat==='applied'){ renderApplied(); return; }
+  if(state.plat==='applied'){ $('#prodRow').style.display='none'; renderApplied(); return; }
+  $('#prodRow').style.display='';
   const applied = loadApplied();
-  const items = (state.data.items||[]).filter(it=>{
-    if(applied[it.id]) return false; // 応募済みはアーカイブへ
-    if((it.game||'pokeca')!==state.game) return false;
+  const gameItems = (state.data.items||[]).filter(it=>!applied[it.id] && (it.game||'pokeca')===state.game);
+  buildProdRow(gameItems);
+  const prod = state.prod[state.game] || 'all';
+  const items = gameItems.filter(it=>{
     if(state.plat!=='all' && it.platform!==state.plat) return false;
     if(state.easyCond && condLevel(it)>=2) return false;
     if(!regionMatch(it)) return false;
+    if(prod!=='all'){
+      if(prod==='other'){ if(it.product_key) return false; }
+      else if(it.product_key!==prod) return false;
+    }
     return true;
   });
   updateAppliedTab();
@@ -384,7 +455,7 @@ function card(it){
       ${(it.regions&&it.regions.length) ? `<span class="regions">📍 ${it.regions.map(esc).join('・')}</span>` : (it.platform==='store'?'<span class="regions">📍 対象店舗はリンク先参照</span>':'')}
     </div>
     ${condChips(it)}
-    ${it.conditions ? `<div class="cond">⚠ ${esc(it.conditions)}</div>` : ''}
+    ${it.conditions ? `<div class="cond" onclick="this.classList.toggle('open')">⚠ ${esc(it.conditions)}</div>` : ''}
     ${p ? `<div class="resale">💰 相場 ${yen(p.market)} ${ratio ? `<span class="x">定価の約${ratio.toFixed(1)}倍</span>` : ''} <span class="est">推定・${esc(p.market_source||'')} ${esc((p.as_of||'').slice(5,10))}時点</span></div>` : ''}
     <div class="apply">
       ${state.plat==='applied'

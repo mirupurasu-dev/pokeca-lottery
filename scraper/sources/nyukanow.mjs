@@ -62,7 +62,7 @@ export async function scrape() {
       source: 'nyuka-now',
       source_url: URL,
       deadline: dDate ? (tm ? `${dDate}T${String(+tm[1]).padStart(2, '0')}:${tm[2]}` : dDate) : null,
-      conditions: fields['応募条件'] ? clean(fields['応募条件']).slice(0, 90) : null,
+      conditions: fields['応募条件'] ? clean(fields['応募条件']).slice(0, 180) : null,
     });
   });
   return items;
