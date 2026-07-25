@@ -166,7 +166,9 @@ async function main() {
     if (byId.has(id)) continue;
     const dl = old.deadline ? new Date(old.deadline.length <= 10 ? old.deadline + 'T23:59:00+09:00' : old.deadline) : null;
     const lastSeen = old.last_seen ? new Date(old.last_seen) : now;
-    const keepUntil = dl ? dl.getTime() + 3 * 86400000 : lastSeen.getTime() + 14 * 86400000;
+    // 締切不明のX投稿は鮮度が命なので短めに落とす
+    const noDlWindow = old.source === 'x' ? 3 : 14;
+    const keepUntil = dl ? dl.getTime() + 3 * 86400000 : lastSeen.getTime() + noDlWindow * 86400000;
     if (keepUntil > now.getTime()) byId.set(id, old);
   }
 

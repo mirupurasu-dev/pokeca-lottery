@@ -16,6 +16,7 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
+.tab,.chip,.gtab,.btn,.sort,.xbtn,.more{touch-action:manipulation;-webkit-tap-highlight-color:rgba(0,0,0,.08)}
 body{font-family:'Noto Sans JP',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;padding-bottom:60px}
 a{color:inherit}
 
@@ -32,7 +33,7 @@ header{background:#111;color:#fff;padding:calc(env(safe-area-inset-top) + 14px) 
 /* filter bar */
 .filters{position:sticky;top:0;z-index:30;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 12px 8px}
 .tabs{display:flex;gap:6px}
-.tab{flex:1;text-align:center;padding:9px 0;font-size:12px;font-weight:700;background:#fff;border:1.5px solid var(--line);border-radius:10px;cursor:pointer;user-select:none;transition:all .15s;white-space:nowrap}
+.tab{flex:1;text-align:center;padding:12px 0;font-size:12px;font-weight:700;background:#fff;border:1.5px solid var(--line);border-radius:10px;cursor:pointer;user-select:none;transition:all .15s;white-space:nowrap}
 .tab.on{background:#111;color:#fff;border-color:#111}
 .tab[data-plat="applied"].on{background:var(--ok);border-color:var(--ok)}
 .row2{display:flex;gap:6px;margin-top:8px;align-items:center;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
@@ -123,6 +124,7 @@ footer b{color:#777}
     <div class="chip" data-reg="大阪">大阪</div>
     <div class="chip" data-reg="京都">京都</div>
     <div class="chip" data-reg="滋賀">滋賀</div>
+    <div class="chip" data-reg="愛媛">愛媛</div>
     <div class="chip" id="easyCond">◎条件ゆるめ</div>
     <select class="sort" id="sort">
       <option value="deadline">締切が近い順</option>
@@ -147,7 +149,7 @@ footer b{color:#777}
   ・本サイトはポケモンカード/ワンピースカードの公開されている抽選販売情報を自動収集した非公式まとめです。応募条件・期間は必ずリンク先の公式ページでご確認ください。<br>
   ・条件タグ(🔒購入実績・本人確認など)は告知文からの自動判定のため、漏れ・誤りがあり得ます。<br>
   ・「相場」は市場価格からの<b>推定値</b>であり、将来の価格を保証するものではありません。<br>
-  ・店頭受取の抽選は首都圏(1都3県)・大阪・京都・滋賀の対象案件のみ掲載しています。
+  ・店頭受取の抽選は首都圏(1都3県)・大阪・京都・滋賀・愛媛の対象案件のみ掲載しています。
 </footer>
 
 <script>
@@ -157,16 +159,30 @@ const state = { game: localStorage.getItem('game')||'pokeca', plat:'all', reg:'a
 const $ = (s)=>document.querySelector(s);
 const $$ = (s)=>[...document.querySelectorAll(s)];
 
-fetch('data/data.json?t=' + Math.floor(Date.now()/600000))
-  .then(r=>r.json()).then(d=>{ state.data=d; renderAll(); })
-  .catch(()=>{ $('#list').innerHTML = '<div class="empty">データの読み込みに失敗しました。時間をおいて再読み込みしてください。</div>'; });
+function loadData(){
+  fetch('data/data.json?t=' + Math.floor(Date.now()/600000))
+    .then(r=>r.json()).then(d=>{ state.data=d; renderAll(); })
+    .catch(()=>{ $('#list').innerHTML = '<div class="empty">データの読み込みに失敗しました。<br><a href="javascript:loadData()" style="text-decoration:underline">再読み込みする</a></div>'; });
+}
+loadData();
 
 $$('.gtab').forEach(g=>{
   g.classList.toggle('on', g.dataset.game===state.game);
   g.onclick=()=>{ $$('.gtab').forEach(x=>x.classList.remove('on')); g.classList.add('on'); state.game=g.dataset.game; localStorage.setItem('game', state.game); if(state.data) renderAll(); };
 });
-$$('.tab').forEach(t=>t.onclick=()=>{ $$('.tab').forEach(x=>x.classList.remove('on')); t.classList.add('on'); state.plat=t.dataset.plat; render(); });
-$$('.chip[data-reg]').forEach(c=>c.onclick=()=>{ $$('.chip[data-reg]').forEach(x=>x.classList.remove('on')); c.classList.add('on'); state.reg=c.dataset.reg; render(); });
+function setPlat(plat){
+  state.plat = plat;
+  $$('.tab').forEach(x=>x.classList.toggle('on', x.dataset.plat===plat));
+}
+$$('.tab').forEach(t=>t.onclick=()=>{ setPlat(t.dataset.plat); render(); });
+$$('.chip[data-reg]').forEach(c=>c.onclick=()=>{
+  $$('.chip[data-reg]').forEach(x=>x.classList.remove('on'));
+  c.classList.add('on');
+  state.reg = c.dataset.reg;
+  // 地域はオンライン(全国配送)には効かないため、地域を選んだら店頭受取タブへ自動切替
+  if(state.reg!=='all' && (state.plat==='all'||state.plat==='online')) setPlat('store');
+  render();
+});
 $('#easyCond').onclick=()=>{ state.easyCond=!state.easyCond; $('#easyCond').classList.toggle('on', state.easyCond); render(); };
 $('#sort').onchange=e=>{ state.sort=e.target.value; render(); };
 $('#showEnded').onclick=()=>{ state.showEnded=!state.showEnded; $('#showEnded').textContent = state.showEnded ? '締切済みを隠す ▲' : '締切済みも表示する ▼'; render(); };
@@ -283,6 +299,7 @@ function renderApplied(){
 }
 
 function render(){
+  if(!state.data) return; // 読み込み前のタップでも落ちない(読み込み完了時に反映される)
   if(state.plat==='applied'){ renderApplied(); return; }
   const applied = loadApplied();
   const items = (state.data.items||[]).filter(it=>{
