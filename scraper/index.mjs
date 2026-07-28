@@ -79,39 +79,104 @@ function normalize(raw, adapterName) {
 const SOURCE_PRIORITY = ['cardchusen', 'pokemon-center', 'pokemon-center-online', 'pokemon.co.jp',
   'kidsrepublic', 'itoyokado', 'rakuten-books', 'yodobashi', 'hmv', 'nyuka-now', 'x'];
 
+// 表記ゆれを吸収する販売元の正規化(同じ店が別名で二重掲載されるのを防ぐ)
+const RETAILER_ALIASES = [
+  [/girafull|ジラフル/i, 'ジラフル'],
+  [/tsutaya|ツタヤ/i, 'TSUTAYA'],
+  [/geo|ゲオ/i, 'GEO'],
+  [/yellowsubmarine|イエローサブマリン|イエサブ/i, 'イエローサブマリン'],
+  [/dragonstar|ドラゴンスター/i, 'ドラゴンスター'],
+  [/hobbystation|ホビーステーション|ホビステ/i, 'ホビーステーション'],
+  [/hareruya|晴れる屋/i, '晴れる屋2'],
+  [/furuichi|古本市場|ふるいち/i, 'ふるいち'],
+  [/wondergoo|新星堂/i, '新星堂/WonderGOO'],
+  [/joshin|ジョーシン|上新/i, 'ジョーシン'],
+  [/kojima|コジマ/i, 'コジマ'],
+  [/nojima|ノジマ/i, 'ノジマ'],
+  [/yodobashi|ヨドバシ/i, 'ヨドバシカメラ'],
+  [/bic\s*camera|ビックカメラ/i, 'ビックカメラ'],
+  [/edion|エディオン/i, 'エディオン'],
+  [/familymart|ファミマ|ファミリーマート/i, 'ファミマオンライン'],
+  [/lawson|ローソン/i, 'ローソン'],
+  [/amazon|アマゾン/i, 'Amazon'],
+  [/rakuten|楽天/i, '楽天ブックス'],
+  [/pokemoncenter|ポケモンセンター|ポケセン/i, 'ポケモンセンター'],
+  [/mugiwara|麦わらストア/i, '麦わらストア'],
+  [/kidyland|キデイランド/i, 'キデイランド'],
+  [/seagull|シーガル/i, 'シーガル'],
+  [/gamearc|ゲームアーク|宝島/i, 'ゲームアーク/宝島'],
+  [/oretan|オレタン/i, 'オレタン'],
+];
+
+export function canonRetailer(name) {
+  const s = name || '';
+  for (const [re, canon] of RETAILER_ALIASES) {
+    if (re.test(s)) return canon;
+  }
+  return s
+    .replace(/[（(].*?[)）]/g, '')
+    .replace(/各店|通販|オンライン|ネット|店頭|ストア|[\s・/／()（）]/g, '')
+    .toLowerCase();
+}
+
 function dedupeKey(it) {
-  const retailer = (it.retailer || '')
-    .toLowerCase()
-    .replace(/各店|通販|オンライン|ネット|店頭|ストア|[\s・/／()（）a-z0-9]/g, '');
-  const sortedRetailer = [...retailer].sort().join('');
   const prod = it.product_key || (it.title || '').slice(0, 20);
-  return `${it.game}|${prod}|${sortedRetailer}`;
+  return `${it.game}|${prod}|${canonRetailer(it.retailer)}`;
+}
+
+function mergeInto(prev, it) {
+  const pa = SOURCE_PRIORITY.indexOf(prev.source);
+  const pb = SOURCE_PRIORITY.indexOf(it.source);
+  const [win, lose] = (pb !== -1 && (pa === -1 || pb < pa)) ? [it, prev] : [prev, it];
+  // 欠けている情報は負けた方から補完
+  if (!win.deadline && lose.deadline) win.deadline = lose.deadline;
+  if ((!win.regions || !win.regions.length) && lose.regions?.length) win.regions = lose.regions;
+  if (!win.conditions && lose.conditions) win.conditions = lose.conditions;
+  if (!win.product_key && lose.product_key) win.product_key = lose.product_key;
+  if ((!win.cond_tags || !win.cond_tags.length) && lose.cond_tags?.length) win.cond_tags = lose.cond_tags;
+  // 直接応募URLを持つ方を必ず優先(まとめページ行きを回避)
+  if (win.apply_kind !== 'direct' && lose.apply_kind === 'direct') {
+    win.apply_url = lose.apply_url;
+    win.apply_kind = 'direct';
+  }
+  return win;
 }
 
 function dedupe(items) {
-  const byKey = new Map();
+  // 第1段: 応募URLが同じなら同一案件(店名の表記ゆれに関係なく確実に統合)
+  const byUrl = new Map();
+  const out = [];
   for (const it of items) {
-    const key = dedupeKey(it);
-    const prev = byKey.get(key);
-    if (!prev) {
-      byKey.set(key, it);
+    const u = normUrl(it.apply_url);
+    // まとめ/SNSページのURLは案件ごとに同じになるので統合キーにしない
+    if (!u || it.apply_kind !== 'direct') {
+      out.push(it);
       continue;
     }
-    const pa = SOURCE_PRIORITY.indexOf(prev.source);
-    const pb = SOURCE_PRIORITY.indexOf(it.source);
-    const [win, lose] = (pb !== -1 && (pa === -1 || pb < pa)) ? [it, prev] : [prev, it];
-    // 欠けている情報は負けた方から補完
-    if (!win.deadline && lose.deadline) win.deadline = lose.deadline;
-    if ((!win.regions || !win.regions.length) && lose.regions?.length) win.regions = lose.regions;
-    if (!win.conditions && lose.conditions) win.conditions = lose.conditions;
-    // 直接応募URLを持つ方を必ず優先(まとめページ行きを回避)
-    if (win.apply_kind !== 'direct' && lose.apply_kind === 'direct') {
-      win.apply_url = lose.apply_url;
-      win.apply_kind = 'direct';
-    }
-    byKey.set(key, win);
+    const prev = byUrl.get(u);
+    byUrl.set(u, prev ? mergeInto(prev, it) : it);
+  }
+  out.push(...byUrl.values());
+
+  // 第2段: 同一ゲーム×商品×販売元(正規化)で統合
+  const byKey = new Map();
+  for (const it of out) {
+    const key = dedupeKey(it);
+    const prev = byKey.get(key);
+    byKey.set(key, prev ? mergeInto(prev, it) : it);
   }
   return [...byKey.values()];
+}
+
+function normUrl(u) {
+  try {
+    const url = new URL(u);
+    url.hash = '';
+    for (const p of ['utm_source', 'utm_medium', 'utm_campaign', 'ref', 'ref_']) url.searchParams.delete(p);
+    return url.origin + url.pathname.replace(/\/$/, '') + url.search;
+  } catch {
+    return null;
+  }
 }
 
 async function main() {
@@ -143,11 +208,11 @@ async function main() {
   }
   for (const [id, old] of prevById) {
     if (byId.has(id)) continue;
+    // X由来は毎回取り直す(古い投稿・判定基準の変更前データを引きずらない)
+    if (old.source === 'x') continue;
     const dl = old.deadline ? new Date(old.deadline.length <= 10 ? old.deadline + 'T23:59:00+09:00' : old.deadline) : null;
     const lastSeen = old.last_seen ? new Date(old.last_seen) : now;
-    // 締切不明のX投稿は鮮度が命なので短めに落とす
-    const noDlWindow = old.source === 'x' ? 3 : 14;
-    const keepUntil = dl ? dl.getTime() + 3 * 86400000 : lastSeen.getTime() + noDlWindow * 86400000;
+    const keepUntil = dl ? dl.getTime() + 3 * 86400000 : lastSeen.getTime() + 14 * 86400000;
     if (keepUntil > now.getTime()) byId.set(id, old);
   }
 

@@ -14,15 +14,21 @@ export async function scrape() {
       if (!/抽選/.test(text)) continue;
       const url = r.full_uniq || r.uniq;
       if (!url) continue;
-      // ポケセンオンライン/店舗のnewsは専用アダプタが担当するので除外
-      if (/pokemoncenter-online\.com|shop\.pokemon\.co\.jp/.test(url)) continue;
+      // 専用アダプタが落ちた場合の保険として、ポケセン系の告知もここで拾う
+      // (デデュープで専用アダプタ版が優先されるため重複はしない)
+      const isPokecenOnline = /pokemoncenter-online\.com/.test(url);
+      const isPokecenStore = /shop\.pokemon\.co\.jp/.test(url);
       items.push({
         title: r.title.slice(0, 90),
         product: null,
-        retailer: 'ポケモン公式ニュース',
-        platform: 'online',
+        retailer: isPokecenOnline
+          ? 'ポケモンセンターオンライン'
+          : isPokecenStore
+            ? 'ポケモンセンター(店頭)'
+            : 'ポケモン公式ニュース',
+        platform: isPokecenStore ? 'store' : 'online',
         regions: [],
-        apply_url: url,
+        apply_url: isPokecenOnline ? 'https://www.pokemoncenter-online.com/lottery/apply.html' : url,
         apply_kind: 'info',
         source: 'pokemon.co.jp',
         source_url: url,
