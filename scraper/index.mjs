@@ -58,10 +58,14 @@ function normalize(raw, adapterName) {
   const condText = `${raw.conditions || ''} ${raw.title} ${retailer}`;
   return {
     id,
+    kind: raw.kind === 'event' ? 'event' : 'lottery',
     game: raw.game || 'pokeca',
     cond_tags: extractCondTags(condText),
     title: raw.title.slice(0, 120),
     product,
+    ...(raw.kind === 'event'
+      ? { perk: raw.perk || null, venue: raw.venue || null, event_at: raw.event_at || null, more_dates: raw.more_dates || 0 }
+      : {}),
     product_key: matchProduct(`${raw.title} ${raw.product || ''}`),
     retailer,
     platform: storeish ? 'store' : 'online',
@@ -120,6 +124,7 @@ export function canonRetailer(name) {
 }
 
 function dedupeKey(it) {
+  if (it.kind === 'event') return `event|${it.game}|${it.title}|${canonRetailer(it.retailer)}`;
   const prod = it.product_key || (it.title || '').slice(0, 20);
   return `${it.game}|${prod}|${canonRetailer(it.retailer)}`;
 }
@@ -218,6 +223,9 @@ async function main() {
 
   // 店頭受取の地域フィルタ(首都圏/大阪/京都/滋賀/愛媛のみ。地域不明の全国チェーンは残す)
   let items = [...byId.values()].filter((it) => it.platform !== 'store' || storeRegionOk(it.regions));
+  // 大会は開催日が過ぎたら落とす
+  const todayStr = nowJst().slice(0, 10);
+  items = items.filter((it) => it.kind !== 'event' || !it.deadline || it.deadline >= todayStr);
 
   // 応募ページの中にしか書かれていない条件(◯円以上購入等)を実フェッチで補完
   let enrichCache = prev.enrich || {};

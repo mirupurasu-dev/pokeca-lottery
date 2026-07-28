@@ -1,8 +1,9 @@
 {
- "updated_at": "2026-07-28T23:43:19.145+09:00",
+ "updated_at": "2026-07-28T23:57:33.759+09:00",
  "items": [
   {
    "id": "36e854474f2c",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
     {
@@ -41,7 +42,7 @@
    "deadline": "2026-07-24T23:59",
    "conditions": "LINEミニアプリ「モギリーLite」で応募・応募リンクは期間開始後に各店舗ページ掲載",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "3297e10680fb",
@@ -440,6 +441,7 @@
   },
   {
    "id": "6eadd574789d",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
     {
@@ -466,10 +468,11 @@
    "deadline": "2026-07-28T23:59:00",
    "conditions": "SNS応募 / SNS応募（Xでフォロー＋リポスト） / お店によっては、コメント投稿・店舗公式アプリの登録・InstagramやTikTokのフォローも条件に加わります。応募前に各店舗の告知投稿で条件を確認してください / ① お店の公式X（旧Twitter）アカウントをフォローする ② 対象の抽選告知の投稿をリポスト（リツイート）する ③ 当落はXのダイレクトメッセージ、または店舗の投稿で確認する ④ 当選したら期間内にお店へ行って購入する",
    "first_seen": "2026-07-28T23:29:32.208+09:00",
-   "last_seen": "2026-07-28T23:43:18.508+09:00"
+   "last_seen": "2026-07-28T23:57:32.737+09:00"
   },
   {
    "id": "d1511065c69c",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
     {
@@ -497,10 +500,11 @@
    "deadline": "2026-07-28T23:59:00",
    "conditions": "本人確認 / Googleフォーム抽選応募 / 送信後は修正できないことが多いです。会員登録は不要な場合がほとんど / ① 告知にあるGoogleフォームを開く ② 必要事項を入力して送信する ③ お店からの連絡（当選メールなど）を待つ ④ 当選したら期限内にお店で購入する / 応募ページ記載: （購入キャンセルは可能） ・ご購入の際「本人確認書類」+当選画面の提示できる電子機器（スクリーンショット不可）をお持ちください / ・ 本人確認書類は応募内容と完全一致のみを対象といたします",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "921c1aec6019",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
     {
@@ -523,10 +527,11 @@
    "deadline": "2026-07-29T11:59:00",
    "conditions": "WEB抽選 / 応募先や条件、結果の知らせ方はお店ごとに違います。各店舗の告知で確認してください / ① お店の公式サイトやSNSで応募ページを探す ② 必要なら会員登録する ③ 応募フォームから申し込む ④ 当選したら期間内に購入する",
    "first_seen": "2026-07-28T23:29:32.208+09:00",
-   "last_seen": "2026-07-28T23:43:18.511+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "e7c21982e5d1",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
     {
@@ -553,10 +558,11 @@
    "deadline": "2026-07-29T18:00:00",
    "conditions": "SNS応募 / SNS応募（Xでフォロー＋リポスト） / お店によっては、コメント投稿・店舗公式アプリの登録・InstagramやTikTokのフォローも条件に加わります。応募前に各店舗の告知投稿で条件を確認してください / 1 / ① お店の公式X（旧Twitter）アカウントをフォローする ② 対象の抽選告知の投稿をリポスト（リツイート）する ③ 当落はXのダイレクトメッセージ、または店舗の投稿で確認する ④ 当選したら期間内にお店へ行って購入する",
    "first_seen": "2026-07-28T23:29:32.208+09:00",
-   "last_seen": "2026-07-28T23:43:18.511+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "59f7769f7572",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
     {
@@ -583,10 +589,11 @@
    "deadline": "2026-07-29T20:00:00",
    "conditions": "会員・本人確認 / 店頭抽選（customform.jp応募フォーム） / 運用はお店ごとに違うので、各店舗の告知で確認してください / ① 告知にあるcustomform.jpのフォームを開く ② 必要事項を入力して送信する ③ お店からの連絡を待つ ④ 当選したら期限内にお店で購入する",
    "first_seen": "2026-07-28T23:29:32.208+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "55346ee5830e",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
     {
@@ -613,10 +620,11 @@
    "deadline": "2026-07-29T23:59:00",
    "conditions": "SNS応募 / SNS応募（Xでフォロー＋リポスト） / お店によっては、コメント投稿・店舗公式アプリの登録・InstagramやTikTokのフォローも条件に加わります。応募前に各店舗の告知投稿で条件を確認してください / ① お店の公式X（旧Twitter）アカウントをフォローする ② 対象の抽選告知の投稿をリポスト（リツイート）する ③ 当落はXのダイレクトメッセージ、または店舗の投稿で確認する ④ 当選したら期間内にお店へ行って購入する",
    "first_seen": "2026-07-28T23:29:32.208+09:00",
-   "last_seen": "2026-07-28T23:43:18.511+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "b1a90388a68b",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
     {
@@ -643,10 +651,11 @@
    "deadline": "2026-07-29T23:59:00",
    "conditions": "SNS応募 / SNS応募（Xでフォロー＋リポスト） / お店によっては、コメント投稿・店舗公式アプリの登録・InstagramやTikTokのフォローも条件に加わります。応募前に各店舗の告知投稿で条件を確認してください / ① お店の公式X（旧Twitter）アカウントをフォローする ② 対象の抽選告知の投稿をリポスト（リツイート）する ③ 当落はXのダイレクトメッセージ、または店舗の投稿で確認する ④ 当選したら期間内にお店へ行って購入する",
    "first_seen": "2026-07-28T23:29:32.208+09:00",
-   "last_seen": "2026-07-28T23:43:18.511+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "39f092ab7fe3",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
     {
@@ -677,10 +686,11 @@
    "deadline": "2026-07-29T23:59:00",
    "conditions": "アプリ・会員・SNS応募 / SNS応募（Xでフォロー＋リポスト） / お店によっては、コメント投稿・店舗公式アプリの登録・InstagramやTikTokのフォローも条件に加わります。応募前に各店舗の告知投稿で条件を確認してください / ① お店の公式X（旧Twitter）アカウントをフォローする ② 対象の抽選告知の投稿をリポスト（リツイート）する ③ 当落はXのダイレクトメッセージ、または店舗の投稿で確認する ④ 当選したら期間内にお店へ行って購入する",
    "first_seen": "2026-07-28T23:29:32.208+09:00",
-   "last_seen": "2026-07-28T23:43:18.511+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "07a0f3d2ea2a",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
     {
@@ -709,10 +719,11 @@
    "deadline": "2026-07-29T23:59:00",
    "conditions": "レシート / Googleフォーム抽選応募 / 送信後は修正できないことが多いです。会員登録は不要な場合がほとんど / ① 告知にあるGoogleフォームを開く ② 必要事項を入力して送信する ③ お店からの連絡（当選メールなど）を待つ ④ 当選したら期限内にお店で購入する / 応募ページ記載: 様】2026/6/28~2026/7/29まで に3000円以上のご購入実績 【LINE買取ご利用者様】 2026/6/28~2026/7/29までに30 / 00円以上の買取ご成約 必要事項：①名前②注文番号(※ pn+5桁の数字)or買取ケースコード 【当",
    "first_seen": "2026-07-28T23:29:32.208+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "7dea4997d02c",
+   "kind": "lottery",
    "game": "onepiece",
    "cond_tags": [
     {
@@ -740,10 +751,37 @@
    "deadline": "2026-07-29T23:59:00",
    "conditions": "本人確認 / Googleフォーム抽選応募 / 送信後は修正できないことが多いです。会員登録は不要な場合がほとんど / ① 告知にあるGoogleフォームを開く ② 必要事項を入力して送信する ③ お店からの連絡（当選メールなど）を待つ ④ 当選したら期限内にお店で購入する / 応募ページ記載: （購入キャンセルは可能） ・ご購入の際「本人確認書類」+当選画面の提示できる電子機器（スクリーンショット不可）をお持ちください / ・ 本人確認書類は応募内容と完全一致のみを対象といたします",
    "first_seen": "2026-07-28T23:29:32.208+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "78d19646bc7b",
+   "kind": "event",
+   "game": "pokeca",
+   "cond_tags": [],
+   "title": "【26/7】ポケモンカードジム ジムバトル",
+   "product": null,
+   "perk": "参加費に商品購入を含む: 新品パック１パックの購入",
+   "venue": "東京都千代田区外神田1-15-15 第1宝田ビル",
+   "event_at": "2026-07-30T18:00",
+   "more_dates": 0,
+   "product_key": null,
+   "retailer": "CARD WINGS秋葉原駅前店",
+   "platform": "store",
+   "regions": [
+    "東京"
+   ],
+   "apply_url": "https://players.pokemon-card.com/event/detail/1083273/1/10373/20260730/1872183",
+   "apply_kind": "direct",
+   "source": "pokeca-events",
+   "source_url": "https://players.pokemon-card.com/event/detail/1083273/1/10373/20260730/1872183",
+   "deadline": "2026-07-30",
+   "conditions": "参加費 新品パック１パックの購入 / 定員16名 / レギュ:スタンダード",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "2406af1320d6",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
     {
@@ -764,10 +802,11 @@
    "deadline": "2026-07-30T23:59",
    "conditions": "申し込みには「Livepocket会員登録」が必要",
    "first_seen": "2026-07-28T23:29:32.208+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "00c83971cd48",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
     {
@@ -788,10 +827,115 @@
    "deadline": "2026-07-30T23:59",
    "conditions": "申し込みには「Livepocket会員登録」が必要",
    "first_seen": "2026-07-28T23:29:32.208+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "0bec486350be",
+   "kind": "event",
+   "game": "pokeca",
+   "cond_tags": [],
+   "title": "メガエルレイドexSARゲットバトル【7-8月開催分】",
+   "product": null,
+   "perk": "参加費に商品購入を含む: 3,000円 ※拡張パック「M6」15パックの購入費を含む。",
+   "venue": "東京都八王子市旭町7-1 豊栄第一ビル3階",
+   "event_at": "2026-07-31T13:00",
+   "more_dates": 0,
+   "product_key": null,
+   "retailer": "フルコンプ PLAYERS CENTER 八王子本店",
+   "platform": "store",
+   "regions": [
+    "東京"
+   ],
+   "apply_url": "https://players.pokemon-card.com/event/detail/1058787/1/10459/20260731/1877734",
+   "apply_kind": "direct",
+   "source": "pokeca-events",
+   "source_url": "https://players.pokemon-card.com/event/detail/1058787/1/10459/20260731/1877734",
+   "deadline": "2026-07-31",
+   "conditions": "参加費 3,000円 ※拡張パック「M6」15パックの購入費を含む。 / 定員64名 / レギュ:その他",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "67ceff07e093",
+   "kind": "event",
+   "game": "pokeca",
+   "cond_tags": [],
+   "title": "メガエルレイドexSARゲットバトル【7-8月開催分】",
+   "product": null,
+   "perk": null,
+   "venue": "東京都町田市原町田4丁目5-8 MIキューブ町田イースト2階",
+   "event_at": "2026-07-31T13:00",
+   "more_dates": 1,
+   "product_key": null,
+   "retailer": "ドラゴンスター町田店",
+   "platform": "store",
+   "regions": [
+    "東京"
+   ],
+   "apply_url": "https://players.pokemon-card.com/event/detail/1058788/1/22093/20260731/1877514",
+   "apply_kind": "direct",
+   "source": "pokeca-events",
+   "source_url": "https://players.pokemon-card.com/event/detail/1058788/1/22093/20260731/1877514",
+   "deadline": "2026-07-31",
+   "conditions": "参加費 3000円(拡張パック「M6」15パック代込み) / 定員16名 / レギュ:その他",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "85f9d9c95396",
+   "kind": "event",
+   "game": "pokeca",
+   "cond_tags": [],
+   "title": "メガエルレイドexSARゲットバトル【7-8月開催分】",
+   "product": null,
+   "perk": "参加費に商品購入を含む: 「3,000円 ※拡張パック「M6」15パックの購入費を含む。」",
+   "venue": "滋賀県大津市今堅田2丁目40-25",
+   "event_at": "2026-07-31T18:00",
+   "more_dates": 7,
+   "product_key": null,
+   "retailer": "ゲームプラザ元気302",
+   "platform": "store",
+   "regions": [
+    "滋賀"
+   ],
+   "apply_url": "https://players.pokemon-card.com/event/detail/1058791/1/10877/20260731/1876995",
+   "apply_kind": "direct",
+   "source": "pokeca-events",
+   "source_url": "https://players.pokemon-card.com/event/detail/1058791/1/10877/20260731/1876995",
+   "deadline": "2026-07-31",
+   "conditions": "参加費 「3,000円 ※拡張パック「M6」15パックの購入費を含む。」 / 定員32名 / レギュ:その他",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "3ecc5a6d9045",
+   "kind": "event",
+   "game": "pokeca",
+   "cond_tags": [],
+   "title": "メガエルレイドexSARゲットバトル【7-8月開催分】",
+   "product": null,
+   "perk": "参加費に商品購入を含む: 3,000円 ※拡張パック「M6」15パックの購入費を含む。",
+   "venue": "愛媛県新居浜市繁本町5番31号 第3越智ビル1階",
+   "event_at": "2026-07-31T17:00",
+   "more_dates": 3,
+   "product_key": null,
+   "retailer": "トレカショップ ファンクス",
+   "platform": "store",
+   "regions": [
+    "愛媛"
+   ],
+   "apply_url": "https://players.pokemon-card.com/event/detail/1058790/1/11295/20260731/1876873",
+   "apply_kind": "direct",
+   "source": "pokeca-events",
+   "source_url": "https://players.pokemon-card.com/event/detail/1058790/1/11295/20260731/1876873",
+   "deadline": "2026-07-31",
+   "conditions": "参加費 3,000円 ※拡張パック「M6」15パックの購入費を含む。 / 定員32名 / レギュ:その他",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "97ad56ec0fdf",
+   "kind": "lottery",
    "game": "onepiece",
    "cond_tags": [
     {
@@ -812,10 +956,11 @@
    "deadline": "2026-07-31T15:00:00",
    "conditions": "会員 / WEB抽選 / 応募先や条件、結果の知らせ方はお店ごとに違います。各店舗の告知で確認してください / ① お店の公式サイトやSNSで応募ページを探す ② 必要なら会員登録する ③ 応募フォームから申し込む ④ 当選したら期間内に購入する",
    "first_seen": "2026-07-28T23:29:32.208+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "a870b0f1e95e",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [],
    "title": "アビスアイ",
@@ -831,10 +976,220 @@
    "deadline": "2026-07-31T23:59:00",
    "conditions": "Amazon.co.jp 招待制販売（招待リクエスト） / 定価販売のほかに中古（マーケットプレイス）の出品もあるので、間違えて買わないよう注意 / ① 商品ページで抽選に参加する ② 当選するとメールで通知が届く ③ 期限内（72時間以内）に購入する",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "12e86ae11ac2",
+   "kind": "event",
+   "game": "onepiece",
+   "cond_tags": [],
+   "title": "あそびかた教室 8月",
+   "product": null,
+   "perk": "参加記念品 プロモーションパック Vol.9 1パック5枚入り(全5種)収録カード一覧 特製ドン!!カードVer.5 特製ストレージボックス Vol.4トライアルデッキ ・ONEPIECEカ",
+   "venue": null,
+   "event_at": "2026-08-01",
+   "more_dates": 0,
+   "product_key": null,
+   "retailer": "公認店舗(全国)",
+   "platform": "store",
+   "regions": [],
+   "apply_url": "https://www.onepiece-cardgame.com/events/howtoplay-class08.html",
+   "apply_kind": "direct",
+   "source": "onepiece-events",
+   "source_url": "https://www.onepiece-cardgame.com/events/howtoplay-class08.html",
+   "deadline": "2026-08-01",
+   "conditions": "2026年8月1日[土] ～ 30日[日]​ / 当日参加可能・初心者歓迎・中学生以下限定・デッキ不要 / 全国各エリアで開催決定！楽しくルールを学んでワンピカードをマスターしよう！",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "8c4ca5ffd4ae",
+   "kind": "event",
+   "game": "onepiece",
+   "cond_tags": [],
+   "title": "【小中学生限定】夏休みティーチング会",
+   "product": null,
+   "perk": "会場物販あり / 参加記念品 トライアルデッキ ・ONEPIECEカードゲーム トライアルデッキ モンキー・D・ルフィ(ギア5) ・ONEPIECEカードゲーム トライアルデッキ シャンクス ※キャラクターを",
+   "venue": null,
+   "event_at": "2026-08-01",
+   "more_dates": 0,
+   "product_key": null,
+   "retailer": "公認店舗(全国)",
+   "platform": "store",
+   "regions": [],
+   "apply_url": "https://www.onepiece-cardgame.com/events/summer-teaching2026.html",
+   "apply_kind": "direct",
+   "source": "onepiece-events",
+   "source_url": "https://www.onepiece-cardgame.com/events/summer-teaching2026.html",
+   "deadline": "2026-08-01",
+   "conditions": "2026年8月1日(土)・2日(日) / 公式ショップ・初心者歓迎・中学生以下限定 / この夏、ワンピカードをはじめよう！",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "ffc5f0dedd05",
+   "kind": "event",
+   "game": "pokeca",
+   "cond_tags": [],
+   "title": "メガエルレイドexSARゲットバトル【7-8月開催分】",
+   "product": null,
+   "perk": "参加費に商品購入を含む: 3,000円 ※拡張パック「M6」15パックの購入費を含む。",
+   "venue": "埼玉県春日部市中央1丁目9番地4号 高元ビル3階",
+   "event_at": "2026-08-01T12:00",
+   "more_dates": 3,
+   "product_key": null,
+   "retailer": "トレカショップKCC",
+   "platform": "store",
+   "regions": [
+    "埼玉"
+   ],
+   "apply_url": "https://players.pokemon-card.com/event/detail/1058803/1/13186/20260801/1877158",
+   "apply_kind": "direct",
+   "source": "pokeca-events",
+   "source_url": "https://players.pokemon-card.com/event/detail/1058803/1/13186/20260801/1877158",
+   "deadline": "2026-08-01",
+   "conditions": "参加費 3,000円 ※拡張パック「M6」15パックの購入費を含む。 / 定員56名 / レギュ:その他",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "075651a09886",
+   "kind": "event",
+   "game": "pokeca",
+   "cond_tags": [
+    {
+     "t": "¥150以上の購入条件",
+     "s": 2
+    }
+   ],
+   "title": "【26/8】ポケモンカードジム トレーナーズリーグ（ジュニアリーグ）",
+   "product": null,
+   "perk": "参加費に商品購入を含む: ポケモンカード関連新品商品150円以上の購入",
+   "venue": "神奈川県横浜市瀬谷区南台1-45-3",
+   "event_at": "2026-08-01T10:30",
+   "more_dates": 0,
+   "product_key": null,
+   "retailer": "ブックオフスーパーバザー横浜瀬谷南台 ホビー・トレカ館",
+   "platform": "store",
+   "regions": [
+    "神奈川"
+   ],
+   "apply_url": "https://players.pokemon-card.com/event/detail/1086961/1/20967/20260801/1880776",
+   "apply_kind": "direct",
+   "source": "pokeca-events",
+   "source_url": "https://players.pokemon-card.com/event/detail/1086961/1/20967/20260801/1880776",
+   "deadline": "2026-08-01",
+   "conditions": "参加費 ポケモンカード関連新品商品150円以上の購入 / 定員16名 / レギュ:スタンダード",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "2bbb8dd0b56a",
+   "kind": "event",
+   "game": "pokeca",
+   "cond_tags": [],
+   "title": "メガエルレイドexSARゲットバトル【7-8月開催分】",
+   "product": null,
+   "perk": "参加費に商品購入を含む: 3,000円 ※拡張パック「M6」15パックの購入費を含む。",
+   "venue": "大阪府枚方市池之宮1-2-50",
+   "event_at": "2026-08-01T18:00",
+   "more_dates": 0,
+   "product_key": null,
+   "retailer": "BOOKOFF SUPER BAZAAR 307号枚方池之宮",
+   "platform": "store",
+   "regions": [
+    "大阪"
+   ],
+   "apply_url": "https://players.pokemon-card.com/event/detail/1058819/1/18876/20260801/1878096",
+   "apply_kind": "direct",
+   "source": "pokeca-events",
+   "source_url": "https://players.pokemon-card.com/event/detail/1058819/1/18876/20260801/1878096",
+   "deadline": "2026-08-01",
+   "conditions": "参加費 3,000円 ※拡張パック「M6」15パックの購入費を含む。 / 定員32名 / レギュ:その他",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "718f84540e24",
+   "kind": "event",
+   "game": "pokeca",
+   "cond_tags": [],
+   "title": "メガエルレイドexSARゲットバトル【7-8月開催分】",
+   "product": null,
+   "perk": "参加費に商品購入を含む: 3000円(現金払いのみ) ※拡張パック「M6」15パックの購入費",
+   "venue": "愛媛県松山市空港通6-12-3ジョイランド21西棟",
+   "event_at": "2026-08-01T18:30",
+   "more_dates": 6,
+   "product_key": null,
+   "retailer": "TCG桜華",
+   "platform": "store",
+   "regions": [
+    "愛媛"
+   ],
+   "apply_url": "https://players.pokemon-card.com/event/detail/1058820/1/18915/20260801/1877065",
+   "apply_kind": "direct",
+   "source": "pokeca-events",
+   "source_url": "https://players.pokemon-card.com/event/detail/1058820/1/18915/20260801/1877065",
+   "deadline": "2026-08-01",
+   "conditions": "参加費 3000円(現金払いのみ) ※拡張パック「M6」15パックの購入費 / 定員32名 / レギュ:その他",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "6417482aeb61",
+   "kind": "event",
+   "game": "pokeca",
+   "cond_tags": [],
+   "title": "メガエルレイドexSARゲットバトル【7-8月開催分】",
+   "product": null,
+   "perk": "参加費に商品購入を含む: 3,000円 ※拡張パック「M6」15パックの購入費を含む。",
+   "venue": "東京都立川市曙町２-7-17 5F",
+   "event_at": "2026-08-02T10:30",
+   "more_dates": 0,
+   "product_key": null,
+   "retailer": "BOOKOFF SUPER BAZAAR 立川駅北口店",
+   "platform": "store",
+   "regions": [
+    "東京"
+   ],
+   "apply_url": "https://players.pokemon-card.com/event/detail/1058825/1/18174/20260802/1877020",
+   "apply_kind": "direct",
+   "source": "pokeca-events",
+   "source_url": "https://players.pokemon-card.com/event/detail/1058825/1/18174/20260802/1877020",
+   "deadline": "2026-08-02",
+   "conditions": "参加費 3,000円 ※拡張パック「M6」15パックの購入費を含む。 / 定員32名 / レギュ:その他",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "b372017d0e48",
+   "kind": "event",
+   "game": "pokeca",
+   "cond_tags": [],
+   "title": "メガエルレイドexSARゲットバトル【7-8月開催分】",
+   "product": null,
+   "perk": "参加費に商品購入を含む: 3000円 ※拡張パック「M6」15パックの購入費を含む。",
+   "venue": "神奈川県相模原市緑区橋本6－2－1 4F",
+   "event_at": "2026-08-02T14:30",
+   "more_dates": 0,
+   "product_key": null,
+   "retailer": "BOOKOFF イオン橋本",
+   "platform": "store",
+   "regions": [
+    "神奈川"
+   ],
+   "apply_url": "https://players.pokemon-card.com/event/detail/1058842/1/19993/20260802/1877721",
+   "apply_kind": "direct",
+   "source": "pokeca-events",
+   "source_url": "https://players.pokemon-card.com/event/detail/1058842/1/19993/20260802/1877721",
+   "deadline": "2026-08-02",
+   "conditions": "参加費 3000円 ※拡張パック「M6」15パックの購入費を含む。 / 定員64名 / レギュ:その他",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "81a2353e96d2",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
     {
@@ -859,10 +1214,11 @@
    "deadline": "2026-08-02T12:00",
    "conditions": "・応募にはLivePocket会員登録が必要 ・応募時に「プレイヤーID」（0を含む10桁の数字）が必要（ログインIDとは別）。未取得の方はポケモンカードゲーム公式HPより取得 ・1人1回・1店舗のみ応募可能（重複応募は無効） ・受取時に当選チケット（QRコード）と公的身分証明書の提示が必要 ・当選者本人のみ応募店舗にて購入可能（代理購入・譲渡不可） ・スク",
    "first_seen": "2026-07-28T23:29:32.208+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "ebc6895c7544",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
     {
@@ -890,10 +1246,11 @@
    "deadline": "2026-08-02T23:59:00",
    "conditions": "SNS応募 / SNS応募（Xでフォロー＋リポスト） / お店によっては、コメント投稿・店舗公式アプリの登録・InstagramやTikTokのフォローも条件に加わります。応募前に各店舗の告知投稿で条件を確認してください / ① お店の公式X（旧Twitter）アカウントをフォローする ② 対象の抽選告知の投稿をリポスト（リツイート）する ③ 当落はXのダイレクトメッセージ、または店舗の投稿で確認する ④ 当選したら期間内にお店へ行って購入する",
    "first_seen": "2026-07-28T23:29:32.208+09:00",
-   "last_seen": "2026-07-28T23:43:18.511+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "41128a5ec4c5",
+   "kind": "lottery",
    "game": "onepiece",
    "cond_tags": [
     {
@@ -918,10 +1275,167 @@
    "deadline": "2026-08-02T23:59:00",
    "conditions": "アプリ / iAEONアプリ抽選 / 応募はiAEONアプリからのみ受け付けています。対象店舗・対象商品はイオン各社（イオン北海道・イオン九州など）の告知で確認してください / ① iAEONアプリをスマートフォンに入れて会員登録する ② アプリ内のトレーディングカード抽選販売ページを開く ③ 対象商品を選んで応募する ④ 当落はアプリの通知やマイページで確認する ⑤ 当選したら期間内に対象店舗で購入する",
    "first_seen": "2026-07-28T23:29:32.208+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "d4a64ffb0a53",
+   "kind": "event",
+   "game": "pokeca",
+   "cond_tags": [],
+   "title": "メガエルレイドexSARゲットバトル【7-8月開催分】",
+   "product": null,
+   "perk": "参加費に商品購入を含む: 「3,000円 ※拡張パック「M6」15パックの購入費を含む。」",
+   "venue": "千葉県習志野市津田沼1-3-11 8階",
+   "event_at": "2026-08-03T13:00",
+   "more_dates": 4,
+   "product_key": null,
+   "retailer": "トーナメントセンターバトロコ 新津田沼駅前",
+   "platform": "store",
+   "regions": [
+    "千葉"
+   ],
+   "apply_url": "https://players.pokemon-card.com/event/detail/1058850/1/18187/20260803/1877936",
+   "apply_kind": "direct",
+   "source": "pokeca-events",
+   "source_url": "https://players.pokemon-card.com/event/detail/1058850/1/18187/20260803/1877936",
+   "deadline": "2026-08-03",
+   "conditions": "参加費 「3,000円 ※拡張パック「M6」15パックの購入費を含む。」 / 定員32名 / レギュ:その他",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "a80d7bfa8695",
+   "kind": "event",
+   "game": "pokeca",
+   "cond_tags": [],
+   "title": "メガエルレイドexSARゲットバトル【7-8月開催分】",
+   "product": null,
+   "perk": "参加費に商品購入を含む: 3,000円 ※拡張パック「M6」15パックの購入費を含む。",
+   "venue": "神奈川県横浜市都筑区中川中央1-25-1",
+   "event_at": "2026-08-03T13:30",
+   "more_dates": 0,
+   "product_key": null,
+   "retailer": "BOOKOFFSUPERBAZAARノースポート・モール店",
+   "platform": "store",
+   "regions": [
+    "神奈川"
+   ],
+   "apply_url": "https://players.pokemon-card.com/event/detail/1058851/1/14790/20260803/1876952",
+   "apply_kind": "direct",
+   "source": "pokeca-events",
+   "source_url": "https://players.pokemon-card.com/event/detail/1058851/1/14790/20260803/1876952",
+   "deadline": "2026-08-03",
+   "conditions": "参加費 3,000円 ※拡張パック「M6」15パックの購入費を含む。 / 定員16名 / レギュ:その他",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "48d749321163",
+   "kind": "event",
+   "game": "pokeca",
+   "cond_tags": [],
+   "title": "メガエルレイドexSARゲットバトル【7-8月開催分】",
+   "product": null,
+   "perk": "参加費に商品購入を含む: 3,000円 ※拡張パック「M6」15パックの購入費を含む。",
+   "venue": "神奈川県厚木市中町４－４－１５ ＴＭビル本厚木 5Ｆ",
+   "event_at": "2026-08-03T14:00",
+   "more_dates": 1,
+   "product_key": null,
+   "retailer": "トーナメントセンターバトロコ 本厚木駅前",
+   "platform": "store",
+   "regions": [
+    "神奈川"
+   ],
+   "apply_url": "https://players.pokemon-card.com/event/detail/1058854/1/13701/20260803/1876944",
+   "apply_kind": "direct",
+   "source": "pokeca-events",
+   "source_url": "https://players.pokemon-card.com/event/detail/1058854/1/13701/20260803/1876944",
+   "deadline": "2026-08-03",
+   "conditions": "参加費 3,000円 ※拡張パック「M6」15パックの購入費を含む。 / 定員64名 / レギュ:その他",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "806f42c22c4c",
+   "kind": "event",
+   "game": "pokeca",
+   "cond_tags": [],
+   "title": "メガエルレイドexSARゲットバトル【7-8月開催分】",
+   "product": null,
+   "perk": "参加費に商品購入を含む: 3,000円（税込）※拡張パック「ストームエメラルダ」15パックの購入費を含む。",
+   "venue": "千葉県船橋市浜町2-1-1 三井ショッピングパーク ららぽーとTOKYO-BAY 西館2階",
+   "event_at": "2026-08-04T13:00",
+   "more_dates": 3,
+   "product_key": null,
+   "retailer": "ポケモンカードステーション・ポケモンセンタートウキョーベイ",
+   "platform": "store",
+   "regions": [
+    "千葉"
+   ],
+   "apply_url": "https://players.pokemon-card.com/event/detail/1058864/1/10546/20260804/1878265",
+   "apply_kind": "direct",
+   "source": "pokeca-events",
+   "source_url": "https://players.pokemon-card.com/event/detail/1058864/1/10546/20260804/1878265",
+   "deadline": "2026-08-04",
+   "conditions": "参加費 3,000円（税込）※拡張パック「ストームエメラルダ」15パックの購入費を含む。 / 定員24名 / レギュ:その他",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "5a9bc051f96c",
+   "kind": "event",
+   "game": "pokeca",
+   "cond_tags": [],
+   "title": "メガエルレイドexSARゲットバトル【7-8月開催分】",
+   "product": null,
+   "perk": "参加費に商品購入を含む: 「3,000円 ※拡張パック「M6」15パックの購入費を含む。」",
+   "venue": "京都府京都市下京区真苧屋町195 福井ビル2F",
+   "event_at": "2026-08-05T13:00",
+   "more_dates": 1,
+   "product_key": null,
+   "retailer": "GIRAFULL京都店",
+   "platform": "store",
+   "regions": [
+    "京都"
+   ],
+   "apply_url": "https://players.pokemon-card.com/event/detail/1058879/1/11037/20260805/1878080",
+   "apply_kind": "direct",
+   "source": "pokeca-events",
+   "source_url": "https://players.pokemon-card.com/event/detail/1058879/1/11037/20260805/1878080",
+   "deadline": "2026-08-05",
+   "conditions": "参加費 「3,000円 ※拡張パック「M6」15パックの購入費を含む。」 / 定員32名 / レギュ:その他",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "2b6151845385",
+   "kind": "event",
+   "game": "pokeca",
+   "cond_tags": [],
+   "title": "メガエルレイドexSARゲットバトル【7-8月開催分】",
+   "product": null,
+   "perk": "参加費に商品購入を含む: 3,000円 ※拡張パック「ストームエメラルダ」15パックの購入費を含む。",
+   "venue": "京都府京都市下京区七条通烏丸東入真苧屋町214番地 京都駅前第5ビル 3階",
+   "event_at": "2026-08-05T14:00",
+   "more_dates": 5,
+   "product_key": null,
+   "retailer": "カードボックス京都店",
+   "platform": "store",
+   "regions": [
+    "京都"
+   ],
+   "apply_url": "https://players.pokemon-card.com/event/detail/1058887/1/18907/20260805/1877371",
+   "apply_kind": "direct",
+   "source": "pokeca-events",
+   "source_url": "https://players.pokemon-card.com/event/detail/1058887/1/18907/20260805/1877371",
+   "deadline": "2026-08-05",
+   "conditions": "参加費 3,000円 ※拡張パック「ストームエメラルダ」15パックの購入費を含む。 / 定員32名 / レギュ:その他",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "b6a72fd3262f",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
     {
@@ -998,10 +1512,11 @@
    "deadline": "2026-08-06T17:59:00",
    "conditions": "会員・本人確認 / ゲオ 抽選販売（WEB） / 応募にはGEO IDとPonta会員IDの連携が必要です。当選後の購入時に本人確認書類の提示を求められます / ① ゲオの抽選販売専用サイトを開く ② GEO IDでログインする（持っていなければ会員登録する） ③ レンタル会員機能付きPontaカード、またはゲオアプリ会員証を連携しておく ④ 申し込みたい商品を選んで応募する（お一人様1点・1回まで） ⑤ 当落は専用サイトかゲオアプリで確認する ⑥ 当選し",
    "first_seen": "2026-07-28T23:29:32.208+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "fdc54150120a",
+   "kind": "lottery",
    "game": "onepiece",
    "cond_tags": [
     {
@@ -1078,10 +1593,11 @@
    "deadline": "2026-08-06T17:59:00",
    "conditions": "会員・本人確認 / ゲオ 抽選販売（WEB） / 応募にはGEO IDとPonta会員IDの連携が必要です。当選後の購入時に本人確認書類の提示を求められます / ① ゲオの抽選販売専用サイトを開く ② GEO IDでログインする（持っていなければ会員登録する） ③ レンタル会員機能付きPontaカード、またはゲオアプリ会員証を連携しておく ④ 申し込みたい商品を選んで応募する（お一人様1点・1回まで） ⑤ 当落は専用サイトかゲオアプリで確認する ⑥ 当選し",
    "first_seen": "2026-07-28T23:29:32.208+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "58eed82299e9",
+   "kind": "lottery",
    "game": "onepiece",
    "cond_tags": [
     {
@@ -1106,10 +1622,201 @@
    "deadline": "2026-08-06T23:58:00",
    "conditions": "アプリ・会員 / 予約販売 / 申し込み方法や支払いのタイミング、受け取り期限はお店ごとに違います / ① お店の窓口や予約フォームで申し込む ② 代金を前払いすることがある ③ 発売日以降に受け取る（店頭か配送）",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "a03b0c98ccdc",
+   "kind": "event",
+   "game": "onepiece",
+   "cond_tags": [],
+   "title": "【小学生限定】ワンピカードであそぼう！夏休み交流会",
+   "product": null,
+   "perk": "会場物販あり / 参加記念品スタンダードバトルパック Vol.16 1パック1枚入り(全4種)収録カード一覧 P-119 ポートガス・D・エース 特製ストレージボックス Vol.4会場物販 ブースターパック",
+   "venue": null,
+   "event_at": "2026-08-07",
+   "more_dates": 0,
+   "product_key": null,
+   "retailer": "公認店舗(全国)",
+   "platform": "store",
+   "regions": [],
+   "apply_url": "https://www.onepiece-cardgame.com/events/summer-meetup2026.html",
+   "apply_kind": "direct",
+   "source": "onepiece-events",
+   "source_url": "https://www.onepiece-cardgame.com/events/summer-meetup2026.html",
+   "deadline": "2026-08-07",
+   "conditions": "2026年8月7日[金] ～8月18日[火] / 公式ショップ・初心者歓迎・小学生限定 / この夏、ワンピカードであそぼう！",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "e7d811e9a103",
+   "kind": "event",
+   "game": "pokeca",
+   "cond_tags": [],
+   "title": "メガエルレイドexSARゲットバトル【7-8月開催分】",
+   "product": null,
+   "perk": "参加費に商品購入を含む: 「3,000円 ※拡張パック「M6」15パックの購入費を含む。」",
+   "venue": "埼玉県比企郡嵐山町平澤2440番地",
+   "event_at": "2026-08-07T16:30",
+   "more_dates": 0,
+   "product_key": null,
+   "retailer": "TSUTAYA嵐山店",
+   "platform": "store",
+   "regions": [
+    "埼玉"
+   ],
+   "apply_url": "https://players.pokemon-card.com/event/detail/1058910/1/14667/20260807/1877308",
+   "apply_kind": "direct",
+   "source": "pokeca-events",
+   "source_url": "https://players.pokemon-card.com/event/detail/1058910/1/14667/20260807/1877308",
+   "deadline": "2026-08-07",
+   "conditions": "参加費 「3,000円 ※拡張パック「M6」15パックの購入費を含む。」 / 定員32名 / レギュ:その他",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "4c51a0233b7f",
+   "kind": "event",
+   "game": "pokeca",
+   "cond_tags": [],
+   "title": "メガエルレイドexSARゲットバトル【7-8月開催分】",
+   "product": null,
+   "perk": "参加費に商品購入を含む: 3,000円 ※拡張パック「M6」15パックの購入費を含む。",
+   "venue": "神奈川県川崎市高津区久本3-6-20-3F",
+   "event_at": "2026-08-07T13:30",
+   "more_dates": 0,
+   "product_key": null,
+   "retailer": "ブックオフ イトーヨカドー溝ノ口店",
+   "platform": "store",
+   "regions": [
+    "神奈川"
+   ],
+   "apply_url": "https://players.pokemon-card.com/event/detail/1058905/1/20020/20260807/1876958",
+   "apply_kind": "direct",
+   "source": "pokeca-events",
+   "source_url": "https://players.pokemon-card.com/event/detail/1058905/1/20020/20260807/1876958",
+   "deadline": "2026-08-07",
+   "conditions": "参加費 3,000円 ※拡張パック「M6」15パックの購入費を含む。 / 定員32名 / レギュ:その他",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "343a08aa02f5",
+   "kind": "event",
+   "game": "pokeca",
+   "cond_tags": [
+    {
+     "t": "¥150以上の購入条件",
+     "s": 2
+    }
+   ],
+   "title": "【26/8】ポケモンカードジム トレーナーズリーグ（オープンリーグ）",
+   "product": null,
+   "perk": "参加費に商品購入を含む: ポケモンカード関連新品商品150円以上の購入",
+   "venue": "神奈川県横浜市瀬谷区南台1-45-3",
+   "event_at": "2026-08-07T14:30",
+   "more_dates": 0,
+   "product_key": null,
+   "retailer": "ブックオフスーパーバザー横浜瀬谷南台 ホビー・トレカ館",
+   "platform": "store",
+   "regions": [
+    "神奈川"
+   ],
+   "apply_url": "https://players.pokemon-card.com/event/detail/1091796/1/20967/20260807/1880840",
+   "apply_kind": "direct",
+   "source": "pokeca-events",
+   "source_url": "https://players.pokemon-card.com/event/detail/1091796/1/20967/20260807/1880840",
+   "deadline": "2026-08-07",
+   "conditions": "参加費 ポケモンカード関連新品商品150円以上の購入 / 定員32名 / レギュ:スタンダード",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "4483021222bf",
+   "kind": "event",
+   "game": "pokeca",
+   "cond_tags": [
+    {
+     "t": "¥150以上の購入条件",
+     "s": 2
+    }
+   ],
+   "title": "【26/8】ポケモンカードジム トレーナーズリーグ（シニアリーグ）",
+   "product": null,
+   "perk": "参加費に商品購入を含む: ポケモンカード関連新品商品150円以上の購入",
+   "venue": "神奈川県横浜市瀬谷区南台1-45-3",
+   "event_at": "2026-08-08T10:30",
+   "more_dates": 0,
+   "product_key": null,
+   "retailer": "ブックオフスーパーバザー横浜瀬谷南台 ホビー・トレカ館",
+   "platform": "store",
+   "regions": [
+    "神奈川"
+   ],
+   "apply_url": "https://players.pokemon-card.com/event/detail/1092427/1/20967/20260808/1880780",
+   "apply_kind": "direct",
+   "source": "pokeca-events",
+   "source_url": "https://players.pokemon-card.com/event/detail/1092427/1/20967/20260808/1880780",
+   "deadline": "2026-08-08",
+   "conditions": "参加費 ポケモンカード関連新品商品150円以上の購入 / 定員16名 / レギュ:スタンダード",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "42c13763bd90",
+   "kind": "event",
+   "game": "pokeca",
+   "cond_tags": [],
+   "title": "メガエルレイドexSARゲットバトル【7-8月開催分】",
+   "product": null,
+   "perk": "参加費に商品購入を含む: 3,000円 ※拡張パック「M6」15パックの購入費を含む。",
+   "venue": "神奈川県厚木市中町2-12-1",
+   "event_at": "2026-08-08T15:30",
+   "more_dates": 0,
+   "product_key": null,
+   "retailer": "BOOKOFFPLUS アミューあつぎ店",
+   "platform": "store",
+   "regions": [
+    "神奈川"
+   ],
+   "apply_url": "https://players.pokemon-card.com/event/detail/1058943/1/18937/20260808/1877417",
+   "apply_kind": "direct",
+   "source": "pokeca-events",
+   "source_url": "https://players.pokemon-card.com/event/detail/1058943/1/18937/20260808/1877417",
+   "deadline": "2026-08-08",
+   "conditions": "参加費 3,000円 ※拡張パック「M6」15パックの購入費を含む。 / 定員64名 / レギュ:その他",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "637390074430",
+   "kind": "event",
+   "game": "pokeca",
+   "cond_tags": [],
+   "title": "メガエルレイドexSARゲットバトル【7-8月開催分】",
+   "product": null,
+   "perk": "参加費に商品購入を含む: 3,000円 ※拡張パック「M6」15パックの購入費を含む。",
+   "venue": "滋賀県大津市皇子が丘2丁目10-27 西大津ISビル3F",
+   "event_at": "2026-08-08T16:00",
+   "more_dates": 2,
+   "product_key": null,
+   "retailer": "トレカショップVOW",
+   "platform": "store",
+   "regions": [
+    "滋賀"
+   ],
+   "apply_url": "https://players.pokemon-card.com/event/detail/1058945/1/18414/20260808/1877069",
+   "apply_kind": "direct",
+   "source": "pokeca-events",
+   "source_url": "https://players.pokemon-card.com/event/detail/1058945/1/18414/20260808/1877069",
+   "deadline": "2026-08-08",
+   "conditions": "参加費 3,000円 ※拡張パック「M6」15パックの購入費を含む。 / 定員64名 / レギュ:その他",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "588eb18746f5",
+   "kind": "lottery",
    "game": "onepiece",
    "cond_tags": [
     {
@@ -1134,10 +1841,111 @@
    "deadline": "2026-08-09T23:59:00",
    "conditions": "本人確認 / ショップロッテリー（e-starbox）WEB抽選 / 応募だけなら支払いは不要。会員登録がいるかはお店によって違います / ① QRコードやリンクから応募ページを開く ② 必要事項を入力して応募する（この時点で支払いはなし） ③ 当落はマイページかメールで確認する ④ 当選したら期限内にお店で購入する",
    "first_seen": "2026-07-28T23:29:32.208+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "41fa88778ab8",
+   "kind": "event",
+   "game": "pokeca",
+   "cond_tags": [],
+   "title": "メガエルレイドexSARゲットバトル【7-8月開催分】",
+   "product": null,
+   "perk": "参加費に商品購入を含む: 3,000円 ※拡張パック「M6」15パックの購入費を含む。",
+   "venue": "千葉県千葉市中央区富士見2-2-3 吉田興業第一ビル3階",
+   "event_at": "2026-08-11T12:00",
+   "more_dates": 0,
+   "product_key": null,
+   "retailer": "フルコンプ千葉店",
+   "platform": "store",
+   "regions": [
+    "千葉"
+   ],
+   "apply_url": "https://players.pokemon-card.com/event/detail/1059007/1/20046/20260811/1877727",
+   "apply_kind": "direct",
+   "source": "pokeca-events",
+   "source_url": "https://players.pokemon-card.com/event/detail/1059007/1/20046/20260811/1877727",
+   "deadline": "2026-08-11",
+   "conditions": "参加費 3,000円 ※拡張パック「M6」15パックの購入費を含む。 / 定員64名 / レギュ:その他",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "60642511ddd9",
+   "kind": "event",
+   "game": "onepiece",
+   "cond_tags": [],
+   "title": "チャンピオンシップ26-27​ Season 1 エリア決勝大会 マッチングバトル​",
+   "product": null,
+   "perk": "会場物販あり / 参加記念品​ ※複数の対戦コンテンツにご参加される場合でも、お一人様1セットまでです",
+   "venue": null,
+   "event_at": "2026-08-15",
+   "more_dates": 0,
+   "product_key": null,
+   "retailer": "公認店舗(全国)",
+   "platform": "store",
+   "regions": [],
+   "apply_url": "https://www.onepiece-cardgame.com/events/season1-final-matching.html",
+   "apply_kind": "direct",
+   "source": "onepiece-events",
+   "source_url": "https://www.onepiece-cardgame.com/events/season1-final-matching.html",
+   "deadline": "2026-08-15",
+   "conditions": "2026年8月15日(土) / 事前応募のみ / エリア決勝大会の会場にてサイドイベントを開催！​ 勝利数に応じて記念品が変動するカードバトルです。​",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "94a7e0ce480b",
+   "kind": "event",
+   "game": "pokeca",
+   "cond_tags": [],
+   "title": "メガエルレイドexSARゲットバトル【7-8月開催分】",
+   "product": null,
+   "perk": "参加費に商品購入を含む: 3000円 ※拡張パック「M16」15パックの購入を含む。",
+   "venue": "愛媛県松山市湊町4丁目10番地8 BE-FLATビル 5階",
+   "event_at": "2026-08-15T13:30",
+   "more_dates": 1,
+   "product_key": null,
+   "retailer": "カードゲームショップ オレタン松山店",
+   "platform": "store",
+   "regions": [
+    "愛媛"
+   ],
+   "apply_url": "https://players.pokemon-card.com/event/detail/1059095/1/19154/20260815/1877527",
+   "apply_kind": "direct",
+   "source": "pokeca-events",
+   "source_url": "https://players.pokemon-card.com/event/detail/1059095/1/19154/20260815/1877527",
+   "deadline": "2026-08-15",
+   "conditions": "参加費 3000円 ※拡張パック「M16」15パックの購入を含む。 / 定員16名 / レギュ:その他",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "f82958ee0a13",
+   "kind": "event",
+   "game": "onepiece",
+   "cond_tags": [],
+   "title": "エクストラチャンピオンシップ26-27​ Season 1 予選大会 マッチングバトル​",
+   "product": null,
+   "perk": "会場物販あり / 参加記念品​ ※複数の対戦コンテンツにご参加される場合でも、お一人様1セットまでです",
+   "venue": null,
+   "event_at": "2026-08-16",
+   "more_dates": 0,
+   "product_key": null,
+   "retailer": "公認店舗(全国)",
+   "platform": "store",
+   "regions": [],
+   "apply_url": "https://www.onepiece-cardgame.com/events/season1-extra-matching.html",
+   "apply_kind": "direct",
+   "source": "onepiece-events",
+   "source_url": "https://www.onepiece-cardgame.com/events/season1-extra-matching.html",
+   "deadline": "2026-08-16",
+   "conditions": "2026年8月16日(日) / 事前応募のみ / エクストラチャンピオンシップの会場にて当日参加可能なサイドイベントを開催！ ​",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "f10077987de1",
+   "kind": "lottery",
    "game": "onepiece",
    "cond_tags": [
     {
@@ -1158,10 +1966,83 @@
    "deadline": "2026-08-21T23:59:00",
    "conditions": "SNS応募 / WEB抽選 / 応募先や条件、結果の知らせ方はお店ごとに違います。各店舗の告知で確認してください / ① お店の公式サイトやSNSで応募ページを探す ② 必要なら会員登録する ③ 応募フォームから申し込む ④ 当選したら期間内に購入する",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.511+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "c70c39d00459",
+   "kind": "event",
+   "game": "onepiece",
+   "cond_tags": [],
+   "title": "世界最強の戦士【OP-17】発売記念イベント",
+   "product": null,
+   "perk": "会場物販あり: 1BOX ¥5,760 / 参加記念品 プロモーションパック Vol.9 1パック5枚入り(全5種)収録カード一覧 スタンダードバトルパック Vol.16 1パック1枚入り(全4種)収録カード一覧 特製ドン‼カード v",
+   "venue": null,
+   "event_at": "2026-08-22",
+   "more_dates": 0,
+   "product_key": "op-17",
+   "retailer": "公認店舗(全国)",
+   "platform": "store",
+   "regions": [],
+   "apply_url": "https://www.onepiece-cardgame.com/events/release-event-op17.html",
+   "apply_kind": "direct",
+   "source": "onepiece-events",
+   "source_url": "https://www.onepiece-cardgame.com/events/release-event-op17.html",
+   "deadline": "2026-08-22",
+   "conditions": "2026年8月22日[土] ～9月6日[日] / 初心者歓迎 / ブースターパックの発売を記念して交流会を開催！​",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "fb7131dd1358",
+   "kind": "event",
+   "game": "onepiece",
+   "cond_tags": [],
+   "title": "3on3 LIMITED BATTLE",
+   "product": null,
+   "perk": "会場物販あり: 1BOX ¥5,760 / 参加記念品プロモーションパック Vol.9 1パック5枚入り(全5種)収録カード一覧 特製ドン!!カードVer.5 物販ブースターパック 世界最強の戦士【OP-17】​ 販売価格 1BOX：",
+   "venue": null,
+   "event_at": "2026-08-29",
+   "more_dates": 0,
+   "product_key": null,
+   "retailer": "公認店舗(全国)",
+   "platform": "store",
+   "regions": [],
+   "apply_url": "https://www.onepiece-cardgame.com/events/3on3-limitedbattle.html",
+   "apply_kind": "direct",
+   "source": "onepiece-events",
+   "source_url": "https://www.onepiece-cardgame.com/events/3on3-limitedbattle.html",
+   "deadline": "2026-08-29",
+   "conditions": "2026年8月29日[土]～9月5日[土] / 事前応募のみ / 使用できるリーダーカードを指定した、3人1組で戦うチーム戦形式のイベントです。",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "b61e3ea0ed50",
+   "kind": "event",
+   "game": "onepiece",
+   "cond_tags": [],
+   "title": "Amazonでジュニア大交流会",
+   "product": null,
+   "perk": "会場物販あり / 参加記念品 プロモーションパック Vol.9 1パック5枚入り(全5種)収録カード一覧 特製ストレージボックス Vol.3 じゃんけん大会 本イベントでは大会終了時にじゃんけん大会を実施いた",
+   "venue": null,
+   "event_at": "2026-09-20",
+   "more_dates": 0,
+   "product_key": null,
+   "retailer": "公認店舗(全国)",
+   "platform": "store",
+   "regions": [],
+   "apply_url": "https://www.onepiece-cardgame.com/events/meetup-amazon-junior-2026.html",
+   "apply_kind": "direct",
+   "source": "onepiece-events",
+   "source_url": "https://www.onepiece-cardgame.com/events/meetup-amazon-junior-2026.html",
+   "deadline": "2026-09-20",
+   "conditions": "2026年9月20日[日] / 初心者歓迎・中学生以下限定 / 気軽に遊べる交流会をAmazonオフィスにて開催！",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "811c2970ea5a",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
     {
@@ -1242,10 +2123,11 @@
    "deadline": null,
    "conditions": "アプリ・会員・本人確認 / 店頭販売（先着・通常） / 整理券の有無や開始時刻、購入制限はお店や入荷状況で変わります / 1 / ① 入荷・発売の告知と、整理券の有無を確認する ② 整理券がある場合は配布時間までにお店へ行く ③ 順番にレジで購入する",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.511+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "0bbe1111d67d",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
     {
@@ -1266,10 +2148,11 @@
    "deadline": null,
    "conditions": "店頭販売（先着・通常） / 整理券の有無や開始時刻、購入制限はお店や入荷状況で変わります / 1 / ① 入荷・発売の告知と、整理券の有無を確認する ② 整理券がある場合は配布時間までにお店へ行く ③ 順番にレジで購入する",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.511+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "da65ffdda125",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
     {
@@ -1292,10 +2175,11 @@
    "deadline": null,
    "conditions": "SNS応募 / WEB抽選 / 応募先や条件、結果の知らせ方はお店ごとに違います。各店舗の告知で確認してください / 1 / ① お店の公式サイトやSNSで応募ページを探す ② 必要なら会員登録する ③ 応募フォームから申し込む ④ 当選したら期間内に購入する",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.511+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "f517f3ac93d9",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
     {
@@ -1364,10 +2248,11 @@
    "deadline": null,
    "conditions": "店頭販売（先着・通常） / 整理券の有無や開始時刻、購入制限はお店や入荷状況で変わります / 1 / ① 入荷・発売の告知と、整理券の有無を確認する ② 整理券がある場合は配布時間までにお店へ行く ③ 順番にレジで購入する",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.511+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "79ba53bcec5d",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
     {
@@ -1388,10 +2273,11 @@
    "deadline": null,
    "conditions": "会員 / WEB抽選 / 応募先や条件、結果の知らせ方はお店ごとに違います。各店舗の告知で確認してください / 1 / ① お店の公式サイトやSNSで応募ページを探す ② 必要なら会員登録する ③ 応募フォームから申し込む ④ 当選したら期間内に購入する",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.511+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "fb682270e1c7",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
     {
@@ -1416,10 +2302,11 @@
    "deadline": null,
    "conditions": "アプリ / WEB抽選 / 応募先や条件、結果の知らせ方はお店ごとに違います。各店舗の告知で確認してください / ① お店の公式サイトやSNSで応募ページを探す ② 必要なら会員登録する ③ 応募フォームから申し込む ④ 当選したら期間内に購入する",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.511+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "2236c00dcf50",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
     {
@@ -1440,10 +2327,11 @@
    "deadline": null,
    "conditions": "招待制販売（リクエスト制） / 仕組みや購入期限はサービスによって違うので、各告知で確認してください / 1 / ① 告知の方法で抽選に参加する ② 当選した場合だけ通知が届く ③ 期限内に購入する",
    "first_seen": "2026-07-28T23:29:32.208+09:00",
-   "last_seen": "2026-07-28T23:43:18.511+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "11197553e045",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
     {
@@ -1468,10 +2356,11 @@
    "deadline": null,
    "conditions": "アプリ / アプリ抽選 / 対象アプリや条件はお店ごとに違うので、各店舗の告知で確認してください / 1 / ① お店の公式アプリを入れて会員登録する ② アプリ内で応募する ③ 結果はアプリの通知で確認する ④ 当選したら期間内にお店へ行く",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.511+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "c24c79e819c3",
+   "kind": "lottery",
    "game": "onepiece",
    "cond_tags": [
     {
@@ -1540,10 +2429,11 @@
    "deadline": null,
    "conditions": "店頭販売（先着・通常） / 整理券の有無や開始時刻、購入制限はお店や入荷状況で変わります / 1 / ① 入荷・発売の告知と、整理券の有無を確認する ② 整理券がある場合は配布時間までにお店へ行く ③ 順番にレジで購入する",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.511+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "6e7f12d7ce8d",
+   "kind": "lottery",
    "game": "onepiece",
    "cond_tags": [
     {
@@ -1568,10 +2458,11 @@
    "deadline": null,
    "conditions": "アプリ / 店頭抽選 / 応募のやり方も結果の知らせ方もお店ごとに違うので、各店舗の告知を確認してください / ① お店で応募する（応募用紙か、店頭の端末・アプリ） ② 名前や連絡先の記入、本人確認を求められることがある ③ 抽選結果を確認する（店頭の掲示・電話・アプリ通知など） ④ 当選したら期間内にお店へ行って購入する",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.511+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "8945c77bea89",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [],
    "title": "ポケモンカードゲーム MEGA 拡張パック「ストームエメラルダ」HMV店",
@@ -1596,10 +2487,11 @@
    "deadline": null,
    "conditions": "HMV店頭抽選・詳細は記事参照",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.511+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "1a0d93798630",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [],
    "title": "ポケモンカードゲーム MEGA 拡張パック「アビスアイ」HMV店頭 抽選販",
@@ -1624,10 +2516,11 @@
    "deadline": null,
    "conditions": "HMV店頭抽選・詳細は記事参照",
    "first_seen": "2026-07-28T23:29:32.208+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "2cc470771a55",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [],
    "title": "MEGA 30th CELEBRATION プレミアムデッキセット エーフィ・ブラッキー / カードセット9種",
@@ -1643,10 +2536,11 @@
    "deadline": null,
    "conditions": "明日6月8日(月)14時商品ページ公開 招待制販売の可能性が高いです。",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "934ef61f6967",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
     {
@@ -1669,10 +2563,11 @@
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認 / ポケカ抽選販売 7月31日（金）分ストームエメラルダ抽選販売します 一人1BOXまで（6,000円） ●応募方法:@ario_bepop をフォロー&このポストをRP ●応募期間:7/29（水）18時まで ●当選発表:DMにてお知らせ ●購入期限:8/2（日） BEPOP柏店店頭で販売 詳しくは画像",
    "first_seen": "2026-07-28T23:39:17.162+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "4a0a66146403",
+   "kind": "lottery",
    "game": "onepiece",
    "cond_tags": [],
    "title": "ブースターパック 決戦の刻【OP-16】((店舗はリンク先参照))",
@@ -1688,10 +2583,11 @@
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認 / ONE PIECEカードゲーム「決戦の刻」抽選販売❗ 🏢ミニストップオンライン ✅抽選応募期間 7月31日(金)15:00まで 🎯当選発表 8月17日(月)15:00以降 🛒購入期間 8月17日(月)15:00〜8月18日(火)15:00 ✅抽選スレッド https://t.co/uMDPH1",
    "first_seen": "2026-07-28T23:39:17.162+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "3a50012c6ffb",
+   "kind": "lottery",
    "game": "onepiece",
    "cond_tags": [
     {
@@ -1712,34 +2608,11 @@
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認 / 🔷🔹🔹抽選販売のお知らせ🔹🔹🔷 #ONEPIECEカードゲーム 『受け継がれる意志』 『神の島の冒険』 『スタートデッキEX ルフィ&エース』 店頭掲示の二次元コードより 本日7/27(月)20:59まで応募受付中✨✨ 当店は20:00閉店ですので来店はお早めに🏃💨 ご応募はWond",
    "first_seen": "2026-07-28T23:39:17.162+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
-  },
-  {
-   "id": "50f988634c0e",
-   "game": "onepiece",
-   "cond_tags": [
-    {
-     "t": "会員登録",
-     "s": 1
-    }
-   ],
-   "title": "ブースターパック 世界最強の戦士【OP-17】(ドラゴンスター各店)",
-   "product": null,
-   "product_key": "op-17",
-   "retailer": "ドラゴンスター各店",
-   "platform": "store",
-   "regions": [],
-   "apply_url": "https://dorasuta.membercard.jp/lottery?form100500_mode=search&form100500_params%5B0%5D=pager&form100500_params%5B1%5D=1&form100500_params%5B2%5D=&page_now=2&page_max=8&search_store_id=",
-   "apply_kind": "direct",
-   "source": "x",
-   "source_url": "https://x.com/panapanapa/status/2080899517495590927",
-   "deadline": null,
-   "conditions": "X投稿由来・詳細は投稿元で確認 / 【8/11 23:59締切🎯】 ドラゴンスター各店で、ワンピカード「世界最強の戦士【OP-17】」1BOXの抽選販売を受付中！ 条件：モバイル会員限定 当選：8/15予定 購入：8/22～8/24 1人1BOXまで。応募時に選択した店舗で購入します。 https://t.co/6HUweoV0XS",
-   "first_seen": "2026-07-28T23:34:31.820+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "a14fc96ca3ad",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [],
    "title": "30周年パック",
@@ -1755,10 +2628,11 @@
    "deadline": null,
    "conditions": "Amazon.co.jp 招待制販売（招待リクエスト） / 定価販売のほかに中古（マーケットプレイス）の出品もあるので、間違えて買わないよう注意 / ① 商品ページで抽選に参加する ② 当選するとメールで通知が届く ③ 期限内（72時間以内）に購入する",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "73828db0cc51",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [],
    "title": "30周年エーフィ・ブラッキーデッキ",
@@ -1774,10 +2648,11 @@
    "deadline": null,
    "conditions": "Amazon.co.jp 招待制販売（招待リクエスト） / 定価販売のほかに中古（マーケットプレイス）の出品もあるので、間違えて買わないよう注意 / ① 商品ページで抽選に参加する ② 当選するとメールで通知が届く ③ 期限内（72時間以内）に購入する",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "840e350df1a8",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
     {
@@ -1802,10 +2677,11 @@
    "deadline": null,
    "conditions": "アプリ / アプリ抽選 / 対象アプリや条件はお店ごとに違うので、各店舗の告知で確認してください / ① お店の公式アプリを入れて会員登録する ② アプリ内で応募する ③ 結果はアプリの通知で確認する ④ 当選したら期間内にお店へ行く",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "494f1a67da25",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [],
    "title": "30周年御三家カードセット",
@@ -1821,10 +2697,11 @@
    "deadline": null,
    "conditions": "Amazon.co.jp 招待制販売（招待リクエスト） / 定価販売のほかに中古（マーケットプレイス）の出品もあるので、間違えて買わないよう注意 / ① 商品ページで抽選に参加する ② 当選するとメールで通知が届く ③ 期限内（72時間以内）に購入する",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "cfda51e7b36a",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [],
    "title": "ブラックボルト/ホワイトフレア",
@@ -1840,10 +2717,11 @@
    "deadline": null,
    "conditions": "Amazon.co.jp 招待制販売（招待リクエスト） / 定価販売のほかに中古（マーケットプレイス）の出品もあるので、間違えて買わないよう注意 / ① 商品ページで抽選に参加する ② 当選するとメールで通知が届く ③ 期限内（72時間以内）に購入する",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "9fd5614bd655",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [],
    "title": "ニンジャスピナー",
@@ -1859,10 +2737,11 @@
    "deadline": null,
    "conditions": "Amazon.co.jp 招待制販売（招待リクエスト） / 定価販売のほかに中古（マーケットプレイス）の出品もあるので、間違えて買わないよう注意 / ① 商品ページで抽選に参加する ② 当選するとメールで通知が届く ③ 期限内（72時間以内）に購入する",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "ea596442f179",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
     {
@@ -1887,10 +2766,11 @@
    "deadline": null,
    "conditions": "会員 / Googleフォーム抽選応募 / 送信後は修正できないことが多いです。会員登録は不要な場合がほとんど / ① 告知にあるGoogleフォームを開く ② 必要事項を入力して送信する ③ お店からの連絡（当選メールなど）を待つ ④ 当選したら期限内にお店で購入する / 応募ページ記載: ・新規エントリーの方：ノジマオンラインの会員登録後、ご希望の商品にエントリーしてください / ノジマ店舗の会員情報・購入履歴とは連動しておりません",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "df459e03e8a8",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [],
    "title": "30周年エーフィ・ブラッキーデッキ",
@@ -1906,10 +2786,11 @@
    "deadline": null,
    "conditions": "予約販売 / 申し込み方法や支払いのタイミング、受け取り期限はお店ごとに違います / ① お店の窓口や予約フォームで申し込む ② 代金を前払いすることがある ③ 発売日以降に受け取る（店頭か配送）",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "fd8c7a98972e",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
     {
@@ -1964,10 +2845,11 @@
    "deadline": null,
    "conditions": "アプリ・会員 / しまむらアプリ抽選（ワクワクポイント） / 応募はアプリからのみ。落選してもチケットは戻りません / ① しまむらのアプリに登録する ② 来店や購入で「ワクワク」ポイントを貯める ③ チケットに交換して応募する ④ 当選したら登録した住所に届く",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "d3396abc27d9",
+   "kind": "lottery",
    "game": "onepiece",
    "cond_tags": [],
    "title": "新たなる皇帝 [OP-09]",
@@ -1983,10 +2865,11 @@
    "deadline": null,
    "conditions": "Amazon.co.jp 招待制販売（招待リクエスト） / 定価販売のほかに中古（マーケットプレイス）の出品もあるので、間違えて買わないよう注意 / ① 商品ページで抽選に参加する ② 当選するとメールで通知が届く ③ 期限内（72時間以内）に購入する",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "bc1612428ea2",
+   "kind": "lottery",
    "game": "onepiece",
    "cond_tags": [
     {
@@ -2013,10 +2896,11 @@
    "deadline": null,
    "conditions": "店頭抽選 / 応募のやり方も結果の知らせ方もお店ごとに違うので、各店舗の告知を確認してください / ① お店で応募する（応募用紙か、店頭の端末・アプリ） ② 名前や連絡先の記入、本人確認を求められることがある ③ 抽選結果を確認する（店頭の掲示・電話・アプリ通知など） ④ 当選したら期間内にお店へ行って購入する",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "d7ac125df699",
+   "kind": "lottery",
    "game": "onepiece",
    "cond_tags": [],
    "title": "世界最強の戦士",
@@ -2032,10 +2916,11 @@
    "deadline": null,
    "conditions": "Amazon.co.jp 招待制販売（招待リクエスト） / 定価販売のほかに中古（マーケットプレイス）の出品もあるので、間違えて買わないよう注意 / ① 商品ページで抽選に参加する ② 当選するとメールで通知が届く ③ 期限内（72時間以内）に購入する",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "f12c4d0c78fb",
+   "kind": "lottery",
    "game": "onepiece",
    "cond_tags": [],
    "title": "決戦の刻",
@@ -2051,10 +2936,35 @@
    "deadline": null,
    "conditions": "Amazon.co.jp 招待制販売（招待リクエスト） / 定価販売のほかに中古（マーケットプレイス）の出品もあるので、間違えて買わないよう注意 / ① 商品ページで抽選に参加する ② 当選するとメールで通知が届く ③ 期限内（72時間以内）に購入する",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "c687ab3578a7",
+   "kind": "event",
+   "game": "onepiece",
+   "cond_tags": [],
+   "title": "公式ショップ全国ティーチング会",
+   "product": null,
+   "perk": "参加記念品 プロモーションパック（全10種 1パック5枚入り）など ※スケジュールは随時更新されます ©尾田栄一郎／集英社 ©尾田栄一郎／集英社・フジテレビ・東映アニメーション 先頭へ戻る",
+   "venue": null,
+   "event_at": null,
+   "more_dates": 0,
+   "product_key": null,
+   "retailer": "公認店舗(全国)",
+   "platform": "store",
+   "regions": [],
+   "apply_url": "https://bandainamco-am.co.jp/official_shop/onepiece-cardgame/topics/teaching.html",
+   "apply_kind": "direct",
+   "source": "onepiece-events",
+   "source_url": "https://bandainamco-am.co.jp/official_shop/onepiece-cardgame/topics/teaching.html",
+   "deadline": null,
+   "conditions": "毎月開催 / 当日参加可能・初心者歓迎・デッキ不要 / カードの説明やルールの解説を受けながら、実際にデッキを使用してゲームを体験しよう！",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "3f6dc0cd9486",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [],
    "title": "MEGAスターターセットex (各種)((店舗はリンク先参照))",
@@ -2070,10 +2980,11 @@
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認 / 【7月31日発売】『ポケモンカードゲーム MEGA スターターセットex ニャオハ&マスカーニャex』抽選販売のお知らせ / なんば店の店舗ブログ - カードラボ https://t.co/QKissf4zzS",
    "first_seen": "2026-07-28T23:39:17.162+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "84e56ca2dd57",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [],
    "title": "MEGAスタートデッキ100 バトルコレクション((店舗はリンク先参照))",
@@ -2089,10 +3000,11 @@
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認 / 【ポケモンカード抽選情報】 ホビーステーションにて「#スタートデッキ100バトルコレクション」再販分の抽選受付開始！ 受付期間 7月30日(木)23時59分まで 当選発表 8月6日(木)予定 抽選ページ⬇️ https://t.co/DUVIOiBfxe #ポケモンカードゲーム #ポケカ #ポケモン",
    "first_seen": "2026-07-28T23:39:17.162+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "cd3e79900110",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [],
    "title": "ストームエメラルダ((店舗はリンク先参照))",
@@ -2108,10 +3020,31 @@
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認 / 【ポケモンカード抽選情報】 ホビーステーションにて「#ストームエメラルダ」再販分の抽選受付開始！ 受付期間 7月30日(木)23時59分まで 当選発表 8月6日(木)予定 抽選ページ⬇️ https://t.co/CvtrfvUGZh #ポケモンカードゲーム #ポケカ #ポケモン https://t",
    "first_seen": "2026-07-28T23:39:17.162+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
+  },
+  {
+   "id": "555278283d4f",
+   "kind": "lottery",
+   "game": "onepiece",
+   "cond_tags": [],
+   "title": "ブースターパック 世界最強の戦士【OP-17】(ドラゴンスター各店)",
+   "product": null,
+   "product_key": "op-17",
+   "retailer": "ドラゴンスター各店",
+   "platform": "store",
+   "regions": [],
+   "apply_url": "https://dorasuta.membercard.jp/lottery?form100500_mode=search&form100500_params%5B0%5D=pager&form100500_params%5B1%5D=1&form100500_params%5B2%5D=&page_now=2&page_max=8&search_store_id=",
+   "apply_kind": "direct",
+   "source": "x",
+   "source_url": "https://x.com/stock_alert_lab/status/2081027822492238064",
+   "deadline": null,
+   "conditions": "X投稿由来・詳細は投稿元で確認 / 【抽選受付中‼️】トレカ🔥 ドラゴンスター各店で2商品の抽選販売！ ✅ドラゴンボールFW「STORY BOOSTER 01」 応募：8/2(日)23:59まで 当選：8/5(水) ✅ワンピカード「世界最強の戦士」 応募：8/11(火)23:59まで 当選：8/15(土) 受取：店頭受取 応募はこち",
+   "first_seen": "2026-07-28T23:57:32.739+09:00",
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "df4a2c24c61f",
+   "kind": "lottery",
    "game": "onepiece",
    "cond_tags": [],
    "title": "ブースターパック 世界最強の戦士【OP-17】((店舗はリンク先参照))",
@@ -2127,10 +3060,11 @@
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認 / ワンピースカード 『世界最強の戦士』抽選 予約まとめ✨ 当選者の購入開始📲 ✅楽天ブックス (PR) 決戦の刻も! 抽選開始🚨 ✅@ほ〜む 一部店舗 受付中💡 ✅Amazon (PR) ✅TSUTAYA ✅カードボックス ✅イオン九州 ✅ドラゴンスター 一部店舗 📲抽選店詳細と応募方法⏬ h",
    "first_seen": "2026-07-28T23:39:17.162+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "059b1b3e1c0c",
+   "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [],
    "title": "メガシンフォニア((店舗はリンク先参照))",
@@ -2146,7 +3080,7 @@
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認 / 【ポケカ抽選予約】 「フルコンプ各店舗」にて「メガブレイブなど」の抽選予約が開始されました！ ⏰8月2日(日)11:59まで 🎯発表 当選:8月5日(水)〜6日(木)予定 🏪フルコンプ各店舗 🎴拡張パック「メガブレイブ」・メガシンフォニア 応募→ https://t.co/yvMEB0Ov8E",
    "first_seen": "2026-07-28T23:39:17.162+09:00",
-   "last_seen": "2026-07-28T23:43:18.512+09:00"
+   "last_seen": "2026-07-28T23:57:32.739+09:00"
   },
   {
    "id": "93cc35450e05",
@@ -2457,7 +3391,7 @@
    "market": 9000,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-07-28T23:43:18.943+09:00",
+   "as_of": "2026-07-28T23:57:33.574+09:00",
    "live": true
   },
   "ninja-spinner": {
@@ -2466,7 +3400,7 @@
    "market": 10800,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-07-28T23:43:18.943+09:00",
+   "as_of": "2026-07-28T23:57:33.574+09:00",
    "live": true
   },
   "munikis-zero": {
@@ -2475,7 +3409,7 @@
    "market": 8600,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-07-28T23:43:18.943+09:00",
+   "as_of": "2026-07-28T23:57:33.574+09:00",
    "live": true
   },
   "mega-dream": {
@@ -2484,7 +3418,7 @@
    "market": 13700,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-07-28T23:43:18.943+09:00",
+   "as_of": "2026-07-28T23:57:33.574+09:00",
    "live": true
   },
   "mega-sinfonia": {
@@ -2493,7 +3427,7 @@
    "market": 10800,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-07-28T23:43:18.943+09:00",
+   "as_of": "2026-07-28T23:57:33.574+09:00",
    "live": true
   },
   "mega-brave": {
@@ -2502,7 +3436,7 @@
    "market": 11800,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-07-28T23:43:18.943+09:00",
+   "as_of": "2026-07-28T23:57:33.574+09:00",
    "live": true
   },
   "celebration-30th": {
@@ -2543,7 +3477,7 @@
    "market": 1800,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-07-28T23:43:18.943+09:00",
+   "as_of": "2026-07-28T23:57:33.574+09:00",
    "live": true
   },
   "pokeca-151": {
@@ -2552,7 +3486,7 @@
    "market": 57500,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-07-28T23:43:18.943+09:00",
+   "as_of": "2026-07-28T23:57:33.574+09:00",
    "live": true
   },
   "terastal-fes": {
@@ -2561,7 +3495,7 @@
    "market": 21000,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-07-28T23:43:18.943+09:00",
+   "as_of": "2026-07-28T23:57:33.574+09:00",
    "live": true
   },
   "black-bolt": {
@@ -2570,7 +3504,7 @@
    "market": 25500,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-07-28T23:43:18.943+09:00",
+   "as_of": "2026-07-28T23:57:33.574+09:00",
    "live": true
   },
   "white-flare": {
@@ -2579,7 +3513,7 @@
    "market": 23200,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-07-28T23:43:18.943+09:00",
+   "as_of": "2026-07-28T23:57:33.574+09:00",
    "live": true
   },
   "inferno-x": {
@@ -2588,7 +3522,7 @@
    "market": 21300,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-07-28T23:43:18.943+09:00",
+   "as_of": "2026-07-28T23:57:33.574+09:00",
    "live": true
   },
   "chouden-breaker": {
@@ -2597,7 +3531,7 @@
    "market": 33000,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-07-28T23:43:18.943+09:00",
+   "as_of": "2026-07-28T23:57:33.574+09:00",
    "live": true
   },
   "rocket-dan": {
@@ -2606,7 +3540,7 @@
    "market": 26300,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-07-28T23:43:18.943+09:00",
+   "as_of": "2026-07-28T23:57:33.574+09:00",
    "live": true
   },
   "mega-gengar-starter": {

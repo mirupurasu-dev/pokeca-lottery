@@ -4,6 +4,7 @@
 
 - **サイト**: https://mirupurasu-dev.github.io/pokeca-lottery/
 - ポケカ / ワンピースのゲーム切替タブ
+- 🏆大会タブ: 参加費に商品購入が含まれる大会・参加記念品/会場物販がある公式イベント
 - 応募ページ(フォーム/応募ボタン)への直リンク付き
 - 応募条件を自動タグ化(🔒購入実績・本人確認・来店必要など)+「条件ゆるめ」フィルタ
 - 店頭受取系は首都圏(1都3県)・大阪・京都・滋賀の対象案件のみ掲載
@@ -25,7 +26,8 @@ docs/data/data.json      収集結果(Actionsがコミットで更新)
 
 | 種別 | ソース |
 |---|---|
-| 横断まとめ | cardchusen.com / nyuka-now.com |
+| 大会・イベント | players.pokemon-card.com(公開JSON API) / onepiece-cardgame.com/events |
+| 横断まとめ | cardchusen.com / nyuka-now.com / pokechuu.com |
 | 公式(ポケセン) | pokemoncenter-online.com / shop.pokemon.co.jp / pokemon.co.jp API |
 | 小売公式 | イオン(kidsrepublic) / イトーヨーカドー / 楽天ブックス / ヨドバシ / HMV |
 | X(Twitter) | Yahoo!リアルタイム検索経由 |
