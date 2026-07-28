@@ -217,7 +217,8 @@ async function main() {
     if (old.source === 'x') continue;
     const dl = old.deadline ? new Date(old.deadline.length <= 10 ? old.deadline + 'T23:59:00+09:00' : old.deadline) : null;
     const lastSeen = old.last_seen ? new Date(old.last_seen) : now;
-    const keepUntil = dl ? dl.getTime() + 3 * 86400000 : lastSeen.getTime() + 14 * 86400000;
+    // 締切済みは1日だけ(結果待ちの確認用)、締切不明は元ソースから消えて7日で落とす
+    const keepUntil = dl ? dl.getTime() + 1 * 86400000 : lastSeen.getTime() + 7 * 86400000;
     if (keepUntil > now.getTime()) byId.set(id, old);
   }
 

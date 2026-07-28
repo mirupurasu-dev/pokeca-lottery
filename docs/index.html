@@ -99,6 +99,7 @@ main{padding:10px 12px 0;max-width:640px;margin:0 auto}
 .xrow::-webkit-scrollbar{display:none}
 .xbtn{flex:none;background:#111;color:#fff;font-size:12px;font-weight:700;padding:9px 14px;border-radius:999px;text-decoration:none}
 
+.sechead{margin:18px 0 10px;padding:9px 12px;background:#e9e9e9;border-radius:9px;font-size:12px;font-weight:900;color:#555;letter-spacing:.02em}
 .more{display:block;width:100%;text-align:center;padding:12px;font-size:13px;font-weight:700;color:var(--sub);background:none;border:none;cursor:pointer}
 .empty{text-align:center;color:var(--sub);font-size:13px;font-weight:700;padding:40px 20px}
 footer{max-width:640px;margin:24px auto 0;padding:16px 16px calc(env(safe-area-inset-bottom) + 24px);font-size:10px;color:#999;line-height:1.8}
@@ -391,26 +392,26 @@ function render(){
     return true;
   });
   updateAppliedTab();
-  const live = items.filter(it=>!isEnded(it));
+  const live = items.filter(it=>!isEnded(it) && it.deadline);
+  const nodl = items.filter(it=>!isEnded(it) && !it.deadline); // 締切情報なし(要確認)
   const ended = items.filter(isEnded);
 
   // stats
   const soon = live.filter(i=>{ const d=deadlineDate(i); return d && (d-jstNow())<48*3600000; }).length;
   if(isEventTab){
-    const buy = live.filter(i=>/物販|購入費|購入代|1BOX/.test(i.perk||'')).length;
+    const all = live.concat(nodl);
+    const buy = all.filter(i=>/物販|購入費|購入代|1BOX/.test(i.perk||'')).length;
     $('#strip').innerHTML = `
-      <div class="stat"><b>${live.length}</b><span>開催予定</span></div>
+      <div class="stat"><b>${all.length}</b><span>開催予定</span></div>
       <div class="stat"><b class="red">${soon}</b><span>48h以内</span></div>
       <div class="stat"><b>${buy}</b><span>商品が買える</span></div>
-      <div class="stat"><b>${live.length-buy}</b><span>賞品・記念品</span></div>`;
+      <div class="stat"><b>${all.length-buy}</b><span>賞品・記念品</span></div>`;
   } else {
-    const online = live.filter(i=>i.platform==='online').length;
-    const store = live.filter(i=>i.platform==='store').length;
     $('#strip').innerHTML = `
-      <div class="stat"><b>${live.length}</b><span>受付中</span></div>
+      <div class="stat"><b>${live.length}</b><span>締切あり受付中</span></div>
       <div class="stat"><b class="red">${soon}</b><span>締切48h以内</span></div>
-      <div class="stat"><b>${online}</b><span>オンライン</span></div>
-      <div class="stat"><b>${store}</b><span>店頭受取</span></div>`;
+      <div class="stat"><b>${live.filter(i=>i.platform==='online').length}</b><span>オンライン</span></div>
+      <div class="stat"><b>${nodl.length}</b><span>締切情報なし</span></div>`;
   }
 
   const byDeadline = (a,b)=>{ const da=deadlineDate(a), db=deadlineDate(b); if(!da&&!db)return 0; if(!da)return 1; if(!db)return -1; return da-db; };
@@ -421,16 +422,28 @@ function render(){
     cond:(a,b)=> condLevel(a)-condLevel(b) || byDeadline(a,b),
   }[state.sort];
   live.sort(sortFn);
+  nodl.sort(sortFn);
   ended.sort((a,b)=>deadlineDate(b)-deadlineDate(a));
 
-  const shown = state.showEnded ? live.concat(ended) : live;
   $('#showEnded').style.display = ended.length ? 'block' : 'none';
 
-  if(!shown.length){
-    $('#list').innerHTML = '<div class="empty">条件に合う受付中の抽選はありません。<br>フィルタを変えるか、また明日チェックしてください。</div>';
+  if(!live.length && !nodl.length && !(state.showEnded && ended.length)){
+    $('#list').innerHTML = `<div class="empty">条件に合う${isEventTab?'開催予定の大会':'受付中の抽選'}はありません。<br>フィルタを変えるか、また明日チェックしてください。</div>`;
     return;
   }
-  $('#list').innerHTML = shown.map(card).join('');
+
+  let html = live.map(card).join('');
+  if(nodl.length){
+    html += sectionHead(isEventTab
+      ? `📋 日程が未確定の大会 ${nodl.length}件`
+      : `📋 締切情報なし ${nodl.length}件（受付終了している場合があります）`);
+    html += nodl.map(card).join('');
+  }
+  if(state.showEnded && ended.length){
+    html += sectionHead(`⏹ 受付終了 ${ended.length}件`);
+    html += ended.map(card).join('');
+  }
+  $('#list').innerHTML = html;
 }
 
 // 赤ボタン=実際の応募画面への直リンクのみ。それ以外は白ボタンで正直に表示
@@ -448,6 +461,10 @@ function applyBtn(it){
   else if(/アプリ|LINE|モギリー/.test(condText)) label = 'アプリ/LINE応募 ・詳細を見る';
   else if(it.platform==='store') label = '店頭応募 ・詳細を見る';
   return `<a class="btn sub" href="${esc(it.apply_url)}" target="_blank" rel="noopener">${label}</a>`;
+}
+
+function sectionHead(label){
+  return `<div class="sechead">${esc(label)}</div>`;
 }
 
 function condChips(it){
