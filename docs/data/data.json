@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-23T07:24:10.760+09:00",
+ "updated_at": "2026-08-23T12:46:55.886+09:00",
  "items": [
   {
    "id": "36e854474f2c",
@@ -42,52 +42,7 @@
    "deadline": "2026-07-24T23:59",
    "conditions": "LINEミニアプリ「モギリーLite」で応募・応募リンクは期間開始後に各店舗ページ掲載",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
-  },
-  {
-   "id": "845911461a33",
-   "kind": "lottery",
-   "game": "pokeca",
-   "cond_tags": [],
-   "title": "アビスアイ / ストームエメラルダ / メガブレイブ / メガシンフォニア",
-   "product": "ポケモンカード アビスアイ / ポケモンカード ストームエメラルダ / ポケモンカード メガブレイブ / ポケモンカード メガシンフォニア",
-   "product_key": "storm-emeralda",
-   "retailer": "竜のしっぽ各店",
-   "platform": "store",
-   "regions": [],
-   "apply_url": "https://ryuunoshippo.membercard.jp/",
-   "apply_kind": "direct",
-   "source": "nyuka-now",
-   "source_url": "https://nyuka-now.com/archives/2459",
-   "deadline": "2026-08-21T23:59",
-   "conditions": "https://ryuunoshippo.membercard.jp/?rt=%2Flottery 8月21日(金)23時59分まで",
-   "first_seen": "2026-08-15T19:16:01.203+09:00",
-   "last_seen": "2026-08-21T19:23:01.754+09:00"
-  },
-  {
-   "id": "f10077987de1",
-   "kind": "lottery",
-   "game": "onepiece",
-   "cond_tags": [
-    {
-     "t": "会員登録",
-     "s": 1
-    }
-   ],
-   "title": "世界最強の戦士",
-   "product": null,
-   "product_key": "op-17",
-   "retailer": "トレカSHOPあんりみてっど",
-   "platform": "online",
-   "regions": [],
-   "apply_url": "https://x.com/unlimited15839/status/2076329781394887102",
-   "apply_kind": "info",
-   "source": "cardchusen",
-   "source_url": "https://cardchusen.com/onepiece/op17-saikyo-no-senshi",
-   "deadline": "2026-08-21T23:59:00",
-   "conditions": "SNS応募 / WEB抽選 / 応募先や条件、結果の知らせ方はお店ごとに違います。各店舗の告知で確認してください / ① お店の公式サイトやSNSで応募ページを探す ② 必要なら会員登録する ③ 応募フォームから申し込む ④ 当選したら期間内に購入する",
-   "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-08-11T07:39:41.551+09:00"
+   "last_seen": "2026-08-23T12:46:54.643+09:00"
   },
   {
    "id": "ed3b45774c5a",
@@ -122,7 +77,7 @@
    "deadline": "2026-08-23T20:00",
    "conditions": "各店掲示のポスターより申込みページへ 指定期間内の最低購入金額300円以上のレシートが必要。 ▼販売店舗 イエローサブマリン 新宿店 https://twitter.com/YS_SHINJYUKU イエローサブマリン 池袋ゲームショップ https://twitter.com/YS_IKEBUKURO イエローサブマリン 秋葉原ラジオ会館本店 https:",
    "first_seen": "2026-08-17T12:46:16.494+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.643+09:00"
   },
   {
    "id": "038c4eaa854c",
@@ -147,7 +102,7 @@
    "deadline": "2026-08-23T21:00",
    "conditions": "ペリカン公式LINEの登録、店頭の申込用紙にて応募 ※営業時間は店舗により異なります",
    "first_seen": "2026-08-20T12:43:05.900+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.643+09:00"
   },
   {
    "id": "2ff234e66f60",
@@ -176,7 +131,34 @@
    "deadline": "2026-08-23T23:45",
    "conditions": "・ポイント共有手続き済みのお宝創庫グループアプリ会員のお客様 ・過去1年以内にお宝創庫グループ店舗にて会員証を提示頂いて売買利用した履歴があるお客様",
    "first_seen": "2026-08-20T12:43:05.900+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.643+09:00"
+  },
+  {
+   "id": "74d2165d7188",
+   "kind": "lottery",
+   "game": "pokeca",
+   "cond_tags": [
+    {
+     "t": "本人確認あり",
+     "s": 2
+    }
+   ],
+   "title": "ストームエメラルダ",
+   "product": null,
+   "product_key": "storm-emeralda",
+   "retailer": "ポケモンカードラウンジ渋谷店",
+   "platform": "store",
+   "regions": [
+    "東京"
+   ],
+   "apply_url": "https://cloud-pass.jp/pr/c1d50bcb6964e7799103a58fc354d2fbe7f28a56357e313a8bf6fc39667e53be",
+   "apply_kind": "direct",
+   "source": "nyuka-now",
+   "source_url": "https://nyuka-now.com/archives/2459",
+   "deadline": "2026-08-24T23:59",
+   "conditions": "X投稿由来・詳細は投稿元で確認 / 【ポケモンカードラウンジ｜8/24 23:59締切】 「ストームエメラルダ」再販分の抽選受付が始まりました。 受付：8/23 10:00〜8/24 23:59 当選：8/31 18:00以降 受取：9/4〜9/6（渋谷店頭） 本人確認書類が必要です。 公式：https://t.co/fE901nvg",
+   "first_seen": "2026-08-23T12:46:54.643+09:00",
+   "last_seen": "2026-08-23T12:46:54.643+09:00"
   },
   {
    "id": "30456d43ecba",
@@ -205,7 +187,7 @@
    "deadline": "2026-08-27T16:59",
    "conditions": "応募にはキッズリパブリックアプリのインストール・会員登録 ※詳細はキッズリパブリックアプリ内にてご確認ください",
    "first_seen": "2026-08-21T12:47:18.787+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.643+09:00"
   },
   {
    "id": "e15710a69835",
@@ -229,7 +211,7 @@
    "deadline": "2026-08-29",
    "conditions": "2026年8月29日[土] ～8月30日[日] / オンライン・初心者歓迎 / メタバースロビーにて『世界最強の戦士【OP-17】発売記念イベント』を開催！",
    "first_seen": "2026-08-17T19:25:18.044+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.643+09:00"
   },
   {
    "id": "fb7131dd1358",
@@ -307,7 +289,7 @@
    "deadline": "2026-08-31T17:00",
    "conditions": null,
    "first_seen": "2026-08-17T12:46:16.494+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.643+09:00"
   },
   {
    "id": "2913ca127033",
@@ -331,7 +313,7 @@
    "deadline": "2026-09-01",
    "conditions": "2026年9月1日[火] ～ 30日[水] / 参加記念品＆優勝記念品あり！お店でワンピカードを楽しもう",
    "first_seen": "2026-07-31T20:57:17.471+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.643+09:00"
   },
   {
    "id": "79e464c9cc45",
@@ -355,7 +337,7 @@
    "deadline": "2026-09-01",
    "conditions": "2026年9月1日[火] ～ 30日[水] / 初心者歓迎 / 毎月開催！勝ち負け無しのライトな対戦＆交流メインの“超”カジュアルイベント！",
    "first_seen": "2026-07-31T20:57:17.471+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.643+09:00"
   },
   {
    "id": "ad9fab6664ba",
@@ -380,7 +362,7 @@
    "deadline": "2026-09-01T23:59",
    "conditions": "三洋堂サイトの会員登録が必要（無料）",
    "first_seen": "2026-08-19T12:43:22.743+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.643+09:00"
   },
   {
    "id": "5bc3195a522b",
@@ -433,7 +415,7 @@
    "deadline": "2026-09-05",
    "conditions": "2026年9月5日[土] ～ 27日[日]​ / 当日参加可能・初心者歓迎・中学生以下限定・デッキ不要 / 全国各エリアで開催決定！楽しくルールを学んでワンピカードをマスターしよう！",
    "first_seen": "2026-08-20T12:43:05.900+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.643+09:00"
   },
   {
    "id": "586909dfb4cc",
@@ -458,7 +440,7 @@
    "deadline": "2026-09-06T23:59",
    "conditions": "指定Xアカウントのフォロー&ポスト",
    "first_seen": "2026-08-20T12:43:05.900+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.643+09:00"
   },
   {
    "id": "e9efd3a03ca1",
@@ -487,7 +469,7 @@
    "deadline": "2026-09-08T23:59",
    "conditions": "LINEミニアプリ「モギリーLite」で応募・応募リンクは期間開始後に各店舗ページ掲載",
    "first_seen": "2026-08-21T19:23:01.754+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.643+09:00"
   },
   {
    "id": "2fb6c033a9af",
@@ -623,7 +605,7 @@
    "deadline": "2026-09-20",
    "conditions": "2026年9月20日[日] / 初心者歓迎・中学生以下限定 / 気軽に遊べる交流会をAmazonオフィスにて開催！",
    "first_seen": "2026-07-28T23:57:32.739+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.643+09:00"
   },
   {
    "id": "5fc18115594b",
@@ -676,7 +658,7 @@
    "deadline": null,
    "conditions": "HMV店頭抽選・詳細は記事参照",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.643+09:00"
   },
   {
    "id": "2cc470771a55",
@@ -696,7 +678,7 @@
    "deadline": null,
    "conditions": "明日6月8日(月)14時商品ページ公開 招待制販売の可能性が高いです。",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.643+09:00"
   },
   {
    "id": "234821a60753",
@@ -728,55 +710,32 @@
    "deadline": null,
    "conditions": "majicaアプリから対象店舗をフォロー後、バナー「ポケモンカードゲーム抽選販売のご案内」から応募 東京23区/神奈川県の一部店舗のみ対象 8月31日(月)23時59分まで",
    "first_seen": "2026-08-17T19:25:18.043+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.643+09:00"
   },
   {
-   "id": "24b94cda6b54",
-   "kind": "lottery",
-   "game": "pokeca",
-   "cond_tags": [],
-   "title": "ストームエメラルダ((店舗はリンク先参照))",
-   "product": null,
-   "product_key": "storm-emeralda",
-   "retailer": "(店舗はリンク先参照)",
-   "platform": "online",
-   "regions": [
-    "東京",
-    "京都"
-   ],
-   "apply_url": "https://seagull.membercard.jp/lottery",
-   "apply_kind": "direct",
-   "source": "x",
-   "source_url": "https://x.com/pokecawatch/status/2091199617514033357",
-   "deadline": null,
-   "conditions": "X投稿由来・詳細は投稿元で確認 / ✨ストームエメラルダ 🌈東京都 TSUTAYA Trading Card 北千住 ✅抽選受付 8/23 20:00まで ✅当選発表 8/26までに発表予定 ▶️購入期間 8/28 10:00～8/30 20:00まで #ポケモンカード #ストームエメラルダ https://t.co/mcKbIHQ",
-   "first_seen": "2026-08-23T07:24:07.522+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
-  },
-  {
-   "id": "cea492637b4a",
+   "id": "3bd28b2a76a1",
    "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
     {
-     "t": "アプリ必須",
-     "s": 1
+     "t": "来店必要",
+     "s": 2
     }
    ],
-   "title": "30th CELEBRATION((店舗はリンク先参照))",
+   "title": "30th CELEBRATION(新所沢 トレカ・ぷれぞんす トレぷれ ポケモンカード)",
    "product": null,
    "product_key": "celebration-30th",
-   "retailer": "(店舗はリンク先参照)",
-   "platform": "online",
+   "retailer": "新所沢 トレカ・ぷれぞんす トレぷれ ポケモンカード",
+   "platform": "store",
    "regions": [],
-   "apply_url": "https://channel-tono.blog.jp/archives/63430706.html",
-   "apply_kind": "direct",
+   "apply_url": "https://x.com/Plaisancetoreca/status/2091366226853548238",
+   "apply_kind": "info",
    "source": "x",
-   "source_url": "https://x.com/pokecawatch/status/2091198884399943701",
+   "source_url": "https://x.com/Plaisancetoreca/status/2091366226853548238",
    "deadline": null,
-   "conditions": "X投稿由来・詳細は投稿元で確認 / ✨30th CELEBRATION ✨30th CELEBRATION プレミアムデッキセット エーフィ・ブラッキー 🌈キッズリパブリック ✅抽選受付 8/27 19:59まで ✅当選発表 9/15 12:00以降順次 ▶️購入期間 9/16～9/23 #ポケカ #ポケモンカード https://",
-   "first_seen": "2026-08-23T07:24:07.522+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "conditions": "X投稿由来・詳細は投稿元で確認 / 📢ポケカ拡張パック「30th CELEBRATION」抽選販売のご案内📢 明日8月24日より抽選応募を開始いたします。 過去の抽選方法やルールなどに変更がありますので、下記案内を必ずご確認の上ご来店くださいませ。 ＃ポケカ ＃30thCELEBRATION ＃抽選販売 ＃新所沢 ＃所沢 http",
+   "first_seen": "2026-08-23T12:46:54.643+09:00",
+   "last_seen": "2026-08-23T12:46:54.643+09:00"
   },
   {
    "id": "f22e75a9560b",
@@ -798,34 +757,65 @@
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認 / 【カード抽選】ポケモンカードゲーム関連商品 オレタン松山店にて抽選販売の受付が開始されました✨ 応募の詳細や他の抽選情報はこちら👇 https://t.co/XnJrU0NL38 📅受付期間 〜8/20(木)23:59 忘れないうちに抽選に応募しましょう！",
    "first_seen": "2026-08-18T19:21:17.927+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.643+09:00"
   },
   {
-   "id": "002d8a43aba7",
+   "id": "4c1b87fcbe83",
    "kind": "lottery",
-   "game": "pokeca",
+   "game": "onepiece",
+   "cond_tags": [
+    {
+     "t": "来店必要",
+     "s": 2
+    },
+    {
+     "t": "会員登録",
+     "s": 1
+    }
+   ],
+   "title": "ブースターパック 世界最強の戦士【OP-17】(とれじゃらす別館（トレカ専門）大阪難波・日本橋)",
+   "product": null,
+   "product_key": "op-17",
+   "retailer": "とれじゃらす別館（トレカ専門）大阪難波・日本橋",
+   "platform": "store",
+   "regions": [
+    "大阪"
+   ],
+   "apply_url": "https://x.com/tcg_torejaras/status/2091360880562962524",
+   "apply_kind": "info",
+   "source": "x",
+   "source_url": "https://x.com/tcg_torejaras/status/2091360880562962524",
+   "deadline": null,
+   "conditions": "X投稿由来・詳細は投稿元で確認 / 🐱会員様限定抽選販売に関するお知らせ🐱 ワンピースカード 『世界最強の戦士』OP-17 販売期間 8/22(土)～8/24(月)まで 当選された方は上記期間内にご来店ください🎵 ※必要物は忘れずにお持ちください #とれじゃらす別館 #ワンピカード",
+   "first_seen": "2026-08-23T12:46:54.643+09:00",
+   "last_seen": "2026-08-23T12:46:54.643+09:00"
+  },
+  {
+   "id": "5c2a7cf87d2a",
+   "kind": "lottery",
+   "game": "onepiece",
    "cond_tags": [
     {
      "t": "Xフォロー等",
      "s": 1
     }
    ],
-   "title": "ストームエメラルダ(くじベル🔔 ポケカ抽選まとめ＆リマインダー)",
+   "title": "ブースターパック 世界最強の戦士【OP-17】(ブックオフ埼玉 草加セーモンプラザ店)",
    "product": null,
-   "product_key": "storm-emeralda",
-   "retailer": "くじベル🔔 ポケカ抽選まとめ＆リマインダー",
-   "platform": "online",
+   "product_key": "op-17",
+   "retailer": "ブックオフ埼玉 草加セーモンプラザ店",
+   "platform": "store",
    "regions": [
-    "大阪"
+    "埼玉"
    ],
-   "apply_url": "https://x.com/kujibell/status/2091219975109501400",
+   "apply_url": "https://x.com/AkiPokemonLife/status/2091312456312521068",
    "apply_kind": "info",
    "source": "x",
-   "source_url": "https://x.com/kujibell/status/2091219975109501400",
+   "source_url": "https://x.com/AkiPokemonLife/status/2091312456312521068",
    "deadline": null,
-   "conditions": "X投稿由来・詳細は投稿元で確認 / 【抽選情報】ストームエメラルダ #くじベル 🏢カードラボ販売買取センターNAMBA 地域：大阪 抽選方法：オンライン抽選 締切：2026/08/23 23:59 当選発表： 2026/08/24 ※フォロー＆対象ポストをリポストで応募 #ポケモンカード #ポケカ #ポケカ抽選 応募URLはこちらか",
-   "first_seen": "2026-08-23T07:24:07.522+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "conditions": "X投稿由来・詳細は投稿元で確認 / 【#ワンピースカード 】 ブックオフ埼玉 草加セーモンプラザ店にて、『#世界最強の戦士 』の抽選販売受付スタート💫 ⏳応募〆切 〜8月24日(月)23:59まで ⬇️応募方法 引用元のアカウントフォロー＆リポスト📱 #ワンピカード #ワンピース #ONEPIECE #トレカ https://t.",
+   "first_seen": "2026-08-23T12:46:54.643+09:00",
+   "last_seen": "2026-08-23T12:46:54.643+09:00"
   },
   {
    "id": "cbfda98f4abb",
@@ -850,7 +840,7 @@
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認 / 『ストームエメラルダ』抽選販売まとめ🎯【8/18更新】PR ✅ カードラボ大阪日本橋店(大阪)〆8/18 https://t.co/zfBvfjXjeD ✅ ゲームプラザ元気302(滋賀)〆8/18 https://t.co/mkIyXnslHB ✅ カードラボ姫路店(兵庫)〆8/19 https",
    "first_seen": "2026-08-19T07:25:48.514+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.643+09:00"
   },
   {
    "id": "a43db5b43399",
@@ -875,7 +865,7 @@
    "deadline": null,
    "conditions": "・2026年6月10日13時以前のエントリーはリセットされているので、必要商品は再度エントリーが必要です。 ・エントリーにはノジマオンラインの会員IDが必要",
    "first_seen": "2026-07-25T14:47:57.181+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.643+09:00"
   },
   {
    "id": "c687ab3578a7",
@@ -899,7 +889,7 @@
    "deadline": null,
    "conditions": "毎月開催 / 当日参加可能・初心者歓迎・デッキ不要 / カードの説明やルールの解説を受けながら、実際にデッキを使用してゲームを体験しよう！",
    "first_seen": "2026-07-28T23:57:32.739+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.643+09:00"
   },
   {
    "id": "091194baafe5",
@@ -919,10 +909,10 @@
    "deadline": null,
    "conditions": "https://amzn.to/4uT3QfZ 招待リクエスト制。商品ページからご確認ください。",
    "first_seen": "2026-08-11T13:17:09.608+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.643+09:00"
   },
   {
-   "id": "77fbc755bd14",
+   "id": "b06dd712fd3f",
    "kind": "lottery",
    "game": "pokeca",
    "cond_tags": [
@@ -935,20 +925,22 @@
      "s": 1
     }
    ],
-   "title": "ストームエメラルダ",
+   "title": "ストームエメラルダ((店舗はリンク先参照))",
    "product": null,
    "product_key": "storm-emeralda",
-   "retailer": "しまむらパーク",
-   "platform": "online",
-   "regions": [],
+   "retailer": "(店舗はリンク先参照)",
+   "platform": "store",
+   "regions": [
+    "東京"
+   ],
    "apply_url": "https://www.shop-shimamura.com/item/0363100014200/?cl=220",
    "apply_kind": "direct",
-   "source": "pokechuu",
-   "source_url": "https://pokechuu.com/pokemon-card-box-lottery-2026/",
+   "source": "x",
+   "source_url": "https://x.com/lifeprep_list/status/2091302811594326492",
    "deadline": null,
-   "conditions": "しまむらパークアプリ「会員証」→「会員特典に応募する」 https://www.shop-shimamura.com/item/0363100014200/?cl=220 8月23日(日)23時00分まで",
-   "first_seen": "2026-08-19T12:43:22.743+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "conditions": "X投稿由来・詳細は投稿元で確認 / 【オンラインで応募できるポケカ抽選まとめ】8/23時点 ⏰8/23(日)締切 ①しまむらパーク／ストームエメラルダ https://t.co/Kh0dlbRBUZ ⏰8/24(月)締切 ②晴れる屋2秋葉原タワー店（発表8/25） ストームエメラルダ https://t.co/qayRTFOJE1 拡",
+   "first_seen": "2026-08-23T12:46:54.644+09:00",
+   "last_seen": "2026-08-23T12:46:54.644+09:00"
   },
   {
    "id": "4e3e20fd49d4",
@@ -977,7 +969,7 @@
    "deadline": null,
    "conditions": "お宝創庫グループアプリから応募 過去1年以内にお宝創庫グループ店舗にて会員証を提示して売買利用した履歴が必要 https://www.otakarasouko.com/information/97450154/ 8月23日(日)23時45分まで",
    "first_seen": "2026-08-21T07:29:32.598+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.644+09:00"
   },
   {
    "id": "d80ba4953d32",
@@ -997,7 +989,7 @@
    "deadline": null,
    "conditions": "https://livepocket.jp/e/jl2b2 8月24日(月)17時00分まで",
    "first_seen": "2026-08-20T19:22:45.489+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.644+09:00"
   },
   {
    "id": "2236dc4a8d17",
@@ -1019,7 +1011,7 @@
    "deadline": null,
    "conditions": "ストームエメラルダはこちら アビスアイはこちら MEGAドリームexはこちら メガブレイブはこちら メガシンフォニアはこちら スタートデッキ100はこちら 8月24日(月)23時59分まで",
    "first_seen": "2026-08-22T07:27:09.121+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.644+09:00"
   },
   {
    "id": "97892e0d1e11",
@@ -1044,7 +1036,7 @@
    "deadline": null,
    "conditions": "https://docs.google.com/forms/d/e/1FAIpQLSeI27KEUBArFaXuj15aDOLAPLyDq-mpn6OZ4r_vdc3JGPRzdg/viewform 8月25日(火)23時59分まで / 応募ページ記載: 会員登録されていない方は先にご登録をお済ませいただくようお願いいたします / トレカプラザ55通販店 リンク おひとり様1回限りのご応募とさせていただきます",
    "first_seen": "2026-08-17T19:25:18.044+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.644+09:00"
   },
   {
    "id": "f8c248302e20",
@@ -1069,7 +1061,7 @@
    "deadline": null,
    "conditions": "https://docs.google.com/forms/d/e/1FAIpQLScI-ud_w91uxyR0UIwSfvIwl7Tm-ikuLarv1-z0cgGnmhL9fA/viewform 7月31日までに入会している会員限定 8月28日(金)23時59分まで / 応募ページ記載: お渡しとなります 販売金額： 計¥6,000税込※お一人様1BOXまで 【注意事項】 受取店舗は応募時にご自身で保管してください / 仮会員で当選された場合、購入時に本会員登録が必要です",
    "first_seen": "2026-08-21T07:29:32.598+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.644+09:00"
   },
   {
    "id": "716016a8edb0",
@@ -1089,7 +1081,7 @@
    "deadline": null,
    "conditions": "https://livepocket.jp/e/6o_kf 3回の各抽選期間につき1回ずつ応募が可能 8月30日(日)11時59分まで",
    "first_seen": "2026-08-21T19:23:01.754+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.644+09:00"
   },
   {
    "id": "7f44a0561d5c",
@@ -1109,27 +1101,7 @@
    "deadline": null,
    "conditions": "(10パック限) https://shop.pokemon.co.jp/ja/shop/common/news/202608/000451.html 9月8日(火)23時59分まで",
    "first_seen": "2026-08-22T07:27:09.121+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
-  },
-  {
-   "id": "8cfa4888e6a3",
-   "kind": "lottery",
-   "game": "pokeca",
-   "cond_tags": [],
-   "title": "30th CELEBRATION(錦糸町マルイ店)",
-   "product": null,
-   "product_key": "celebration-30th",
-   "retailer": "錦糸町マルイ店",
-   "platform": "online",
-   "regions": [],
-   "apply_url": "https://livepocket.jp/e/tn698",
-   "apply_kind": "direct",
-   "source": "x",
-   "source_url": "https://x.com/penchanTCG/status/2091286792980840925",
-   "deadline": null,
-   "conditions": "X投稿由来・詳細は投稿元で確認 / 【ポケカ30th 抽選販売】 Japan TCG Center 錦糸町マルイ店で 30周年記念商品の抽選受付中🔥 ✅30th CELEBRATION BOX https://t.co/QXLEP6sZav ✅30th プレミアムデッキセット https://t.co/Qfdo0dmcC0 📅応募",
-   "first_seen": "2026-08-23T07:24:07.522+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.644+09:00"
   },
   {
    "id": "2b8f2b159e2f",
@@ -1149,7 +1121,7 @@
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認 / #ドラスタ通販 #ワンピカード ドラゴンスター通販にてワンピースカードゲーム『決戦の刻』の抽選販売を受付中です🎉 抽選応募の受付期間は8月23日までとなりますので、お探しのお客さまはぜひご応募ください😍 🔽抽選応募のページはこちらから🔽 https://t.co/8rMdBui6m5 htt",
    "first_seen": "2026-08-23T07:24:07.522+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.644+09:00"
   },
   {
    "id": "b37a5107ac83",
@@ -1169,7 +1141,7 @@
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認 / 【プレミアムバンダイ ワンピカード抽選販売📣】 「プレミアムカードコレクション -ONE PIECE DAY'26-」の抽選受付が本日13:00から始まっています✨ 🔗予約抽選ページ https://t.co/iSz19BOXyo 📅応募期間 8月22日(土)13:00〜9月7日(月)23:0",
    "first_seen": "2026-08-23T07:24:07.522+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.644+09:00"
   },
   {
    "id": "b7691b970f7d",
@@ -1189,7 +1161,32 @@
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認 / ポケカ・ワンピースカード・ドラゴンボール 再販 抽選情報✨ ✅キデイランド ららぽーと富士見 抽選販売が開始してます🚨 受付 📅8/24(月)23:59まで 当選 🎯8/28(金)18時頃まで 📲抽選店の応募と詳細まとめ⏬ https://t.co/Vx5i3eJLSp… 対象商品💡 【ポ",
    "first_seen": "2026-08-23T07:24:07.522+09:00",
-   "last_seen": "2026-08-23T07:24:07.522+09:00"
+   "last_seen": "2026-08-23T12:46:54.644+09:00"
+  },
+  {
+   "id": "eea1204f864a",
+   "kind": "lottery",
+   "game": "pokeca",
+   "cond_tags": [
+    {
+     "t": "アプリ必須",
+     "s": 1
+    }
+   ],
+   "title": "30th CELEBRATION((店舗はリンク先参照))",
+   "product": null,
+   "product_key": "celebration-30th",
+   "retailer": "(店舗はリンク先参照)",
+   "platform": "store",
+   "regions": [],
+   "apply_url": "https://toreca-entry.com/pack/30th-celebration/",
+   "apply_kind": "direct",
+   "source": "x",
+   "source_url": "https://x.com/toreca_entry/status/2091359833996050677",
+   "deadline": null,
+   "conditions": "X投稿由来・詳細は投稿元で確認 / 🔥 30th CELEBRATIONの抽選、25店舗で受付中 🏬 プレミアムバンダイ、イ… ⏳ 9/7(月) 23:00まで 📝 イオン九州はiAEONアプリから応募 ✨ 他24店舗の受付状況もこちら👇 https://t.co/aSgL5OnGcQ #ポケカ #抽選販売 https://t",
+   "first_seen": "2026-08-23T12:46:54.644+09:00",
+   "last_seen": "2026-08-23T12:46:54.644+09:00"
   },
   {
    "id": "76042d80bdf2",
@@ -1216,6 +1213,35 @@
    "deadline": null,
    "conditions": "X投稿由来・詳細は投稿元で確認 / 🔥ゲームプラザ元気302にて抽選開始！ ✅ONE PIECEカードゲーム 『ブースターパック 世界最強の戦士』 📅応募期間 8月22日(土)〜8月25日(火)23:59 下記Googleフォームから応募 https://t.co/ekrgoYbzLG #ワンピースカード #抽選 https:// / 応募ページ記載: り時は、グーグルフォームに登録されたご本人の公的な本人確認書類 （運転免許証、マイナンバーなど、顔写真付き身分証明書）による本人確認を行います / 氏名、住所が記載されている公的な身分証を持参ください",
    "first_seen": "2026-08-23T07:24:07.522+09:00",
+   "last_seen": "2026-08-23T12:46:54.644+09:00"
+  },
+  {
+   "id": "77fbc755bd14",
+   "kind": "lottery",
+   "game": "pokeca",
+   "cond_tags": [
+    {
+     "t": "アプリ必須",
+     "s": 1
+    },
+    {
+     "t": "会員登録",
+     "s": 1
+    }
+   ],
+   "title": "ストームエメラルダ",
+   "product": null,
+   "product_key": "storm-emeralda",
+   "retailer": "しまむらパーク",
+   "platform": "online",
+   "regions": [],
+   "apply_url": "https://www.shop-shimamura.com/item/0363100014200/?cl=220",
+   "apply_kind": "direct",
+   "source": "pokechuu",
+   "source_url": "https://pokechuu.com/pokemon-card-box-lottery-2026/",
+   "deadline": null,
+   "conditions": "しまむらパークアプリ「会員証」→「会員特典に応募する」 https://www.shop-shimamura.com/item/0363100014200/?cl=220 8月23日(日)23時00分まで",
+   "first_seen": "2026-08-19T12:43:22.743+09:00",
    "last_seen": "2026-08-23T07:24:07.522+09:00"
   },
   {
@@ -1526,7 +1552,7 @@
    "market": 17000,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-08-23T07:24:09.728+09:00",
+   "as_of": "2026-08-23T12:46:54.972+09:00",
    "live": true
   },
   "abyss-eye": {
@@ -1535,7 +1561,7 @@
    "market": 9200,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-08-23T07:24:09.729+09:00",
+   "as_of": "2026-08-23T12:46:54.972+09:00",
    "live": true
   },
   "ninja-spinner": {
@@ -1544,7 +1570,7 @@
    "market": 11300,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-08-23T07:24:09.729+09:00",
+   "as_of": "2026-08-23T12:46:54.972+09:00",
    "live": true
   },
   "munikis-zero": {
@@ -1553,7 +1579,7 @@
    "market": 9300,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-08-23T07:24:09.729+09:00",
+   "as_of": "2026-08-23T12:46:54.972+09:00",
    "live": true
   },
   "mega-dream": {
@@ -1562,7 +1588,7 @@
    "market": 13700,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-08-23T07:24:09.729+09:00",
+   "as_of": "2026-08-23T12:46:54.972+09:00",
    "live": true
   },
   "mega-sinfonia": {
@@ -1571,7 +1597,7 @@
    "market": 9800,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-08-23T07:24:09.729+09:00",
+   "as_of": "2026-08-23T12:46:54.972+09:00",
    "live": true
   },
   "mega-brave": {
@@ -1580,7 +1606,7 @@
    "market": 11000,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-08-23T07:24:09.729+09:00",
+   "as_of": "2026-08-23T12:46:54.972+09:00",
    "live": true
   },
   "celebration-30th": {
@@ -1630,7 +1656,7 @@
    "market": 57000,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-08-23T07:24:09.729+09:00",
+   "as_of": "2026-08-23T12:46:54.972+09:00",
    "live": true
   },
   "terastal-fes": {
@@ -1639,7 +1665,7 @@
    "market": 20300,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-08-23T07:24:09.729+09:00",
+   "as_of": "2026-08-23T12:46:54.972+09:00",
    "live": true
   },
   "black-bolt": {
@@ -1648,7 +1674,7 @@
    "market": 24500,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-08-23T07:24:09.729+09:00",
+   "as_of": "2026-08-23T12:46:54.972+09:00",
    "live": true
   },
   "white-flare": {
@@ -1657,34 +1683,34 @@
    "market": 22500,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-08-23T07:24:09.729+09:00",
+   "as_of": "2026-08-23T12:46:54.972+09:00",
    "live": true
   },
   "inferno-x": {
    "name": "拡張パック「インフェルノX」BOX",
    "msrp": 5400,
-   "market": 21300,
+   "market": 22000,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-08-23T07:24:09.729+09:00",
+   "as_of": "2026-08-23T12:46:54.972+09:00",
    "live": true
   },
   "chouden-breaker": {
    "name": "SV拡張パック「超電ブレイカー」BOX",
    "msrp": 5400,
-   "market": 32500,
+   "market": 32300,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-08-23T07:24:09.729+09:00",
+   "as_of": "2026-08-23T12:46:54.972+09:00",
    "live": true
   },
   "rocket-dan": {
    "name": "SV拡張パック「ロケット団の栄光」BOX",
    "msrp": 5400,
-   "market": 24100,
+   "market": 24500,
    "market_source": "ポケカ買取チェッカー(買取最高値)",
    "market_url": "https://pokeca-box-hikaku.com/",
-   "as_of": "2026-08-23T07:24:09.729+09:00",
+   "as_of": "2026-08-23T12:46:54.972+09:00",
    "live": true
   },
   "mega-gengar-starter": {
